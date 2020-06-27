@@ -527,11 +527,11 @@
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! /Users/ganesh/Desktop/Angular/Portfolio/portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css */
+    /*! /Users/ganesh/Desktop/Angular/portfolio/portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css */
     "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
     module.exports = __webpack_require__(
-    /*! /Users/ganesh/Desktop/Angular/Portfolio/portfolio/src/styles.css */
+    /*! /Users/ganesh/Desktop/Angular/portfolio/portfolio/src/styles.css */
     "./src/styles.css");
     /***/
   }
