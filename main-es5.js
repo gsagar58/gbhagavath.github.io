@@ -755,7 +755,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
      */
 
 
-    var styles = ["@import url('https://fonts.googleapis.com/css?family=Happy Monkey');\n\n.row[_ngcontent-%COMP%] {\n    background: url(/assets/images/ContactBG.png);\n    height: 100vh;\n    font-family: 'Happy Monkey', cursive;\n}\n\n.heading[_ngcontent-%COMP%] {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    margin-top: 80px;\n    height: 10%;\n}\n\n.headingh5[_ngcontent-%COMP%] {\n    font-family: 'Happy Monkey', cursive;\n    font-size: 50px;\n    font-weight: 700;\n}\n\n.formleft[_ngcontent-%COMP%] {\n    float: left;\n}\n\n.formRow[_ngcontent-%COMP%] {\n    margin-top: 100px;\n}\n\n.fNSection[_ngcontent-%COMP%], .lNSection[_ngcontent-%COMP%], .emailSection[_ngcontent-%COMP%], .phoneSection[_ngcontent-%COMP%] {\n    display: inline-block;\n}\n\n.fNSection[_ngcontent-%COMP%], .emailSection[_ngcontent-%COMP%], .messageSection[_ngcontent-%COMP%] {\n    margin-left: 50px;\n}\n\n.dottedVLine[_ngcontent-%COMP%] {\n    height: 30px;\n    border-left: 1px dotted black;\n}\n\n.messageButton[_ngcontent-%COMP%] {\n    margin-left: 65px;\n}\n\n.buttonMsg[_ngcontent-%COMP%] {\n    color: #fff;\n    background-color: #e91e63;\n    border-color: #e91e63;\n    border: 1px solid transparent;\n    padding: .375rem .75rem;\n    display: inline-block;\n    font-weight: 400;\n    border-radius: .25rem;\n}\n\n.vl[_ngcontent-%COMP%] {\n    border-left: 1px dotted black;\n    height: 375px;\n    display: inline-block;\n    margin-top: 100px;\n}\n\n.phone[_ngcontent-%COMP%] {\n    display: inline-block;\n    position: absolute;\n}\n\n.device-google-pixel-2-xl[_ngcontent-%COMP%] {\n    height: 520px;\n    width: 275px;\n    margin-top: 30px;\n    margin-left: 200px;\n}\n\n.device-frame[_ngcontent-%COMP%] {\n    background: #121212;\n    border-radius: 36px;\n    height: 520px;\n    width: 275px;\n    padding: 37px 15px;\n    box-shadow: inset 0 0 0 2px #cfcfcf, inset 0 0 0 7px #9c9c9c;\n}\n\n.device-content[_ngcontent-%COMP%] {\n    border-radius: 10px;\n    height: 446px;\n    width: 245px;\n}\n\n.device-header[_ngcontent-%COMP%] {\n    height: 520px;\n    left: 51%;\n    margin-left: -137px;\n    position: absolute;\n    top: 30px;\n    width: 274px;\n}\n\n.device-header[_ngcontent-%COMP%]::after, .device-header[_ngcontent-%COMP%]::before {\n  background: #333;\n  border-radius: 3px;\n  content: \"\";\n  height: 6px;\n  left: 50%;\n  margin-left: -73px;\n  margin-top: -3px;\n  position: absolute;\n  width: 146px;\n}\n\n.device-header[_ngcontent-%COMP%]::after {\n    top: 20px;\n  }\n\n.device-header[_ngcontent-%COMP%]::before {\n    bottom: 16px;\n  }\n\n.device-sensors[_ngcontent-%COMP%] {\n    background: #333;\n    border-radius: 7px;\n    height: 14px;\n    margin-top: 8px;\n    position: absolute;\n    top: 36px;\n    width: 14px;\n    margin-left: 30px;\n}\n\n.device-btns[_ngcontent-%COMP%] {\n    background: #121212;\n    position: absolute;\n    height: 75px;\n    top: 210px;\n    width: 3px;\n    right: 214px;\n}\n\n.device-power[_ngcontent-%COMP%] {\n    background: #121212;\n    height: 30px;\n    position: absolute;\n    right: 214px;\n    top: 150px;\n    width: 3px;\n  }\n\n.instagram[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 85px;\n}\n\n.facebook[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 205px;\n    border-radius: 5px;\n}\n\n.linkedIn[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 25px;\n    border-radius: 5px;\n}\n\n.gmail[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 145px;\n    border-radius: 5px;\n}\n\n.google-search-bar[_ngcontent-%COMP%] {\n    width: 225px;\n    height: 30px;\n    position: absolute;\n    top: 100px;\n    margin-left: 10px;\n    background: #272727;\n    border-radius: 40px;\n}\n\n.google[_ngcontent-%COMP%] {\n    top: 7px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 8px;\n    border-radius: 5px;\n}\n\n.googleassistant[_ngcontent-%COMP%] {\n    top: 5px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 200px;\n    border-radius: 5px;\n}\n\n.currenttime[_ngcontent-%COMP%] {\n    top: 68px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 10px;\n    border-radius: 5px;\n    color: white;\n    font-family: serif;\n    font-size: 12px;\n}\n\n#wifi[_ngcontent-%COMP%] {\n    top: 70px;\n    position: absolute;\n    margin-left: -75px;\n    border-radius: 5px;\n    color: white;\n    font-size: 10px;\n}\n\n#signal[_ngcontent-%COMP%] {\n    top: 70px;\n    position: absolute;\n    margin-left: -58px;\n    border-radius: 5px;\n    color: white;\n    font-size: 12px;\n}\n\n#battery[_ngcontent-%COMP%] {\n    top: 72px;\n    position: absolute;\n    margin-left: -42px;\n    color: white;\n    transform: rotate(270deg);\n    font-size: 8px;\n}\n\n.hundred[_ngcontent-%COMP%] {\n    top: 69px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 215px;\n    border-radius: 5px;\n    color: white;\n    font-family: sans-serif;\n    font-size: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFjdC9jb250YWN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsbUVBQW1FOztBQUVuRTtJQUNJLDZDQUE2QztJQUM3QyxhQUFhO0lBQ2Isb0NBQW9DO0FBQ3hDOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLG9DQUFvQztJQUNwQyxlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0kscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksWUFBWTtJQUNaLDZCQUE2QjtBQUNqQzs7QUFFQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIscUJBQXFCO0lBQ3JCLDZCQUE2QjtJQUM3Qix1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLGdCQUFnQjtJQUNoQixxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSw2QkFBNkI7SUFDN0IsYUFBYTtJQUNiLHFCQUFxQjtJQUNyQixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQiw0REFBNEQ7QUFDaEU7O0FBRUE7SUFDSSxtQkFBbUI7SUFDbkIsYUFBYTtJQUNiLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsU0FBUztJQUNULG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsU0FBUztJQUNULFlBQVk7QUFDaEI7O0FBRUE7O0VBRUUsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsV0FBVztFQUNYLFNBQVM7RUFDVCxrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixZQUFZO0FBQ2Q7O0FBRUE7SUFDSSxTQUFTO0VBQ1g7O0FBRUE7SUFDRSxZQUFZO0VBQ2Q7O0FBRUY7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxXQUFXO0lBQ1gsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osVUFBVTtJQUNWLFVBQVU7SUFDVixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFVBQVU7SUFDVixVQUFVO0VBQ1o7O0FBRUY7SUFDSSxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksWUFBWTtJQUNaLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksUUFBUTtJQUNSLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxRQUFRO0lBQ1Isa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxrQkFBa0I7SUFDbEIsV0FBVztJQUNYLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osZUFBZTtBQUNuQjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osZUFBZTtBQUNuQjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWix5QkFBeUI7SUFDekIsY0FBYztBQUNsQjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxrQkFBa0I7SUFDbEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWix1QkFBdUI7SUFDdkIsZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3QvY29udGFjdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1IYXBweSBNb25rZXknKTtcblxuLnJvdyB7XG4gICAgYmFja2dyb3VuZDogdXJsKC9hc3NldHMvaW1hZ2VzL0NvbnRhY3RCRy5wbmcpO1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgZm9udC1mYW1pbHk6ICdIYXBweSBNb25rZXknLCBjdXJzaXZlO1xufVxuXG4uaGVhZGluZyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcbiAgICBtYXJnaW4tdG9wOiA4MHB4O1xuICAgIGhlaWdodDogMTAlO1xufVxuXG4uaGVhZGluZ2g1IHtcbiAgICBmb250LWZhbWlseTogJ0hhcHB5IE1vbmtleScsIGN1cnNpdmU7XG4gICAgZm9udC1zaXplOiA1MHB4O1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG59XG5cbi5mb3JtbGVmdCB7XG4gICAgZmxvYXQ6IGxlZnQ7XG59XG5cbi5mb3JtUm93IHtcbiAgICBtYXJnaW4tdG9wOiAxMDBweDtcbn1cblxuLmZOU2VjdGlvbiwgLmxOU2VjdGlvbiwgLmVtYWlsU2VjdGlvbiwgLnBob25lU2VjdGlvbiB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuXG4uZk5TZWN0aW9uLCAuZW1haWxTZWN0aW9uLCAubWVzc2FnZVNlY3Rpb24ge1xuICAgIG1hcmdpbi1sZWZ0OiA1MHB4O1xufVxuXG4uZG90dGVkVkxpbmUge1xuICAgIGhlaWdodDogMzBweDtcbiAgICBib3JkZXItbGVmdDogMXB4IGRvdHRlZCBibGFjaztcbn1cblxuLm1lc3NhZ2VCdXR0b24ge1xuICAgIG1hcmdpbi1sZWZ0OiA2NXB4O1xufVxuXG4uYnV0dG9uTXNnIHtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZTkxZTYzO1xuICAgIGJvcmRlci1jb2xvcjogI2U5MWU2MztcbiAgICBib3JkZXI6IDFweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgICBwYWRkaW5nOiAuMzc1cmVtIC43NXJlbTtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBib3JkZXItcmFkaXVzOiAuMjVyZW07XG59XG5cbi52bCB7XG4gICAgYm9yZGVyLWxlZnQ6IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgaGVpZ2h0OiAzNzVweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgbWFyZ2luLXRvcDogMTAwcHg7XG59XG5cbi5waG9uZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuLmRldmljZS1nb29nbGUtcGl4ZWwtMi14bCB7XG4gICAgaGVpZ2h0OiA1MjBweDtcbiAgICB3aWR0aDogMjc1cHg7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbiAgICBtYXJnaW4tbGVmdDogMjAwcHg7XG59XG5cbi5kZXZpY2UtZnJhbWUge1xuICAgIGJhY2tncm91bmQ6ICMxMjEyMTI7XG4gICAgYm9yZGVyLXJhZGl1czogMzZweDtcbiAgICBoZWlnaHQ6IDUyMHB4O1xuICAgIHdpZHRoOiAyNzVweDtcbiAgICBwYWRkaW5nOiAzN3B4IDE1cHg7XG4gICAgYm94LXNoYWRvdzogaW5zZXQgMCAwIDAgMnB4ICNjZmNmY2YsIGluc2V0IDAgMCAwIDdweCAjOWM5YzljO1xufVxuXG4uZGV2aWNlLWNvbnRlbnQge1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgaGVpZ2h0OiA0NDZweDtcbiAgICB3aWR0aDogMjQ1cHg7XG59XG5cbi5kZXZpY2UtaGVhZGVyIHtcbiAgICBoZWlnaHQ6IDUyMHB4O1xuICAgIGxlZnQ6IDUxJTtcbiAgICBtYXJnaW4tbGVmdDogLTEzN3B4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDMwcHg7XG4gICAgd2lkdGg6IDI3NHB4O1xufVxuXG4uZGV2aWNlLWhlYWRlcjo6YWZ0ZXIsXG4uZGV2aWNlLWhlYWRlcjo6YmVmb3JlIHtcbiAgYmFja2dyb3VuZDogIzMzMztcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xuICBjb250ZW50OiBcIlwiO1xuICBoZWlnaHQ6IDZweDtcbiAgbGVmdDogNTAlO1xuICBtYXJnaW4tbGVmdDogLTczcHg7XG4gIG1hcmdpbi10b3A6IC0zcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDE0NnB4O1xufVxuXG4uZGV2aWNlLWhlYWRlcjo6YWZ0ZXIge1xuICAgIHRvcDogMjBweDtcbiAgfVxuXG4gIC5kZXZpY2UtaGVhZGVyOjpiZWZvcmUge1xuICAgIGJvdHRvbTogMTZweDtcbiAgfVxuXG4uZGV2aWNlLXNlbnNvcnMge1xuICAgIGJhY2tncm91bmQ6ICMzMzM7XG4gICAgYm9yZGVyLXJhZGl1czogN3B4O1xuICAgIGhlaWdodDogMTRweDtcbiAgICBtYXJnaW4tdG9wOiA4cHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMzZweDtcbiAgICB3aWR0aDogMTRweDtcbiAgICBtYXJnaW4tbGVmdDogMzBweDtcbn1cblxuLmRldmljZS1idG5zIHtcbiAgICBiYWNrZ3JvdW5kOiAjMTIxMjEyO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBoZWlnaHQ6IDc1cHg7XG4gICAgdG9wOiAyMTBweDtcbiAgICB3aWR0aDogM3B4O1xuICAgIHJpZ2h0OiAyMTRweDtcbn1cblxuLmRldmljZS1wb3dlciB7XG4gICAgYmFja2dyb3VuZDogIzEyMTIxMjtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHJpZ2h0OiAyMTRweDtcbiAgICB0b3A6IDE1MHB4O1xuICAgIHdpZHRoOiAzcHg7XG4gIH1cblxuLmluc3RhZ3JhbSB7XG4gICAgYm90dG9tOiA1MHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDg1cHg7XG59XG5cbi5mYWNlYm9vayB7XG4gICAgYm90dG9tOiA1MHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDIwNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cblxuLmxpbmtlZEluIHtcbiAgICBib3R0b206IDUwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBtYXJnaW4tbGVmdDogMjVweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG59XG5cbi5nbWFpbCB7XG4gICAgYm90dG9tOiA1MHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDE0NXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cblxuLmdvb2dsZS1zZWFyY2gtYmFyIHtcbiAgICB3aWR0aDogMjI1cHg7XG4gICAgaGVpZ2h0OiAzMHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDEwMHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgIGJhY2tncm91bmQ6ICMyNzI3Mjc7XG4gICAgYm9yZGVyLXJhZGl1czogNDBweDtcbn1cblxuLmdvb2dsZSB7XG4gICAgdG9wOiA3cHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiAxN3B4O1xuICAgIGhlaWdodDogMTdweDtcbiAgICBtYXJnaW4tbGVmdDogOHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cblxuLmdvb2dsZWFzc2lzdGFudCB7XG4gICAgdG9wOiA1cHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiAxN3B4O1xuICAgIGhlaWdodDogMTdweDtcbiAgICBtYXJnaW4tbGVmdDogMjAwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxuXG4uY3VycmVudHRpbWUge1xuICAgIHRvcDogNjhweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgd2lkdGg6IDE3cHg7XG4gICAgaGVpZ2h0OiAxN3B4O1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6IHNlcmlmO1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbn1cblxuI3dpZmkge1xuICAgIHRvcDogNzBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLWxlZnQ6IC03NXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1zaXplOiAxMHB4O1xufVxuXG4jc2lnbmFsIHtcbiAgICB0b3A6IDcwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1hcmdpbi1sZWZ0OiAtNThweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbn1cblxuI2JhdHRlcnkge1xuICAgIHRvcDogNzJweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLWxlZnQ6IC00MnB4O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgyNzBkZWcpO1xuICAgIGZvbnQtc2l6ZTogOHB4O1xufVxuXG4uaHVuZHJlZCB7XG4gICAgdG9wOiA2OXB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogMTdweDtcbiAgICBoZWlnaHQ6IDE3cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDIxNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgZm9udC1zaXplOiAxMHB4O1xufSJdfQ== */"];
+    var styles = ["@import url('https://fonts.googleapis.com/css?family=Happy Monkey');\n\n.row[_ngcontent-%COMP%] {\n    background: url(/assets/images/ContactBG.png);\n    height: 100vh;\n    font-family: 'Happy Monkey', cursive;\n}\n\n.heading[_ngcontent-%COMP%] {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    margin-top: 80px;\n    height: 10%;\n}\n\n.headingh5[_ngcontent-%COMP%] {\n    font-family: 'Happy Monkey', cursive;\n    font-size: 50px;\n    font-weight: 700;\n}\n\n.formleft[_ngcontent-%COMP%] {\n    float: left;\n}\n\n.formRow[_ngcontent-%COMP%] {\n    margin-top: 100px;\n}\n\n.fNSection[_ngcontent-%COMP%], .lNSection[_ngcontent-%COMP%], .emailSection[_ngcontent-%COMP%], .phoneSection[_ngcontent-%COMP%] {\n    display: inline-block;\n}\n\n.fNSection[_ngcontent-%COMP%], .emailSection[_ngcontent-%COMP%], .messageSection[_ngcontent-%COMP%] {\n    margin-left: 50px;\n}\n\ninput.ng-invalid.ng-touched[_ngcontent-%COMP%] {\n    border: 1px solid #e91e63;\n}\n\ntextarea.ng-invalid.ng-touched[_ngcontent-%COMP%] {\n    border: 1px solid #e91e63;\n}\n\n.dottedVLine[_ngcontent-%COMP%] {\n    height: 30px;\n    border-left: 1px dotted black;\n}\n\n.messageButton[_ngcontent-%COMP%] {\n    margin-left: 65px;\n}\n\n.buttonMsg[_ngcontent-%COMP%] {\n    color: #fff;\n    background-color: #e91e63;\n    border-color: #e91e63;\n    border: 1px solid transparent;\n    padding: .375rem .75rem;\n    display: inline-block;\n    font-weight: 400;\n    border-radius: .25rem;\n}\n\n.vl[_ngcontent-%COMP%] {\n    border-left: 1px dotted black;\n    height: 375px;\n    display: inline-block;\n    margin-top: 100px;\n}\n\n.phone[_ngcontent-%COMP%] {\n    display: inline-block;\n    position: absolute;\n}\n\n.device-google-pixel-2-xl[_ngcontent-%COMP%] {\n    height: 520px;\n    width: 275px;\n    margin-top: 30px;\n    margin-left: 200px;\n}\n\n.device-frame[_ngcontent-%COMP%] {\n    background: #121212;\n    border-radius: 36px;\n    height: 520px;\n    width: 275px;\n    padding: 37px 15px;\n    box-shadow: inset 0 0 0 2px #cfcfcf, inset 0 0 0 7px #9c9c9c;\n}\n\n.device-content[_ngcontent-%COMP%] {\n    border-radius: 10px;\n    height: 446px;\n    width: 245px;\n}\n\n.device-header[_ngcontent-%COMP%] {\n    height: 520px;\n    left: 51%;\n    margin-left: -137px;\n    position: absolute;\n    top: 30px;\n    width: 274px;\n}\n\n.device-header[_ngcontent-%COMP%]::after, .device-header[_ngcontent-%COMP%]::before {\n  background: #333;\n  border-radius: 3px;\n  content: \"\";\n  height: 6px;\n  left: 50%;\n  margin-left: -73px;\n  margin-top: -3px;\n  position: absolute;\n  width: 146px;\n}\n\n.device-header[_ngcontent-%COMP%]::after {\n    top: 20px;\n  }\n\n.device-header[_ngcontent-%COMP%]::before {\n    bottom: 16px;\n  }\n\n.device-sensors[_ngcontent-%COMP%] {\n    background: #333;\n    border-radius: 7px;\n    height: 14px;\n    margin-top: 8px;\n    position: absolute;\n    top: 36px;\n    width: 14px;\n    margin-left: 30px;\n}\n\n.device-btns[_ngcontent-%COMP%] {\n    background: #121212;\n    position: absolute;\n    height: 75px;\n    top: 210px;\n    width: 3px;\n    right: 214px;\n}\n\n.device-power[_ngcontent-%COMP%] {\n    background: #121212;\n    height: 30px;\n    position: absolute;\n    right: 214px;\n    top: 150px;\n    width: 3px;\n  }\n\n.instagram[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 85px;\n}\n\n.facebook[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 205px;\n    border-radius: 5px;\n}\n\n.linkedIn[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 25px;\n    border-radius: 5px;\n}\n\n.gmail[_ngcontent-%COMP%] {\n    bottom: 50px;\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    margin-left: 145px;\n    border-radius: 5px;\n}\n\n.google-search-bar[_ngcontent-%COMP%] {\n    width: 225px;\n    height: 30px;\n    position: absolute;\n    top: 100px;\n    margin-left: 25px;\n    background: #272727;\n    border-radius: 40px;\n}\n\n.buttonMsg[_ngcontent-%COMP%]:disabled {\n    background-color: rgba(0, 0, 0, 0.5);\n}\n\n.google[_ngcontent-%COMP%] {\n    top: 7px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 8px;\n    border-radius: 5px;\n}\n\n.googleassistant[_ngcontent-%COMP%] {\n    top: 5px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 200px;\n    border-radius: 5px;\n}\n\n.topcontent[_ngcontent-%COMP%] {\n    margin-left: 12px;\n}\n\n.currenttime[_ngcontent-%COMP%] {\n    top: 68px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 10px;\n    border-radius: 5px;\n    color: white;\n    font-family: serif;\n    font-size: 12px;\n}\n\n#wifi[_ngcontent-%COMP%] {\n    top: 70px;\n    position: absolute;\n    margin-left: 175px;\n    border-radius: 5px;\n    color: white;\n    font-size: 10px;\n}\n\n#signal[_ngcontent-%COMP%] {\n    top: 70px;\n    position: absolute;\n    margin-left: 190px;\n    border-radius: 5px;\n    color: white;\n    font-size: 12px;\n}\n\n#battery[_ngcontent-%COMP%] {\n    top: 72px;\n    position: absolute;\n    margin-left: 205px;\n    color: white;\n    transform: rotate(270deg);\n    font-size: 8px;\n}\n\n.hundred[_ngcontent-%COMP%] {\n    top: 69px;\n    position: absolute;\n    width: 17px;\n    height: 17px;\n    margin-left: 215px;\n    border-radius: 5px;\n    color: white;\n    font-family: sans-serif;\n    font-size: 10px;\n}\n\n.help-block[_ngcontent-%COMP%] {\n    color: #e91e63;\n    font-size: 15px;\n}\n\n.notify[_ngcontent-%COMP%], .notify[_ngcontent-%COMP%]::after {\n    -webkit-animation-delay: 1s;\n            animation-delay: 1s;\n    -webkit-animation-duration: 2s;\n            animation-duration: 2s;\n    -webkit-animation-fill-mode: both;\n            animation-fill-mode: both;\n    -webkit-animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n            animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n}\n\n.notify[_ngcontent-%COMP%] {\n    width: 220px;\n    height: 30px;\n    margin-top: 30px;\n    position: relative;\n    margin-left: 65px;\n    background: rgba(0, 0, 0, 0.6);\n}\n\n.notify[_ngcontent-%COMP%], .notify[_ngcontent-%COMP%]::after {\n    transform: scaleX(0);\n    transform-origin: 0 50%;\n    pointer-events: none;\n    -webkit-animation-name: revealer;\n            animation-name: revealer;\n    display: none;\n}\n\n.thankyou[_ngcontent-%COMP%] {\n    color: green;\n    font-family: \"Calibri Light\";\n    font-style: italic;\n    font-size: 17px;\n    -webkit-animation: mainFadeIn 2s forwards;\n    animation: mainFadeIn 2s forwards;\n    -webkit-animation-delay: 2s;\n            animation-delay: 2s;\n    opacity: 0;\n    align-items: self-start;\n    -webkit-font-smoothing: antialiased;\n    white-space: nowrap;\n    margin-top: -28px;\n    position: relative;\n    margin-left: 65px;\n    display: none;\n}\n\n@-webkit-keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\n@keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\n@-webkit-keyframes mainFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n\n@keyframes mainFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n\n@-webkit-keyframes mainFadeOut {\n    0% {\n        opacity:1;\n      }\n      100% {\n        opacity:0;\n      }\n}\n\n@keyframes mainFadeOut {\n    0% {\n        opacity:1;\n      }\n      100% {\n        opacity:0;\n      }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFjdC9jb250YWN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsbUVBQW1FOztBQUVuRTtJQUNJLDZDQUE2QztJQUM3QyxhQUFhO0lBQ2Isb0NBQW9DO0FBQ3hDOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLG9DQUFvQztJQUNwQyxlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0kscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksWUFBWTtJQUNaLDZCQUE2QjtBQUNqQzs7QUFFQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIscUJBQXFCO0lBQ3JCLDZCQUE2QjtJQUM3Qix1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLGdCQUFnQjtJQUNoQixxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSw2QkFBNkI7SUFDN0IsYUFBYTtJQUNiLHFCQUFxQjtJQUNyQixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQiw0REFBNEQ7QUFDaEU7O0FBRUE7SUFDSSxtQkFBbUI7SUFDbkIsYUFBYTtJQUNiLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsU0FBUztJQUNULG1CQUFtQjtJQUNu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LG9CQUFvQjtJQUNwQixnQ0FBd0I7WUFBeEIsd0JBQXdCO0lBQ3hCLGFBQWE7QUFDakI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osNEJBQTRCO0lBQzVCLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YseUNBQXlDO0lBRXpDLGlDQUFpQztJQUNqQywyQkFBbUI7WUFBbkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVix1QkFBdUI7SUFDdkIsbUNBQW1DO0lBQ25DLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixhQUFhO0FBQ2pCOztBQUVBOztJQUVJO1lBQ1EsdUJBQXVCO0lBQy9COztJQUVBO1lBQ1EsMEJBQTBCO0lBQ2xDOztJQUVBO1lBQ1Esb0JBQW9CO0lBQzVCOztJQUVBO1lBQ1Esb0JBQW9CO0lBQzVCO0VBQ0Y7O0FBakJGOztJQUVJO1lBQ1EsdUJBQXVCO0lBQy9COztJQUVBO1lBQ1EsMEJBQTBCO0lBQ2xDOztJQUVBO1lBQ1Esb0JBQW9CO0lBQzVCOztJQUVBO1lBQ1Esb0JBQW9CO0lBQzVCO0VBQ0Y7O0FBRUE7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsVUFBVTtJQUNaO0VBQ0Y7O0FBUEE7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsVUFBVTtJQUNaO0VBQ0Y7O0FBRUE7SUFDRTtRQUNJLFNBQVM7TUFDWDtNQUNBO1FBQ0UsU0FBUztNQUNYO0FBQ047O0FBUEU7SUFDRTtRQUNJLFNBQVM7TUFDWDtNQUNBO1FBQ0UsU0FBUztNQUNYO0FBQ04iLCJmaWxlIjoic3JjL2FwcC9jb250YWN0L2NvbnRhY3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9SGFwcHkgTW9ua2V5Jyk7XG5cbi5yb3cge1xuICAgIGJhY2tncm91bmQ6IHVybCgvYXNzZXRzL2ltYWdlcy9Db250YWN0QkcucG5nKTtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIGZvbnQtZmFtaWx5OiAnSGFwcHkgTW9ua2V5JywgY3Vyc2l2ZTtcbn1cblxuLmhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gICAgbWFyZ2luLXRvcDogODBweDtcbiAgICBoZWlnaHQ6IDEwJTtcbn1cblxuLmhlYWRpbmdoNSB7XG4gICAgZm9udC1mYW1pbHk6ICdIYXBweSBNb25rZXknLCBjdXJzaXZlO1xuICAgIGZvbnQtc2l6ZTogNTBweDtcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG4uZm9ybWxlZnQge1xuICAgIGZsb2F0OiBsZWZ0O1xufVxuXG4uZm9ybVJvdyB7XG4gICAgbWFyZ2luLXRvcDogMTAwcHg7XG59XG5cbi5mTlNlY3Rpb24sIC5sTlNlY3Rpb24sIC5lbWFpbFNlY3Rpb24sIC5waG9uZVNlY3Rpb24ge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn1cblxuLmZOU2VjdGlvbiwgLmVtYWlsU2VjdGlvbiwgLm1lc3NhZ2VTZWN0aW9uIHtcbiAgICBtYXJnaW4tbGVmdDogNTBweDtcbn1cblxuaW5wdXQubmctaW52YWxpZC5uZy10b3VjaGVkIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjZTkxZTYzO1xufVxuXG50ZXh0YXJlYS5uZy1pbnZhbGlkLm5nLXRvdWNoZWQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNlOTFlNjM7XG59XG5cbi5kb3R0ZWRWTGluZSB7XG4gICAgaGVpZ2h0OiAzMHB4O1xuICAgIGJvcmRlci1sZWZ0OiAxcHggZG90dGVkIGJsYWNrO1xufVxuXG4ubWVzc2FnZUJ1dHRvbiB7XG4gICAgbWFyZ2luLWxlZnQ6IDY1cHg7XG59XG5cbi5idXR0b25Nc2cge1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNlOTFlNjM7XG4gICAgYm9yZGVyLWNvbG9yOiAjZTkxZTYzO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIHBhZGRpbmc6IC4zNzVyZW0gLjc1cmVtO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGJvcmRlci1yYWRpdXM6IC4yNXJlbTtcbn1cblxuLnZsIHtcbiAgICBib3JkZXItbGVmdDogMXB4IGRvdHRlZCBibGFjaztcbiAgICBoZWlnaHQ6IDM3NXB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBtYXJnaW4tdG9wOiAxMDBweDtcbn1cblxuLnBob25lIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG4uZGV2aWNlLWdvb2dsZS1waXhlbC0yLXhsIHtcbiAgICBoZWlnaHQ6IDUyMHB4O1xuICAgIHdpZHRoOiAyNzVweDtcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAyMDBweDtcbn1cblxuLmRldmljZS1mcmFtZSB7XG4gICAgYmFja2dyb3VuZDogIzEyMTIxMjtcbiAgICBib3JkZXItcmFkaXVzOiAzNnB4O1xuICAgIGhlaWdodDogNTIwcHg7XG4gICAgd2lkdGg6IDI3NXB4O1xuICAgIHBhZGRpbmc6IDM3cHggMTVweDtcbiAgICBib3gtc2hhZG93OiBpbnNldCAwIDAgMCAycHggI2NmY2ZjZiwgaW5zZXQgMCAwIDAgN3B4ICM5YzljOWM7XG59XG5cbi5kZXZpY2UtY29udGVudCB7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBoZWlnaHQ6IDQ0NnB4O1xuICAgIHdpZHRoOiAyNDVweDtcbn1cblxuLmRldmljZS1oZWFkZXIge1xuICAgIGhlaWdodDogNTIwcHg7XG4gICAgbGVmdDogNTElO1xuICAgIG1hcmdpbi1sZWZ0OiAtMTM3cHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMzBweDtcbiAgICB3aWR0aDogMjc0cHg7XG59XG5cbi5kZXZpY2UtaGVhZGVyOjphZnRlcixcbi5kZXZpY2UtaGVhZGVyOjpiZWZvcmUge1xuICBiYWNrZ3JvdW5kOiAjMzMzO1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIGhlaWdodDogNnB4O1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiAtNzNweDtcbiAgbWFyZ2luLXRvcDogLTNweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMTQ2cHg7XG59XG5cbi5kZXZpY2UtaGVhZGVyOjphZnRlciB7XG4gICAgdG9wOiAyMHB4O1xuICB9XG5cbiAgLmRldmljZS1oZWFkZXI6OmJlZm9yZSB7XG4gICAgYm90dG9tOiAxNnB4O1xuICB9XG5cbi5kZXZpY2Utc2Vuc29ycyB7XG4gICAgYmFja2dyb3VuZDogIzMzMztcbiAgICBib3JkZXItcmFkaXVzOiA3cHg7XG4gICAgaGVpZ2h0OiAxNHB4O1xuICAgIG1hcmdpbi10b3A6IDhweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAzNnB4O1xuICAgIHdpZHRoOiAxNHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAzMHB4O1xufVxuXG4uZGV2aWNlLWJ0bnMge1xuICAgIGJhY2tncm91bmQ6ICMxMjEyMTI7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGhlaWdodDogNzVweDtcbiAgICB0b3A6IDIxMHB4O1xuICAgIHdpZHRoOiAzcHg7XG4gICAgcmlnaHQ6IDIxNHB4O1xufVxuXG4uZGV2aWNlLXBvd2VyIHtcbiAgICBiYWNrZ3JvdW5kOiAjMTIxMjEyO1xuICAgIGhlaWdodDogMzBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgcmlnaHQ6IDIxNHB4O1xuICAgIHRvcDogMTUwcHg7XG4gICAgd2lkdGg6IDNweDtcbiAgfVxuXG4uaW5zdGFncmFtIHtcbiAgICBib3R0b206IDUwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBtYXJnaW4tbGVmdDogODVweDtcbn1cblxuLmZhY2Vib29rIHtcbiAgICBib3R0b206IDUwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBtYXJnaW4tbGVmdDogMjA1cHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxuXG4ubGlua2VkSW4ge1xuICAgIGJvdHRvbTogNTBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAyNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cblxuLmdtYWlsIHtcbiAgICBib3R0b206IDUwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBtYXJnaW4tbGVmdDogMTQ1cHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxuXG4uZ29vZ2xlLXNlYXJjaC1iYXIge1xuICAgIHdpZHRoOiAyMjVweDtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDI1cHg7XG4gICAgYmFja2dyb3VuZDogIzI3MjcyNztcbiAgICBib3JkZXItcmFkaXVzOiA0MHB4O1xufVxuXG4uYnV0dG9uTXNnOmRpc2FibGVkIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG59XG5cbi5nb29nbGUge1xuICAgIHRvcDogN3B4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogMTdweDtcbiAgICBoZWlnaHQ6IDE3cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDhweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG59XG5cbi5nb29nbGVhc3Npc3RhbnQge1xuICAgIHRvcDogNXB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogMTdweDtcbiAgICBoZWlnaHQ6IDE3cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDIwMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cblxuLnRvcGNvbnRlbnQge1xuICAgIG1hcmdpbi1sZWZ0OiAxMnB4O1xufVxuXG4uY3VycmVudHRpbWUge1xuICAgIHRvcDogNjhweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgd2lkdGg6IDE3cHg7XG4gICAgaGVpZ2h0OiAxN3B4O1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6IHNlcmlmO1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbn1cblxuI3dpZmkge1xuICAgIHRvcDogNzBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLWxlZnQ6IDE3NXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1zaXplOiAxMHB4O1xufVxuXG4jc2lnbmFsIHtcbiAgICB0b3A6IDcwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1hcmdpbi1sZWZ0OiAxOTBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbn1cblxuI2JhdHRlcnkge1xuICAgIHRvcDogNzJweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLWxlZnQ6IDIwNXB4O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgyNzBkZWcpO1xuICAgIGZvbnQtc2l6ZTogOHB4O1xufVxuXG4uaHVuZHJlZCB7XG4gICAgdG9wOiA2OXB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogMTdweDtcbiAgICBoZWlnaHQ6IDE3cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDIxNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgZm9udC1zaXplOiAxMHB4O1xufVxuXG4uaGVscC1ibG9jayB7XG4gICAgY29sb3I6ICNlOTFlNjM7XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuXG4ubm90aWZ5LFxuLm5vdGlmeTo6YWZ0ZXIge1xuICAgIGFuaW1hdGlvbi1kZWxheTogMXM7XG4gICAgYW5pbWF0aW9uLWR1cmF0aW9uOiAycztcbiAgICBhbmltYXRpb24tZmlsbC1tb2RlOiBib3RoO1xuICAgIGFuaW1hdGlvbi10aW1pbmctZnVuY3Rpb246IGN1YmljLWJlemllciguNzQsIC4wNiwgLjQsIC45MikgZm9yd2FyZHM7XG59XG5cbi5ub3RpZnkge1xuICAgIHdpZHRoOiAyMjBweDtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbWFyZ2luLWxlZnQ6IDY1cHg7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjYpO1xufVxuLm5vdGlmeSxcbi5ub3RpZnk6OmFmdGVyIHtcbiAgICB0cmFuc2Zvcm06IHNjYWxlWCgwKTtcbiAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDUwJTtcbiAgICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgICBhbmltYXRpb24tbmFtZTogcmV2ZWFsZXI7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cblxuLnRoYW5reW91IHtcbiAgICBjb2xvcjogZ3JlZW47XG4gICAgZm9udC1mYW1pbHk6IFwiQ2FsaWJyaSBMaWdodFwiO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICBmb250LXNpemU6IDE3cHg7XG4gICAgLXdlYmtpdC1hbmltYXRpb246IG1haW5GYWRlSW4gMnMgZm9yd2FyZHM7XG4gICAgLW8tYW5pbWF0aW9uOiBtYWluRmFkZUluIDJzIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbjogbWFpbkZhZGVJbiAycyBmb3J3YXJkcztcbiAgICBhbmltYXRpb24tZGVsYXk6IDJzO1xuICAgIG9wYWNpdHk6IDA7XG4gICAgYWxpZ24taXRlbXM6IHNlbGYtc3RhcnQ7XG4gICAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBtYXJnaW4tdG9wOiAtMjhweDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbWFyZ2luLWxlZnQ6IDY1cHg7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cblxuQGtleWZyYW1lcyByZXZlYWxlciB7XG4gICAgXG4gICAgMCUsIDUwJSB7XG4gICAgICAgICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDUwJTtcbiAgICB9XG4gICAgXG4gICAgNjAlLCAxMDAlIHtcbiAgICAgICAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDEwMCUgNTAlO1x0XHRcbiAgICB9XG4gICBcbiAgICA2MCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XG4gICAgfVxuICAgIFxuICAgIDEwMCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMCk7XG4gICAgfVxuICB9XG5cbiAgQGtleWZyYW1lcyBtYWluRmFkZUluIHtcbiAgICAwJSB7XG4gICAgICBvcGFjaXR5OiAwO1xuICAgIH1cbiAgICAxMDAlIHtcbiAgICAgIG9wYWNpdHk6IDE7XG4gICAgfVxuICB9XG5cbiAgQGtleWZyYW1lcyBtYWluRmFkZU91dCB7XG4gICAgMCUge1xuICAgICAgICBvcGFjaXR5OjE7XG4gICAgICB9XG4gICAgICAxMDAlIHtcbiAgICAgICAgb3BhY2l0eTowO1xuICAgICAgfVxufSJdfQ== */"];
     /***/
   },
 
@@ -811,25 +811,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ../fragment-polyfill.module */
     "./src/app/fragment-polyfill.module.ts");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
-    var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/fesm2015/forms.js");
     /* harmony import */
 
 
-    var _contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _contact_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./contact.component */
     "./src/app/contact/contact.component.ts");
     /**
@@ -848,113 +854,518 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       data: {}
     });
 
+    function View_ContactComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "span", [["class", "help-block"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["First Name is mandatory!"]))], null, null);
+    }
+
+    function View_ContactComponent_2(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "span", [["class", "help-block"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Last Name is mandatory!"]))], null, null);
+    }
+
+    function View_ContactComponent_3(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "span", [["class", "help-block"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Please enter a valid email!"]))], null, null);
+    }
+
+    function View_ContactComponent_4(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "span", [["class", "help-block"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Please enter a valid phone number!"]))], null, null);
+    }
+
+    function View_ContactComponent_5(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "span", [["class", "help-block"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Please enter why you are trying to contact!"]))], null, null);
+    }
+
     function View_ContactComponent_0(_l) {
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 79, "div", [["class", "container-fluid"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 78, "div", [["class", "row"], ["id", "contact"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["DatePipe"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 133, "div", [["class", "container-fluid"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 132, "div", [["class", "row"], ["id", "contact"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](3, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
         id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 76, "div", [["class", "col-lg-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 2, "div", [["class", "heading"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 1, "h5", [["class", "headingh5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Contact"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 72, "div", [["class", "col-lg-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, null, 38, "div", [["class", "col-md-6 formleft"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 37, "form", [["id", "contactForm"], ["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "submit"], [null, "reset"]], function (_v, en, $event) {
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 130, "div", [["class", "col-lg-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 2, "div", [["class", "heading"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 1, "h5", [["class", "headingh5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Contact"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, null, 126, "div", [["class", "col-lg-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 91, "div", [["class", "col-md-6 formleft"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](10, 0, null, null, 85, "form", [["id", "contactForm"], ["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngSubmit"], [null, "submit"], [null, "reset"]], function (_v, en, $event) {
         var ad = true;
+        var _co = _v.component;
 
         if ("submit" === en) {
-          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 11).onSubmit($event) !== false;
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 12).onSubmit($event) !== false;
           ad = pd_0 && ad;
         }
 
         if ("reset" === en) {
-          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 11).onReset() !== false;
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 12).onReset() !== false;
           ad = pd_1 && ad;
         }
 
+        if ("ngSubmit" === en) {
+          var pd_2 = _co.sendMessage(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 12)) !== false;
+          ad = pd_2 && ad;
+        }
+
         return ad;
-      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](10, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], [], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](11, 4210688, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], [[8, null], [8, null]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ControlContainer"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](13, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ControlContainer"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](14, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
+      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](11, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵangular_packages_forms_forms_y"], [], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](12, 4210688, [["f", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgForm"], [[8, null], [8, null]], null, {
+        ngSubmit: "ngSubmit"
+      }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ControlContainer"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgForm"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](14, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatusGroup"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ControlContainer"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](15, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
         id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](15, 0, null, null, 31, "div", [["class", "form-row formRow"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](16, 0, null, null, 10, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](17, 0, null, null, 4, "div", [["class", "form-group col-lg-5 fNSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](18, 0, null, null, 1, "label", [["for", "firstName"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["First Name *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](20, 0, null, null, 1, "input", [["class", "form-control"], ["id", "firstName"], ["placeholder", "Please enter first name"], ["required", ""], ["type", "text"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](21, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](16, 0, null, null, 79, "div", [["class", "form-row formRow"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](17, 0, null, null, 28, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](18, 0, null, null, 13, "div", [["class", "form-group col-lg-5 fNSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](19, 0, null, null, 1, "label", [["for", "firstName"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["First Name *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](21, 0, null, null, 8, "input", [["class", "form-control"], ["id", "firstName"], ["name", "fName"], ["ngModel", ""], ["placeholder", "Please enter first name"], ["required", ""], ["type", "text"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("input" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22)._handleInput($event.target.value) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).onTouched() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("compositionstart" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22)._compositionStart() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("compositionend" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22)._compositionEnd($event.target.value) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](22, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["COMPOSITION_BUFFER_MODE"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](23, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], [], {
+        required: [0, "required"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](26, 671744, [["fName", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ControlContainer"]], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"]], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], {
+        name: [0, "name"],
+        model: [1, "model"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](28, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](29, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
+        id: [0, "id"],
+        name: [1, "name"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_ContactComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](31, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](32, 0, null, null, 13, "div", [["class", "form-group col-lg-5 lNSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](33, 0, null, null, 1, "label", [["for", "lastName"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Last Name *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](35, 0, null, null, 8, "input", [["class", "form-control"], ["id", "lastName"], ["name", "lName"], ["ngModel", ""], ["placeholder", "Please enter last name"], ["required", ""], ["type", "text"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("input" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 36)._handleInput($event.target.value) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 36).onTouched() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("compositionstart" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 36)._compositionStart() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("compositionend" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 36)._compositionEnd($event.target.value) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](36, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["COMPOSITION_BUFFER_MODE"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](37, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], [], {
+        required: [0, "required"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](40, 671744, [["lName", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ControlContainer"]], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"]], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], {
+        name: [0, "name"],
+        model: [1, "model"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](42, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](43, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
+        id: [0, "id"],
+        name: [1, "name"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_ContactComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](45, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](46, 0, null, null, 29, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](47, 0, null, null, 13, "div", [["class", "form-group col-lg-5 emailSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](48, 0, null, null, 1, "label", [["for", "email"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Email *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](50, 0, null, null, 8, "input", [["class", "form-control"], ["id", "email"], ["name", "email"], ["ngModel", ""], ["placeholder", "Please enter email address"], ["required", ""], ["type", "email"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("input" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 51)._handleInput($event.target.value) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 51).onTouched() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("compositionstart" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 51)._compositionStart() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("compositionend" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 51)._compositionEnd($event.target.value) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](51, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["COMPOSITION_BUFFER_MODE"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](52, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], [], {
+        required: [0, "required"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](55, 671744, [["email", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ControlContainer"]], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"]], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], {
+        name: [0, "name"],
+        model: [1, "model"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](57, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](58, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
+        id: [0, "id"],
+        name: [1, "name"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_ContactComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](60, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](61, 0, null, null, 14, "div", [["class", "form-group col-lg-5 phoneSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](62, 0, null, null, 1, "label", [["for", "lastName"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Phone Number *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](64, 0, null, null, 9, "input", [["class", "form-control"], ["id", "phoneNumber"], ["name", "phoneNumber"], ["ngModel", ""], ["pattern", "^[6789][0-9]{9}"], ["placeholder", "Please enter phone number"], ["required", ""], ["type", "tel"]], [[1, "required", 0], [1, "pattern", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("input" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 65)._handleInput($event.target.value) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 65).onTouched() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("compositionstart" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 65)._compositionStart() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("compositionend" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 65)._compositionEnd($event.target.value) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](65, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["COMPOSITION_BUFFER_MODE"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](66, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], [], {
+        required: [0, "required"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](67, 540672, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["PatternValidator"], [], {
+        pattern: [0, "pattern"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"], function (p0_0, p1_0) {
+        return [p0_0, p1_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["PatternValidator"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](70, 671744, [["phone", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ControlContainer"]], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"]], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], {
+        name: [0, "name"],
+        model: [1, "model"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](72, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](73, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
+        id: [0, "id"],
+        name: [1, "name"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_ContactComponent_4)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](75, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](76, 0, null, null, 14, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](77, 0, null, null, 13, "div", [["class", "form-group col-lg-10 messageSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](78, 0, null, null, 1, "label", [["for", "email"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Message *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](80, 0, null, null, 8, "textarea", [["class", "form-control"], ["id", "messageArea"], ["name", "message"], ["ngModel", ""], ["placeholder", "Please enter the message or your product details"], ["required", ""], ["rows", "4"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) {
+        var ad = true;
+
+        if ("input" === en) {
+          var pd_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 81)._handleInput($event.target.value) !== false;
+          ad = pd_0 && ad;
+        }
+
+        if ("blur" === en) {
+          var pd_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 81).onTouched() !== false;
+          ad = pd_1 && ad;
+        }
+
+        if ("compositionstart" === en) {
+          var pd_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 81)._compositionStart() !== false;
+          ad = pd_2 && ad;
+        }
+
+        if ("compositionend" === en) {
+          var pd_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 81)._compositionEnd($event.target.value) !== false;
+          ad = pd_3 && ad;
+        }
+
+        return ad;
+      }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](81, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["COMPOSITION_BUFFER_MODE"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](82, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], [], {
+        required: [0, "required"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) {
+        return [p0_0];
+      }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](85, 671744, [["messagePurpose", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[2, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ControlContainer"]], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"]], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], {
+        name: [0, "name"],
+        model: [1, "model"]
+      }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](87, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](88, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
+        id: [0, "id"],
+        name: [1, "name"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_ContactComponent_5)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](90, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], {
+        ngIf: [0, "ngIf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](91, 0, null, null, 4, "div", [["class", "col-sm-12 messageButton"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](92, 0, null, null, 1, "button", [["class", "buttonMsg"], ["type", "submit"]], [[8, "disabled", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Send"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](94, 0, null, null, 1, "button", [["class", "btn btn-link"], ["style", "margin-left: 10px;"], ["type", "button"]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) {
+        var ad = true;
+        var _co = _v.component;
+
+        if ("click" === en) {
+          var pd_0 = _co.onClear(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 12)) !== false;
+          ad = pd_0 && ad;
+        }
+
+        return ad;
+      }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Cancel"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](96, 0, null, null, 1, "div", [["class", "notify"], ["id", "notifySuccess"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](97, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
         id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](22, 0, null, null, 4, "div", [["class", "form-group col-lg-5 lNSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](23, 0, null, null, 1, "label", [["for", "lastName"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Last Name *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](25, 0, null, null, 1, "input", [["class", "form-control"], ["id", "lastName"], ["placeholder", "Please enter last name"], ["required", ""], ["type", "text"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](26, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](98, 0, null, null, 2, "div", [["class", "thankyou"], ["id", "thankyou"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](99, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
         id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](27, 0, null, null, 10, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](28, 0, null, null, 4, "div", [["class", "form-group col-lg-5 emailSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](29, 0, null, null, 1, "label", [["for", "email"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Email *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](31, 0, null, null, 1, "input", [["class", "form-control"], ["id", "email"], ["placeholder", "Please enter email address"], ["required", ""], ["type", "email"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](32, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Thank you for contacting!"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](101, 0, null, null, 0, "div", [["class", "vl"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](102, 0, null, null, 32, "div", [["class", "col-md-6 phone"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](103, 0, null, null, 31, "div", [["class", "device device-google-pixel-2-xl"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](104, 0, null, null, 1, "div", [["class", "device-frame"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](105, 0, null, null, 0, "img", [["class", "device-content"], ["src", "/assets/images/Ganesh.jpg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](106, 0, null, null, 11, "div", [["class", "topcontent"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](107, 0, null, null, 2, "div", [["class", "currenttime"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](108, null, ["", ""])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵppd"](109, 2), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](110, 0, null, null, 1, "i", [["aria-hidden", "true"], ["class", "fa fa-wifi"], ["id", "wifi"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](111, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
         id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](33, 0, null, null, 4, "div", [["class", "form-group col-lg-5 phoneSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](34, 0, null, null, 1, "label", [["for", "lastName"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Phone Number *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](36, 0, null, null, 1, "input", [["class", "form-control"], ["id", "phoneNumber"], ["pattern", "[0-9]{10}"], ["placeholder", "Please enter phone number"], ["required", ""], ["type", "tel"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](37, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](112, 0, null, null, 1, "i", [["aria-hidden", "true"], ["class", "fa fa-signal"], ["id", "signal"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](113, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
         id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](38, 0, null, null, 5, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](39, 0, null, null, 4, "div", [["class", "form-group col-lg-10 messageSection"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](40, 0, null, null, 1, "label", [["for", "email"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Message *"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](42, 0, null, null, 1, "textarea", [["class", "form-control"], ["id", "messageArea"], ["placeholder", "Please enter the message or your product details"], ["required", ""], ["rows", "4"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](43, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](114, 0, null, null, 1, "i", [["aria-hidden", "true"], ["class", "fa fa-battery-full"], ["id", "battery"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](115, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_3__["WindowScroller"]], {
         id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](44, 0, null, null, 2, "div", [["class", "col-sm-12 messageButton"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](45, 0, null, null, 1, "button", [["class", "buttonMsg"], ["type", "submit"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Send"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](47, 0, null, null, 0, "div", [["class", "vl"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](48, 0, null, null, 31, "div", [["class", "col-md-6 phone"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](49, 0, null, null, 30, "div", [["class", "device device-google-pixel-2-xl"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](50, 0, null, null, 15, "div", [["class", "device-frame"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](51, 0, null, null, 0, "img", [["class", "device-content"], ["src", "/assets/images/Ganesh.jpg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](52, 0, null, null, 1, "div", [["class", "currenttime"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](53, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](54, 0, null, null, 1, "i", [["aria-hidden", "true"], ["class", "fa fa-wifi"], ["id", "wifi"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](55, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
-        id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](56, 0, null, null, 1, "i", [["aria-hidden", "true"], ["class", "fa fa-signal"], ["id", "signal"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](57, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
-        id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](58, 0, null, null, 1, "i", [["aria-hidden", "true"], ["class", "fa fa-battery-full"], ["id", "battery"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](59, 212992, null, 0, _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["FragmentTargetDirective"], [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _fragment_polyfill_module__WEBPACK_IMPORTED_MODULE_2__["WindowScroller"]], {
-        id: [0, "id"]
-      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](60, 0, null, null, 1, "div", [["class", "hundred"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["100%"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](62, 0, null, null, 3, "a", [["href", "https://in.linkedin.com/in/ganesh-bhagavath-b5208358"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](63, 0, null, null, 2, "div", [["class", "google-search-bar"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](64, 0, null, null, 0, "img", [["class", "google"], ["src", "/assets/images/Google.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](65, 0, null, null, 0, "img", [["class", "googleassistant"], ["src", "/assets/images/GoogleAssistant.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](66, 0, null, null, 0, "div", [["class", "device-stripe"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](67, 0, null, null, 0, "div", [["class", "device-header"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](68, 0, null, null, 0, "div", [["class", "device-sensors"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](69, 0, null, null, 0, "div", [["class", "device-btns"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](70, 0, null, null, 0, "div", [["class", "device-power"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](71, 0, null, null, 8, "div", [["class", "apps"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](72, 0, null, null, 1, "a", [["href", "https://in.linkedin.com/in/ganesh-bhagavath-b5208358"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](73, 0, null, null, 0, "img", [["class", "linkedIn"], ["src", "/assets/images/LinkedIn.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](74, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](75, 0, null, null, 0, "img", [["class", "instagram"], ["src", "/assets/images/instagram.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](76, 0, null, null, 1, "a", [["href", "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ganeshbhagavath58@email.com"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](77, 0, null, null, 0, "img", [["class", "gmail"], ["src", "/assets/images/gmail.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](78, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](79, 0, null, null, 0, "img", [["class", "facebook"], ["src", "/assets/images/facebook.png"]], null, null, null, null, null))], function (_ck, _v) {
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](116, 0, null, null, 1, "div", [["class", "hundred"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["100%"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](118, 0, null, null, 2, "div", [["class", "google-search-bar"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](119, 0, null, null, 0, "img", [["class", "google"], ["src", "/assets/images/Google.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](120, 0, null, null, 0, "img", [["class", "googleassistant"], ["src", "/assets/images/GoogleAssistant.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](121, 0, null, null, 0, "div", [["class", "device-stripe"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](122, 0, null, null, 0, "div", [["class", "device-header"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](123, 0, null, null, 0, "div", [["class", "device-sensors"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](124, 0, null, null, 0, "div", [["class", "device-btns"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](125, 0, null, null, 0, "div", [["class", "device-power"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](126, 0, null, null, 8, "div", [["class", "apps"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](127, 0, null, null, 1, "a", [["href", "https://in.linkedin.com/in/ganesh-bhagavath-b5208358"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](128, 0, null, null, 0, "img", [["class", "linkedIn"], ["src", "/assets/images/LinkedIn.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](129, 0, null, null, 1, "a", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](130, 0, null, null, 0, "img", [["class", "instagram"], ["src", "/assets/images/instagram.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](131, 0, null, null, 1, "a", [["href", "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ganeshbhagavath58@email.com"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](132, 0, null, null, 0, "img", [["class", "gmail"], ["src", "/assets/images/gmail.png"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](133, 0, null, null, 1, "a", [["href", "https://www.facebook.com/ganeshbhagavath.58"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](134, 0, null, null, 0, "img", [["class", "facebook"], ["src", "/assets/images/facebook.png"]], null, null, null, null, null))], function (_ck, _v) {
         var currVal_0 = "contact";
 
-        _ck(_v, 2, 0, currVal_0);
+        _ck(_v, 3, 0, currVal_0);
 
         var currVal_8 = "contactForm";
 
-        _ck(_v, 14, 0, currVal_8);
+        _ck(_v, 15, 0, currVal_8);
 
-        var currVal_9 = "firstName";
+        var currVal_17 = "";
 
-        _ck(_v, 21, 0, currVal_9);
+        _ck(_v, 23, 0, currVal_17);
 
-        var currVal_10 = "lastName";
+        var currVal_18 = "fName";
+        var currVal_19 = "";
 
-        _ck(_v, 26, 0, currVal_10);
+        _ck(_v, 26, 0, currVal_18, currVal_19);
 
-        var currVal_11 = "email";
+        var currVal_20 = "firstName";
+        var currVal_21 = "fName";
 
-        _ck(_v, 32, 0, currVal_11);
+        _ck(_v, 29, 0, currVal_20, currVal_21);
 
-        var currVal_12 = "phoneNumber";
+        var currVal_22 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 26).invalid && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 26).touched;
 
-        _ck(_v, 37, 0, currVal_12);
+        _ck(_v, 31, 0, currVal_22);
 
-        var currVal_13 = "messageArea";
+        var currVal_31 = "";
 
-        _ck(_v, 43, 0, currVal_13);
+        _ck(_v, 37, 0, currVal_31);
 
-        var currVal_15 = "wifi";
+        var currVal_32 = "lName";
+        var currVal_33 = "";
 
-        _ck(_v, 55, 0, currVal_15);
+        _ck(_v, 40, 0, currVal_32, currVal_33);
 
-        var currVal_16 = "signal";
+        var currVal_34 = "lastName";
+        var currVal_35 = "lName";
 
-        _ck(_v, 57, 0, currVal_16);
+        _ck(_v, 43, 0, currVal_34, currVal_35);
 
-        var currVal_17 = "battery";
+        var currVal_36 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 40).invalid && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 40).touched;
 
-        _ck(_v, 59, 0, currVal_17);
+        _ck(_v, 45, 0, currVal_36);
+
+        var currVal_45 = "";
+
+        _ck(_v, 52, 0, currVal_45);
+
+        var currVal_46 = "email";
+        var currVal_47 = "";
+
+        _ck(_v, 55, 0, currVal_46, currVal_47);
+
+        var currVal_48 = "email";
+        var currVal_49 = "email";
+
+        _ck(_v, 58, 0, currVal_48, currVal_49);
+
+        var currVal_50 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 55).invalid && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 55).touched;
+
+        _ck(_v, 60, 0, currVal_50);
+
+        var currVal_60 = "";
+
+        _ck(_v, 66, 0, currVal_60);
+
+        var currVal_61 = "^[6789][0-9]{9}";
+
+        _ck(_v, 67, 0, currVal_61);
+
+        var currVal_62 = "phoneNumber";
+        var currVal_63 = "";
+
+        _ck(_v, 70, 0, currVal_62, currVal_63);
+
+        var currVal_64 = "phoneNumber";
+        var currVal_65 = "phoneNumber";
+
+        _ck(_v, 73, 0, currVal_64, currVal_65);
+
+        var currVal_66 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 70).invalid && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 70).touched;
+
+        _ck(_v, 75, 0, currVal_66);
+
+        var currVal_75 = "";
+
+        _ck(_v, 82, 0, currVal_75);
+
+        var currVal_76 = "message";
+        var currVal_77 = "";
+
+        _ck(_v, 85, 0, currVal_76, currVal_77);
+
+        var currVal_78 = "messageArea";
+        var currVal_79 = "message";
+
+        _ck(_v, 88, 0, currVal_78, currVal_79);
+
+        var currVal_80 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 85).invalid && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 85).touched;
+
+        _ck(_v, 90, 0, currVal_80);
+
+        var currVal_83 = "notifySuccess";
+
+        _ck(_v, 97, 0, currVal_83);
+
+        var currVal_84 = "thankyou";
+
+        _ck(_v, 99, 0, currVal_84);
+
+        var currVal_86 = "wifi";
+
+        _ck(_v, 111, 0, currVal_86);
+
+        var currVal_87 = "signal";
+
+        _ck(_v, 113, 0, currVal_87);
+
+        var currVal_88 = "battery";
+
+        _ck(_v, 115, 0, currVal_88);
       }, function (_ck, _v) {
         var _co = _v.component;
 
-        var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 13).ngClassUntouched;
+        var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 14).ngClassUntouched;
 
-        var currVal_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 13).ngClassTouched;
+        var currVal_2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 14).ngClassTouched;
 
-        var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 13).ngClassPristine;
+        var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 14).ngClassPristine;
 
-        var currVal_4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 13).ngClassDirty;
+        var currVal_4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 14).ngClassDirty;
 
-        var currVal_5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 13).ngClassValid;
+        var currVal_5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 14).ngClassValid;
 
-        var currVal_6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 13).ngClassInvalid;
+        var currVal_6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 14).ngClassInvalid;
 
-        var currVal_7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 13).ngClassPending;
+        var currVal_7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 14).ngClassPending;
 
-        _ck(_v, 9, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7);
+        _ck(_v, 10, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7);
 
-        var currVal_14 = _co.now;
+        var currVal_9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 23).required ? "" : null;
 
-        _ck(_v, 53, 0, currVal_14);
+        var currVal_10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 28).ngClassUntouched;
+
+        var currVal_11 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 28).ngClassTouched;
+
+        var currVal_12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 28).ngClassPristine;
+
+        var currVal_13 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 28).ngClassDirty;
+
+        var currVal_14 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 28).ngClassValid;
+
+        var currVal_15 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 28).ngClassInvalid;
+
+        var currVal_16 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 28).ngClassPending;
+
+        _ck(_v, 21, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16);
+
+        var currVal_23 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 37).required ? "" : null;
+
+        var currVal_24 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 42).ngClassUntouched;
+
+        var currVal_25 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 42).ngClassTouched;
+
+        var currVal_26 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 42).ngClassPristine;
+
+        var currVal_27 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 42).ngClassDirty;
+
+        var currVal_28 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 42).ngClassValid;
+
+        var currVal_29 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 42).ngClassInvalid;
+
+        var currVal_30 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 42).ngClassPending;
+
+        _ck(_v, 35, 0, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27, currVal_28, currVal_29, currVal_30);
+
+        var currVal_37 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 52).required ? "" : null;
+
+        var currVal_38 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 57).ngClassUntouched;
+
+        var currVal_39 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 57).ngClassTouched;
+
+        var currVal_40 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 57).ngClassPristine;
+
+        var currVal_41 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 57).ngClassDirty;
+
+        var currVal_42 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 57).ngClassValid;
+
+        var currVal_43 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 57).ngClassInvalid;
+
+        var currVal_44 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 57).ngClassPending;
+
+        _ck(_v, 50, 0, currVal_37, currVal_38, currVal_39, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44);
+
+        var currVal_51 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 66).required ? "" : null;
+        var currVal_52 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 67).pattern ? _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 67).pattern : null;
+
+        var currVal_53 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 72).ngClassUntouched;
+
+        var currVal_54 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 72).ngClassTouched;
+
+        var currVal_55 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 72).ngClassPristine;
+
+        var currVal_56 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 72).ngClassDirty;
+
+        var currVal_57 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 72).ngClassValid;
+
+        var currVal_58 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 72).ngClassInvalid;
+
+        var currVal_59 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 72).ngClassPending;
+
+        _ck(_v, 64, 0, currVal_51, currVal_52, currVal_53, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58, currVal_59);
+
+        var currVal_67 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 82).required ? "" : null;
+
+        var currVal_68 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 87).ngClassUntouched;
+
+        var currVal_69 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 87).ngClassTouched;
+
+        var currVal_70 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 87).ngClassPristine;
+
+        var currVal_71 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 87).ngClassDirty;
+
+        var currVal_72 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 87).ngClassValid;
+
+        var currVal_73 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 87).ngClassInvalid;
+
+        var currVal_74 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 87).ngClassPending;
+
+        _ck(_v, 80, 0, currVal_67, currVal_68, currVal_69, currVal_70, currVal_71, currVal_72, currVal_73, currVal_74);
+
+        var currVal_81 = !_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 12).valid;
+
+        _ck(_v, 92, 0, currVal_81);
+
+        var currVal_82 = !_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 12).touched;
+
+        _ck(_v, 94, 0, currVal_82);
+
+        var currVal_85 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 108, 0, _ck(_v, 109, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 0), _co.now, "hh:mm"));
+
+        _ck(_v, 108, 0, currVal_85);
       });
     }
 
     function View_ContactComponent_Host_0(_l) {
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "app-contact", [], null, null, null, View_ContactComponent_0, RenderType_ContactComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"], [], null, null)], function (_ck, _v) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "app-contact", [], null, null, null, View_ContactComponent_0, RenderType_ContactComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _contact_component__WEBPACK_IMPORTED_MODULE_6__["ContactComponent"], [], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
       }, null);
     }
 
-    var ContactComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("app-contact", _contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"], View_ContactComponent_Host_0, {}, {}, []);
+    var ContactComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("app-contact", _contact_component__WEBPACK_IMPORTED_MODULE_6__["ContactComponent"], View_ContactComponent_Host_0, {}, {}, []);
     /***/
 
   },
@@ -985,31 +1396,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _classCallCheck(this, ContactComponent);
 
+        this.url = "https://in.linkedin.com/in/ganesh-bhagavath-b5208358";
         setInterval(function () {
-          var time = new Date();
-          var hours = time.getHours();
-          var minutes = time.getMinutes();
-          var min = '';
-
-          if (hours > 12) {
-            hours -= 12;
-          } else if (hours === 0) {
-            hours = 12;
-          }
-
-          if (minutes < 10) {
-            min = '0' + minutes;
-          } else {
-            min = minutes.toString();
-          }
-
-          _this.now = hours + ':' + min;
+          _this.now = new Date();
         }, 1);
       }
 
       _createClass(ContactComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "sendMessage",
+        value: function sendMessage(form) {
+          console.log(form);
+          var value = form.value;
+          console.log(value.fName);
+          console.log(value.lName);
+          console.log(value.email);
+          console.log(value.phoneNumber);
+          console.log(value.message);
+          var notify = document.getElementById("notifySuccess");
+          notify.style.display = "block";
+          var thankyou = document.getElementById("thankyou");
+          thankyou.style.display = "block";
+          form.reset();
+          setTimeout(function () {
+            thankyou.style.animation = "mainFadeOut 6s forwards";
+          }, 3000);
+        }
+      }, {
+        key: "onClear",
+        value: function onClear(form) {
+          form.reset();
+        }
       }]);
 
       return ContactComponent;
@@ -1675,7 +2094,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _projects_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _projects_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./projects.component */
     "./src/app/projects/projects.component.ts");
     /**
@@ -1694,27 +2119,48 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       data: {}
     });
 
-    function View_ProjectsComponent_0(_l) {
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](0, _safepipe_component__WEBPACK_IMPORTED_MODULE_2__["SafePipe"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 15, "div", [["class", "main"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["P"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["R"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, "span", [["class", "letter"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["J"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["E"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["C"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](13, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["T"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](15, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["S"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](17, 0, null, null, 42, "div", [["class", "container-fluid"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](18, 0, null, null, 19, "div", [["class", "row items-center text-center text-lg-left"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](19, 0, null, null, 9, "div", [["class", "col-lg-7 p-lg-0"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](20, 0, null, null, 8, "div", [["class", "device device-macbook-pro device-spacegray"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](21, 0, null, null, 2, "div", [["class", "device-frame"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](22, 0, null, null, 1, "iframe", [["class", "device-content"]], [[8, "src", 5]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵppd"](23, 1), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](24, 0, null, null, 0, "div", [["class", "device-stripe"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](25, 0, null, null, 0, "div", [["class", "device-header"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](26, 0, null, null, 0, "div", [["class", "device-sensors"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](27, 0, null, null, 0, "div", [["class", "device-btns"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](28, 0, null, null, 0, "div", [["class", "device-power"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](29, 0, null, null, 8, "div", [["class", "col-lg-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](30, 0, null, null, 3, "h3", [["class", "h3"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Turvo "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](32, 0, null, null, 1, "div", [["class", "badge badge-primary badge-sm"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["2019"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](34, 0, null, null, 1, "p", [["class", "description mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, [" Turvo is a product that gives a real time solution for the logistics platform using Shipper, Broker and Carrier, with real-time tracking of shipments. The product uses Telematics devices to track the shipment and give the real time updates on the platform. The application completes the shipments based on geo-fence, the invoice will be sent across the consumers. "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](36, 0, null, null, 1, "p", [["class", "proj mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, [" Tech Skills: Java, Spring Boot, MongoDB, MySQL, RabbitMQ, Kibana "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](38, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](39, 0, null, null, 19, "div", [["class", "row items-center text-center text-lg-left"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](40, 0, null, null, 9, "div", [["class", "col-lg-7 p-lg-0"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](41, 0, null, null, 8, "div", [["class", "device device-macbook-pro device-spacegray"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](42, 0, null, null, 2, "div", [["class", "device-frame"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](43, 0, null, null, 1, "iframe", [["class", "device-content"]], [[8, "src", 5]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵppd"](44, 1), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](45, 0, null, null, 0, "div", [["class", "device-stripe"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](46, 0, null, null, 0, "div", [["class", "device-header"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](47, 0, null, null, 0, "div", [["class", "device-sensors"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](48, 0, null, null, 0, "div", [["class", "device-btns"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](49, 0, null, null, 0, "div", [["class", "device-power"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](50, 0, null, null, 8, "div", [["class", "col-lg-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](51, 0, null, null, 3, "h3", [["class", "h3"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Turvo "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](53, 0, null, null, 1, "div", [["class", "badge badge-primary badge-sm"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["2019"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](55, 0, null, null, 1, "p", [["class", "description mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, [" Turvo is a product that gives a real time solution for the logistics platform using Shipper, Broker and Carrier, with real-time tracking of shipments. The product uses Telematics devices to track the shipment and give the real time updates on the platform. The application completes the shipments based on geo-fence, the invoice will be sent across the consumers. "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](57, 0, null, null, 1, "p", [["class", "proj mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, [" Tech Skills: Java, Spring Boot, MongoDB, MySQL, RabbitMQ, Kibana "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](59, 0, null, null, 0, "hr", [], null, null, null, null, null))], null, function (_ck, _v) {
-        var _co = _v.component;
+    function View_ProjectsComponent_1(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 19, "div", [["class", "row items-center text-center text-lg-left"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 9, "div", [["class", "col-lg-7 p-lg-0"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 8, "div", [["class", "device device-macbook-pro device-spacegray"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 2, "div", [["class", "device-frame"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 1, "iframe", [["class", "device-content"]], [[8, "src", 5]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵppd"](5, 1), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, "div", [["class", "device-stripe"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 0, "div", [["class", "device-header"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, null, 0, "div", [["class", "device-sensors"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 0, "div", [["class", "device-btns"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](10, 0, null, null, 0, "div", [["class", "device-power"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 8, "div", [["class", "col-lg-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](12, 0, null, null, 3, "h3", [["class", "h3"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](13, null, ["", " "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](14, 0, null, null, 1, "div", [["class", "badge badge-primary badge-sm"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](15, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](16, 0, null, null, 1, "p", [["class", "description mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](17, null, [" ", " "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](18, 0, null, null, 1, "p", [["class", "proj mb-4"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](19, null, [" Tech Skills: ", " "]))], null, function (_ck, _v) {
+        var currVal_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 4, 0, _ck(_v, 5, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v.parent, 0), _v.context.$implicit.url));
 
-        var currVal_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 22, 0, _ck(_v, 23, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 0), _co.url));
+        _ck(_v, 4, 0, currVal_0);
 
-        _ck(_v, 22, 0, currVal_0);
+        var currVal_1 = _v.context.$implicit.name;
 
-        var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunv"](_v, 43, 0, _ck(_v, 44, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 0), _co.url));
+        _ck(_v, 13, 0, currVal_1);
 
-        _ck(_v, 43, 0, currVal_1);
+        var currVal_2 = _v.context.$implicit.year;
+
+        _ck(_v, 15, 0, currVal_2);
+
+        var currVal_3 = _v.context.$implicit.description;
+
+        _ck(_v, 17, 0, currVal_3);
+
+        var currVal_4 = _v.context.$implicit.languages;
+
+        _ck(_v, 19, 0, currVal_4);
       });
     }
 
+    function View_ProjectsComponent_0(_l) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵpid"](0, _safepipe_component__WEBPACK_IMPORTED_MODULE_2__["SafePipe"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]]), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 15, "div", [["class", "main"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["P"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["R"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, "span", [["class", "letter"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["J"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["E"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["C"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](13, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["T"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](15, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["S"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](17, 0, null, null, 3, "div", [["class", "container-fluid"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_ProjectsComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](19, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], {
+        ngForOf: [0, "ngForOf"]
+      }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](20, 0, null, null, 0, "hr", [], null, null, null, null, null))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.projects;
+
+        _ck(_v, 19, 0, currVal_0);
+      }, null);
+    }
+
     function View_ProjectsComponent_Host_0(_l) {
-      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "app-projects", [], null, null, null, View_ProjectsComponent_0, RenderType_ProjectsComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _projects_component__WEBPACK_IMPORTED_MODULE_4__["ProjectsComponent"], [], null, null)], function (_ck, _v) {
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "app-projects", [], null, null, null, View_ProjectsComponent_0, RenderType_ProjectsComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _projects_component__WEBPACK_IMPORTED_MODULE_5__["ProjectsComponent"], [], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
       }, null);
     }
 
-    var ProjectsComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("app-projects", _projects_component__WEBPACK_IMPORTED_MODULE_4__["ProjectsComponent"], View_ProjectsComponent_Host_0, {}, {}, []);
+    var ProjectsComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("app-projects", _projects_component__WEBPACK_IMPORTED_MODULE_5__["ProjectsComponent"], View_ProjectsComponent_Host_0, {}, {}, []);
     /***/
 
   },
@@ -1738,12 +2184,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function () {
       return ProjectsComponent;
     });
+    /* harmony import */
+
+
+    var _projects_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./projects.model */
+    "./src/app/projects/projects.model.ts");
 
     var ProjectsComponent = /*#__PURE__*/function () {
       function ProjectsComponent() {
         _classCallCheck(this, ProjectsComponent);
 
-        this.url = "https://turvo.com/product";
+        this.projects = [new _projects_model__WEBPACK_IMPORTED_MODULE_0__["Project"]("https://turvo.com/product", "Turvo", "Turvo is a product that gives a real time solution for the logistics" + "platform using Shipper, Broker and Carrier, with real-time tracking" + "of shipments. The product uses Telematics devices to track the" + "shipment and give the real time updates on the platform. The" + "application completes the shipments based on geo-fence, the " + "invoice will be sent across the consumers.", "Java, Spring Boot, MongoDB, MySQL, RabbitMQ, Kibana", "2019"), new _projects_model__WEBPACK_IMPORTED_MODULE_0__["Project"]("https://turvo.com/product", "Turvo", "Turvo is a product that gives a real time solution for the logistics" + "platform using Shipper, Broker and Carrier, with real-time tracking" + "of shipments. The product uses Telematics devices to track the" + "shipment and give the real time updates on the platform. The" + "application completes the shipments based on geo-fence, the " + "invoice will be sent across the consumers.", "Java, Spring Boot, MongoDB, MySQL, RabbitMQ, Kibana", "2019")];
       }
 
       _createClass(ProjectsComponent, [{
@@ -1753,6 +2205,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       return ProjectsComponent;
     }();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/projects/projects.model.ts":
+  /*!********************************************!*\
+    !*** ./src/app/projects/projects.model.ts ***!
+    \********************************************/
+
+  /*! exports provided: Project */
+
+  /***/
+  function srcAppProjectsProjectsModelTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "Project", function () {
+      return Project;
+    });
+
+    var Project = function Project(url, name, desc, lang, year) {
+      _classCallCheck(this, Project);
+
+      this.url = url;
+      this.name = name;
+      this.description = desc;
+      this.languages = lang;
+      this.year = year;
+    };
     /***/
 
   },
@@ -1824,7 +2309,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
      */
 
 
-    var styles = [".displaycard[_ngcontent-%COMP%] {\n  display: contents;\n}\n\n.items[_ngcontent-%COMP%] {\n margin-left: 100px;\n}\n\n.navCLass[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: white;\n}\n\n.navCLass[_ngcontent-%COMP%] {\n  float: right;\n}\n\n.navbar-inner[_ngcontent-%COMP%] {\n  background: transparent;\n}\n\n.dark[_ngcontent-%COMP%] {\n  background-color: rgba(32,26,22,.9);\n}\n\n.name[_ngcontent-%COMP%] {\n    font-family: \"Calibri Light\";\n    font-style: italic;\n    font-size: 17px;\n    -webkit-animation: mainFadeIn 2s forwards;\n    animation: mainFadeIn 2s forwards;\n    -webkit-animation-delay: 2s;\n            animation-delay: 2s;\n    opacity: 0;\n    align-items: self-start;\n    position: relative;\n    -webkit-font-smoothing: antialiased;\n    white-space: nowrap;\n    color: white;\n    \n}\n\n.bloc[_ngcontent-%COMP%] {\n    width: 0%;\n    height: inherit;\n    background: #e91e63;\n    position: relative;\n    -webkit-animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;\n            animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;\n    -webkit-animation-delay: 2s;\n            animation-delay: 2s;\n    display: flex;\n}\n\n.desg[_ngcontent-%COMP%] {\n    font-size: 12px;\n    font-family: \"Calibri Light\";\n    font-style: italic;\n    color: #ffffff;\n    -webkit-animation: secFadeIn 2s forwards;\n            animation: secFadeIn 2s forwards;\n    -webkit-animation-delay: 4.0s;\n            animation-delay: 4.0s;\n    opacity: 0;\n    text-transform: uppercase;\n    white-space: nowrap;\n}\n\nimg[_ngcontent-%COMP%] {\n    width:50px; \n    height: 60px; \n    margin-left: 20px;\n    margin-top: 0px;\n}\n\n.active[_ngcontent-%COMP%] {\n    border-bottom: 4px solid red;\n}\n\n.navCLass[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%] {\n    color: white;\n}\n\n@-webkit-keyframes mainFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n\n@keyframes mainFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n\n@-webkit-keyframes secFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 0.5;\n    }\n  }\n\n@keyframes secFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 0.5;\n    }\n  }\n\n.revealname[_ngcontent-%COMP%], .revealname[_ngcontent-%COMP%]::after {\n      -webkit-animation-delay: 1s;\n              animation-delay: 1s;\n      -webkit-animation-duration: 2s;\n              animation-duration: 2s;\n      -webkit-animation-fill-mode: both;\n              animation-fill-mode: both;\n      -webkit-animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n              animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n  }\n\n.revealname[_ngcontent-%COMP%] {\n    position: relative;\n    font-size: 10vw;\n  }\n\n.revealname[_ngcontent-%COMP%]::after {\n      content: \"\";\n      position: absolute;\n      z-index: 999;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      background-color: #ffb510;\n      transform: scaleX(0);\n      transform-origin: 0 50%;\n      pointer-events: none;\n      -webkit-animation-name: revealer;\n              animation-name: revealer;\n    }\n\n@-webkit-keyframes text {\n    from {\n            -webkit-clip-path: inset(0 100% 0 0);\n                    clip-path: inset(0 100% 0 0);\n    }\n    to {\n            -webkit-clip-path: inset(0 0 0 0);\n                    clip-path: inset(0 0 0 0);\n    }\n  }\n\n@keyframes text {\n    from {\n            -webkit-clip-path: inset(0 100% 0 0);\n                    clip-path: inset(0 100% 0 0);\n    }\n    to {\n            -webkit-clip-path: inset(0 0 0 0);\n                    clip-path: inset(0 0 0 0);\n    }\n  }\n\n@-webkit-keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\n@keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\n.revealdesg[_ngcontent-%COMP%], .revealdesg[_ngcontent-%COMP%]::after {\n      -webkit-animation-delay: 3s;\n              animation-delay: 3s;\n      -webkit-animation-duration: 2s;\n              animation-duration: 2s;\n      -webkit-animation-fill-mode: both;\n              animation-fill-mode: both;\n      -webkit-animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n              animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n  }\n\n.revealdesg[_ngcontent-%COMP%] {\n    position: relative;\n    font-size: 10vw;\n  }\n\n.revealdesg[_ngcontent-%COMP%]::after {\n      content: \"\";\n      position: absolute;\n      z-index: 999;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      background-color: #e91e63;;\n      transform: scaleX(0);\n      transform-origin: 0 50%;\n      pointer-events: none;\n      -webkit-animation-name: revealer;\n              animation-name: revealer;\n    }\n\n@keyframes text {\n    from {\n            -webkit-clip-path: inset(0 100% 0 0);\n                    clip-path: inset(0 100% 0 0);\n    }\n    to {\n            -webkit-clip-path: inset(0 0 0 0);\n                    clip-path: inset(0 0 0 0);\n    }\n  }\n\n@keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\nspan[_ngcontent-%COMP%] {\n    width:0px;\n    height: 0px;\n    border-radius: 50%;\n\n    background: #ffb510;\n    -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;\n    animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;\n    -webkit-animation-delay: 3s;\n            animation-delay: 3s;\n    margin-left: 5px;\n    margin-top: -10px;\n    position: absolute;\n  }\n\n@-webkit-keyframes popIn {\n    0% {\n      width: 0px;\n      height: 0px;\n      background: #e9d856;\n      border: 0px solid #ddd;\n      opacity: 0;\n    }\n    50% {\n      width: 10px;\n      height: 10px;\n      background: #e9d856;\n      opacity: 1;\n      bottom: 45px;\n    }\n     65% {\n        width: 7px;\n      height: 7px;\n        bottom: 0px;\n        width: 15px\n     }\n     80% {\n        width: 10px;\n      height: 10px;\n        bottom: 20px\n     }\n    100% {\n      width: 7px;\n      height: 7px;\n      background: #e9d856;\n      border: 0px solid #222;\n      bottom: 7px;\n    }\n  }\n\n@keyframes popIn {\n    0% {\n      width: 0px;\n      height: 0px;\n      background: #e9d856;\n      border: 0px solid #ddd;\n      opacity: 0;\n    }\n    50% {\n      width: 10px;\n      height: 10px;\n      background: #e9d856;\n      opacity: 1;\n      bottom: 45px;\n    }\n     65% {\n        width: 7px;\n      height: 7px;\n        bottom: 0px;\n        width: 15px\n     }\n     80% {\n        width: 10px;\n      height: 10px;\n        bottom: 20px\n     }\n    100% {\n      width: 7px;\n      height: 7px;\n      background: #e9d856;\n      border: 0px solid #222;\n      bottom: 7px;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdG9wLW5hdi90b3AtbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsbUNBQW1DO0FBQ3JDOztBQUVBO0lBQ0ksNEJBQTRCO0lBQzVCLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YseUNBQXlDO0lBRXpDLGlDQUFpQztJQUNqQywyQkFBbUI7WUFBbkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLG1DQUFtQztJQUNuQyxtQkFBbUI7SUFDbkIsWUFBWTs7QUFFaEI7O0FBRUE7SUFDSSxTQUFTO0lBQ1QsZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsdUVBQStEO1lBQS9ELCtEQUErRDtJQUMvRCwyQkFBbUI7WUFBbkIsbUJBQW1CO0lBQ25CLGFBQWE7QUFDakI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsNEJBQTRCO0lBQzVCLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2Qsd0NBQWdDO1lBQWhDLGdDQUFnQztJQUNoQyw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLFVBQVU7SUFDVix5QkFBeUI7SUFDekIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksVUFBVTtJQUNWLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLDRCQUE0QjtBQUNoQzs7QUFFQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUU7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsVUFBVTtJQUNaO0VBQ0Y7O0FBUEE7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsVUFBVTtJQUNaO0VBQ0Y7O0FBRUE7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01B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WUFBWTtNQUNaLG1CQUFtQjtNQUNuQixVQUFVO01BQ1YsWUFBWTtJQUNkO0tBQ0M7UUFDRyxVQUFVO01BQ1osV0FBVztRQUNULFdBQVc7UUFDWDtLQUNIO0tBQ0E7UUFDRyxXQUFXO01BQ2IsWUFBWTtRQUNWO0tBQ0g7SUFDRDtNQUNFLFVBQVU7TUFDVixXQUFXO01BQ1gsbUJBQW1CO01BQ25CLHNCQUFzQjtNQUN0QixXQUFXO0lBQ2I7RUFDRiIsImZpbGUiOiJzcmMvYXBwL3RvcC1uYXYvdG9wLW5hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmRpc3BsYXljYXJkIHtcbiAgZGlzcGxheTogY29udGVudHM7XG59XG5cbi5pdGVtcyB7XG4gbWFyZ2luLWxlZnQ6IDEwMHB4O1xufVxuXG4ubmF2Q0xhc3MgYSB7XG4gICAgY29sb3I6IHdoaXRlO1xufVxuXG4ubmF2Q0xhc3Mge1xuICBmbG9hdDogcmlnaHQ7XG59XG5cbi5uYXZiYXItaW5uZXIge1xuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbn1cblxuLmRhcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDMyLDI2LDIyLC45KTtcbn1cblxuLm5hbWUge1xuICAgIGZvbnQtZmFtaWx5OiBcIkNhbGlicmkgTGlnaHRcIjtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIC13ZWJraXQtYW5pbWF0aW9uOiBtYWluRmFkZUluIDJzIGZvcndhcmRzO1xuICAgIC1vLWFuaW1hdGlvbjogbWFpbkZhZGVJbiAycyBmb3J3YXJkcztcbiAgICBhbmltYXRpb246IG1haW5GYWRlSW4gMnMgZm9yd2FyZHM7XG4gICAgYW5pbWF0aW9uLWRlbGF5OiAycztcbiAgICBvcGFjaXR5OiAwO1xuICAgIGFsaWduLWl0ZW1zOiBzZWxmLXN0YXJ0O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBcbn1cblxuLmJsb2Mge1xuICAgIHdpZHRoOiAwJTtcbiAgICBoZWlnaHQ6IGluaGVyaXQ7XG4gICAgYmFja2dyb3VuZDogI2U5MWU2MztcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgYW5pbWF0aW9uOiBzZWNCbG9jayAycyBjdWJpYy1iZXppZXIoLjc0LCAuMDYsIC40LCAuOTIpIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbi1kZWxheTogMnM7XG4gICAgZGlzcGxheTogZmxleDtcbn1cblxuLmRlc2cge1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBmb250LWZhbWlseTogXCJDYWxpYnJpIExpZ2h0XCI7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgIGNvbG9yOiAjZmZmZmZmO1xuICAgIGFuaW1hdGlvbjogc2VjRmFkZUluIDJzIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbi1kZWxheTogNC4wcztcbiAgICBvcGFjaXR5OiAwO1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbn1cblxuaW1nIHtcbiAgICB3aWR0aDo1MHB4OyBcbiAgICBoZWlnaHQ6IDYwcHg7IFxuICAgIG1hcmdpbi1sZWZ0OiAyMHB4O1xuICAgIG1hcmdpbi10b3A6IDBweDtcbn1cblxuLmFjdGl2ZSB7XG4gICAgYm9yZGVyLWJvdHRvbTogNHB4IHNvbGlkIHJlZDtcbn1cblxuLm5hdkNMYXNzIC5hY3RpdmUge1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cblxuICBAa2V5ZnJhbWVzIG1haW5GYWRlSW4ge1xuICAgIDAlIHtcbiAgICAgIG9wYWNpdHk6IDA7XG4gICAgfVxuICAgIDEwMCUge1xuICAgICAgb3BhY2l0eTogMTtcbiAgICB9XG4gIH1cblxuICBAa2V5ZnJhbWVzIHNlY0ZhZGVJbiB7XG4gICAgMCUge1xuICAgICAgb3BhY2l0eTogMDtcbiAgICB9XG4gICAgMTAwJSB7XG4gICAgICBvcGFjaXR5OiAwLjU7XG4gICAgfVxuICB9XG4gICBcbiAgLnJldmVhbG5hbWUsXG4gIC5yZXZlYWxuYW1lOjphZnRlciB7XG4gICAgICBhbmltYXRpb24tZGVsYXk6IDFzO1xuICAgICAgYW5pbWF0aW9uLWR1cmF0aW9uOiAycztcbiAgICAgIGFuaW1hdGlvbi1maWxsLW1vZGU6IGJvdGg7XG4gICAgICBhbmltYXRpb24tdGltaW5nLWZ1bmN0aW9uOiBjdWJpYy1iZXppZXIoLjc0LCAuMDYsIC40LCAuOTIpIGZvcndhcmRzO1xuICB9XG4gICBcbiAgLnJldmVhbG5hbWUge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBmb250LXNpemU6IDEwdnc7XG4gIH1cbiAgIFxuICAucmV2ZWFsbmFtZTo6YWZ0ZXIge1xuICAgICAgY29udGVudDogXCJcIjtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHotaW5kZXg6IDk5OTtcbiAgICAgIHRvcDogMDtcbiAgICAgIGxlZnQ6IDA7XG4gICAgICByaWdodDogMDtcbiAgICAgIGJvdHRvbTogMDtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmI1MTA7XG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgwKTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgNTAlO1xuICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICBhbmltYXRpb24tbmFtZTogcmV2ZWFsZXI7XG4gICAgfVxuXG4gIEBrZXlmcmFtZXMgdGV4dCB7XG4gICAgZnJvbSB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMTAwJSAwIDApO1xuICAgIH1cbiAgICB0byB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMCAwIDApO1xuICAgIH1cbiAgfVxuICBcbiAgQGtleWZyYW1lcyByZXZlYWxlciB7XG4gICAgXG4gICAgMCUsIDUwJSB7XG4gICAgICAgICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDUwJTtcbiAgICB9XG4gICAgXG4gICAgNjAlLCAxMDAlIHtcbiAgICAgICAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDEwMCUgNTAlO1x0XHRcbiAgICB9XG4gICBcbiAgICA2MCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XG4gICAgfVxuICAgIFxuICAgIDEwMCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMCk7XG4gICAgfVxuICB9XG4gIFxuICAucmV2ZWFsZGVzZyxcbiAgLnJldmVhbGRlc2c6OmFmdGVyIHtcbiAgICAgIGFuaW1hdGlvbi1kZWxheTogM3M7XG4gICAgICBhbmltYXRpb24tZHVyYXRpb246IDJzO1xuICAgICAgYW5pbWF0aW9uLWZpbGwtbW9kZTogYm90aDtcbiAgICAgIGFuaW1hdGlvbi10aW1pbmctZnVuY3Rpb246IGN1YmljLWJlemllciguNzQsIC4wNiwgLjQsIC45MikgZm9yd2FyZHM7XG4gIH1cbiAgIFxuICAucmV2ZWFsZGVzZyB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGZvbnQtc2l6ZTogMTB2dztcbiAgfVxuICAgXG4gIC5yZXZlYWxkZXNnOjphZnRlciB7XG4gICAgICBjb250ZW50OiBcIlwiO1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgei1pbmRleDogOTk5O1xuICAgICAgdG9wOiAwO1xuICAgICAgbGVmdDogMDtcbiAgICAgIHJpZ2h0OiAwO1xuICAgICAgYm90dG9tOiAwO1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2U5MWU2Mzs7XG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgwKTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgNTAlO1xuICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICBhbmltYXRpb24tbmFtZTogcmV2ZWFsZXI7XG4gICAgfVxuXG4gIEBrZXlmcmFtZXMgdGV4dCB7XG4gICAgZnJvbSB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMTAwJSAwIDApO1xuICAgIH1cbiAgICB0byB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMCAwIDApO1xuICAgIH1cbiAgfVxuICBcbiAgQGtleWZyYW1lcyByZXZlYWxlciB7XG4gICAgXG4gICAgMCUsIDUwJSB7XG4gICAgICAgICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDUwJTtcbiAgICB9XG4gICAgXG4gICAgNjAlLCAxMDAlIHtcbiAgICAgICAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDEwMCUgNTAlO1x0XHRcbiAgICB9XG4gICBcbiAgICA2MCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XG4gICAgfVxuICAgIFxuICAgIDEwMCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMCk7XG4gICAgfVxuICB9XG5cbiAgc3BhbiB7XG4gICAgd2lkdGg6MHB4O1xuICAgIGhlaWdodDogMHB4O1xuICAgIC13ZWJraXQtYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIC1tb3otYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcblxuICAgIGJhY2tncm91bmQ6ICNmZmI1MTA7XG4gICAgLXdlYmtpdC1hbmltYXRpb246IGxvYWQgMC42cyBjdWJpYy1iZXppZXIoLjc0LCAuMDYsIC40LCAuOTIpIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbjogcG9wSW4gMC44cyBjdWJpYy1iZXppZXIoLjc0LCAuMDYsIC40LCAuOTIpIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbi1kZWxheTogM3M7XG4gICAgbWFyZ2luLWxlZnQ6IDVweDtcbiAgICBtYXJnaW4tdG9wOiAtMTBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIH1cblxuICBAa2V5ZnJhbWVzIHBvcEluIHtcbiAgICAwJSB7XG4gICAgICB3aWR0aDogMHB4O1xuICAgICAgaGVpZ2h0OiAwcHg7XG4gICAgICBiYWNrZ3JvdW5kOiAjZTlkODU2O1xuICAgICAgYm9yZGVyOiAwcHggc29saWQgI2RkZDtcbiAgICAgIG9wYWNpdHk6IDA7XG4gICAgfVxuICAgIDUwJSB7XG4gICAgICB3aWR0aDogMTBweDtcbiAgICAgIGhlaWdodDogMTBweDtcbiAgICAgIGJhY2tncm91bmQ6ICNlOWQ4NTY7XG4gICAgICBvcGFjaXR5OiAxO1xuICAgICAgYm90dG9tOiA0NXB4O1xuICAgIH1cbiAgICAgNjUlIHtcbiAgICAgICAgd2lkdGg6IDdweDtcbiAgICAgIGhlaWdodDogN3B4O1xuICAgICAgICBib3R0b206IDBweDtcbiAgICAgICAgd2lkdGg6IDE1cHhcbiAgICAgfVxuICAgICA4MCUge1xuICAgICAgICB3aWR0aDogMTBweDtcbiAgICAgIGhlaWdodDogMTBweDtcbiAgICAgICAgYm90dG9tOiAyMHB4XG4gICAgIH1cbiAgICAxMDAlIHtcbiAgICAgIHdpZHRoOiA3cHg7XG4gICAgICBoZWlnaHQ6IDdweDtcbiAgICAgIGJhY2tncm91bmQ6ICNlOWQ4NTY7XG4gICAgICBib3JkZXI6IDBweCBzb2xpZCAjMjIyO1xuICAgICAgYm90dG9tOiA3cHg7XG4gICAgfVxuICB9Il19 */"];
+    var styles = [".displaycard[_ngcontent-%COMP%] {\n  display: contents;\n}\n\n.items[_ngcontent-%COMP%] {\n margin-left: 100px;\n}\n\n.navCLass[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: white;\n}\n\n.navCLass[_ngcontent-%COMP%] {\n  float: right;\n}\n\n.navbar-inner[_ngcontent-%COMP%] {\n  background: transparent;\n}\n\n.dark[_ngcontent-%COMP%] {\n  background-color: rgba(32,26,22,.9);\n}\n\n.name[_ngcontent-%COMP%] {\n    font-family: \"Calibri Light\";\n    font-style: italic;\n    font-size: 17px;\n    -webkit-animation: mainFadeIn 2s forwards;\n    animation: mainFadeIn 2s forwards;\n    -webkit-animation-delay: 2s;\n            animation-delay: 2s;\n    opacity: 0;\n    align-items: self-start;\n    position: relative;\n    -webkit-font-smoothing: antialiased;\n    white-space: nowrap;\n    color: white;\n    \n}\n\n.desg[_ngcontent-%COMP%] {\n    font-size: 12px;\n    font-family: \"Calibri Light\";\n    font-style: italic;\n    color: #ffffff;\n    -webkit-animation: secFadeIn 2s forwards;\n            animation: secFadeIn 2s forwards;\n    -webkit-animation-delay: 4.0s;\n            animation-delay: 4.0s;\n    opacity: 0;\n    text-transform: uppercase;\n    white-space: nowrap;\n}\n\nimg[_ngcontent-%COMP%] {\n    width:50px; \n    height: 60px; \n    margin-left: 20px;\n    margin-top: 0px;\n}\n\n.active[_ngcontent-%COMP%] {\n    border-bottom: 4px solid red;\n}\n\n.navCLass[_ngcontent-%COMP%]   .active[_ngcontent-%COMP%] {\n    color: white;\n}\n\n@-webkit-keyframes mainFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n\n@keyframes mainFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n\n@-webkit-keyframes secFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 0.5;\n    }\n  }\n\n@keyframes secFadeIn {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 0.5;\n    }\n  }\n\n.revealname[_ngcontent-%COMP%], .revealname[_ngcontent-%COMP%]::after {\n      -webkit-animation-delay: 1s;\n              animation-delay: 1s;\n      -webkit-animation-duration: 2s;\n              animation-duration: 2s;\n      -webkit-animation-fill-mode: both;\n              animation-fill-mode: both;\n      -webkit-animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n              animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n  }\n\n.revealname[_ngcontent-%COMP%] {\n    position: relative;\n    font-size: 10vw;\n  }\n\n.revealname[_ngcontent-%COMP%]::after {\n      content: \"\";\n      position: absolute;\n      z-index: 999;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      background-color: #ffb510;\n      transform: scaleX(0);\n      transform-origin: 0 50%;\n      pointer-events: none;\n      -webkit-animation-name: revealer;\n              animation-name: revealer;\n    }\n\n@-webkit-keyframes text {\n    from {\n            -webkit-clip-path: inset(0 100% 0 0);\n                    clip-path: inset(0 100% 0 0);\n    }\n    to {\n            -webkit-clip-path: inset(0 0 0 0);\n                    clip-path: inset(0 0 0 0);\n    }\n  }\n\n@keyframes text {\n    from {\n            -webkit-clip-path: inset(0 100% 0 0);\n                    clip-path: inset(0 100% 0 0);\n    }\n    to {\n            -webkit-clip-path: inset(0 0 0 0);\n                    clip-path: inset(0 0 0 0);\n    }\n  }\n\n@-webkit-keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\n@keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\n.revealdesg[_ngcontent-%COMP%], .revealdesg[_ngcontent-%COMP%]::after {\n      -webkit-animation-delay: 3s;\n              animation-delay: 3s;\n      -webkit-animation-duration: 2s;\n              animation-duration: 2s;\n      -webkit-animation-fill-mode: both;\n              animation-fill-mode: both;\n      -webkit-animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n              animation-timing-function: cubic-bezier(.74, .06, .4, .92) forwards;\n  }\n\n.revealdesg[_ngcontent-%COMP%] {\n    position: relative;\n    font-size: 10vw;\n  }\n\n.revealdesg[_ngcontent-%COMP%]::after {\n      content: \"\";\n      position: absolute;\n      z-index: 999;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      background-color: #e91e63;;\n      transform: scaleX(0);\n      transform-origin: 0 50%;\n      pointer-events: none;\n      -webkit-animation-name: revealer;\n              animation-name: revealer;\n    }\n\n@keyframes text {\n    from {\n            -webkit-clip-path: inset(0 100% 0 0);\n                    clip-path: inset(0 100% 0 0);\n    }\n    to {\n            -webkit-clip-path: inset(0 0 0 0);\n                    clip-path: inset(0 0 0 0);\n    }\n  }\n\n@keyframes revealer {\n    \n    0%, 50% {\n            transform-origin: 0 50%;\n    }\n    \n    60%, 100% {\n            transform-origin: 100% 50%;\t\t\n    }\n   \n    60% {\n            transform: scaleX(1);\n    }\n    \n    100% {\n            transform: scaleX(0);\n    }\n  }\n\nspan[_ngcontent-%COMP%] {\n    width:0px;\n    height: 0px;\n    border-radius: 50%;\n\n    background: #ffb510;\n    -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;\n    animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;\n    -webkit-animation-delay: 3s;\n            animation-delay: 3s;\n    margin-left: 5px;\n    margin-top: -10px;\n    position: absolute;\n  }\n\n@-webkit-keyframes popIn {\n    0% {\n      width: 0px;\n      height: 0px;\n      background: #e9d856;\n      border: 0px solid #ddd;\n      opacity: 0;\n    }\n    50% {\n      width: 10px;\n      height: 10px;\n      background: #e9d856;\n      opacity: 1;\n      bottom: 45px;\n    }\n     65% {\n        width: 7px;\n      height: 7px;\n        bottom: 0px;\n        width: 15px\n     }\n     80% {\n        width: 10px;\n      height: 10px;\n        bottom: 20px\n     }\n    100% {\n      width: 7px;\n      height: 7px;\n      background: #e9d856;\n      border: 0px solid #222;\n      bottom: 7px;\n    }\n  }\n\n@keyframes popIn {\n    0% {\n      width: 0px;\n      height: 0px;\n      background: #e9d856;\n      border: 0px solid #ddd;\n      opacity: 0;\n    }\n    50% {\n      width: 10px;\n      height: 10px;\n      background: #e9d856;\n      opacity: 1;\n      bottom: 45px;\n    }\n     65% {\n        width: 7px;\n      height: 7px;\n        bottom: 0px;\n        width: 15px\n     }\n     80% {\n        width: 10px;\n      height: 10px;\n        bottom: 20px\n     }\n    100% {\n      width: 7px;\n      height: 7px;\n      background: #e9d856;\n      border: 0px solid #222;\n      bottom: 7px;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdG9wLW5hdi90b3AtbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsbUNBQW1DO0FBQ3JDOztBQUVBO0lBQ0ksNEJBQTRCO0lBQzVCLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YseUNBQXlDO0lBRXpDLGlDQUFpQztJQUNqQywyQkFBbUI7WUFBbkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLG1DQUFtQztJQUNuQyxtQkFBbUI7SUFDbkIsWUFBWTs7QUFFaEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsNEJBQTRCO0lBQzVCLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2Qsd0NBQWdDO1lBQWhDLGdDQUFnQztJQUNoQyw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLFVBQVU7SUFDVix5QkFBeUI7SUFDekIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksVUFBVTtJQUNWLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLDRCQUE0QjtBQUNoQzs7QUFFQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUU7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsVUFBVTtJQUNaO0VBQ0Y7O0FBUEE7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsVUFBVTtJQUNaO0VBQ0Y7O0FBRUE7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsWUFBWTtJQUNkO0VBQ0Y7O0FBUEE7SUFDRTtNQUNFLFVBQVU7SUFDWjtJQUNBO01BQ0UsWUFBWTtJQUNkO0VBQ0Y7O0FBRUE7O01BRUksMkJBQW1CO2NBQW5CLG1CQUFtQjtNQUNuQiw4QkFBc0I7Y0FBdEIs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Q0g7SUFDRDtNQUNFLFVBQVU7TUFDVixXQUFXO01BQ1gsbUJBQW1CO01BQ25CLHNCQUFzQjtNQUN0QixXQUFXO0lBQ2I7RUFDRiIsImZpbGUiOiJzcmMvYXBwL3RvcC1uYXYvdG9wLW5hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmRpc3BsYXljYXJkIHtcbiAgZGlzcGxheTogY29udGVudHM7XG59XG5cbi5pdGVtcyB7XG4gbWFyZ2luLWxlZnQ6IDEwMHB4O1xufVxuXG4ubmF2Q0xhc3MgYSB7XG4gICAgY29sb3I6IHdoaXRlO1xufVxuXG4ubmF2Q0xhc3Mge1xuICBmbG9hdDogcmlnaHQ7XG59XG5cbi5uYXZiYXItaW5uZXIge1xuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbn1cblxuLmRhcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDMyLDI2LDIyLC45KTtcbn1cblxuLm5hbWUge1xuICAgIGZvbnQtZmFtaWx5OiBcIkNhbGlicmkgTGlnaHRcIjtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIC13ZWJraXQtYW5pbWF0aW9uOiBtYWluRmFkZUluIDJzIGZvcndhcmRzO1xuICAgIC1vLWFuaW1hdGlvbjogbWFpbkZhZGVJbiAycyBmb3J3YXJkcztcbiAgICBhbmltYXRpb246IG1haW5GYWRlSW4gMnMgZm9yd2FyZHM7XG4gICAgYW5pbWF0aW9uLWRlbGF5OiAycztcbiAgICBvcGFjaXR5OiAwO1xuICAgIGFsaWduLWl0ZW1zOiBzZWxmLXN0YXJ0O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBcbn1cblxuLmRlc2cge1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBmb250LWZhbWlseTogXCJDYWxpYnJpIExpZ2h0XCI7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgIGNvbG9yOiAjZmZmZmZmO1xuICAgIGFuaW1hdGlvbjogc2VjRmFkZUluIDJzIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbi1kZWxheTogNC4wcztcbiAgICBvcGFjaXR5OiAwO1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbn1cblxuaW1nIHtcbiAgICB3aWR0aDo1MHB4OyBcbiAgICBoZWlnaHQ6IDYwcHg7IFxuICAgIG1hcmdpbi1sZWZ0OiAyMHB4O1xuICAgIG1hcmdpbi10b3A6IDBweDtcbn1cblxuLmFjdGl2ZSB7XG4gICAgYm9yZGVyLWJvdHRvbTogNHB4IHNvbGlkIHJlZDtcbn1cblxuLm5hdkNMYXNzIC5hY3RpdmUge1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cblxuICBAa2V5ZnJhbWVzIG1haW5GYWRlSW4ge1xuICAgIDAlIHtcbiAgICAgIG9wYWNpdHk6IDA7XG4gICAgfVxuICAgIDEwMCUge1xuICAgICAgb3BhY2l0eTogMTtcbiAgICB9XG4gIH1cblxuICBAa2V5ZnJhbWVzIHNlY0ZhZGVJbiB7XG4gICAgMCUge1xuICAgICAgb3BhY2l0eTogMDtcbiAgICB9XG4gICAgMTAwJSB7XG4gICAgICBvcGFjaXR5OiAwLjU7XG4gICAgfVxuICB9XG4gICBcbiAgLnJldmVhbG5hbWUsXG4gIC5yZXZlYWxuYW1lOjphZnRlciB7XG4gICAgICBhbmltYXRpb24tZGVsYXk6IDFzO1xuICAgICAgYW5pbWF0aW9uLWR1cmF0aW9uOiAycztcbiAgICAgIGFuaW1hdGlvbi1maWxsLW1vZGU6IGJvdGg7XG4gICAgICBhbmltYXRpb24tdGltaW5nLWZ1bmN0aW9uOiBjdWJpYy1iZXppZXIoLjc0LCAuMDYsIC40LCAuOTIpIGZvcndhcmRzO1xuICB9XG4gICBcbiAgLnJldmVhbG5hbWUge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBmb250LXNpemU6IDEwdnc7XG4gIH1cbiAgIFxuICAucmV2ZWFsbmFtZTo6YWZ0ZXIge1xuICAgICAgY29udGVudDogXCJcIjtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHotaW5kZXg6IDk5OTtcbiAgICAgIHRvcDogMDtcbiAgICAgIGxlZnQ6IDA7XG4gICAgICByaWdodDogMDtcbiAgICAgIGJvdHRvbTogMDtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmI1MTA7XG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgwKTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgNTAlO1xuICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICBhbmltYXRpb24tbmFtZTogcmV2ZWFsZXI7XG4gICAgfVxuXG4gIEBrZXlmcmFtZXMgdGV4dCB7XG4gICAgZnJvbSB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMTAwJSAwIDApO1xuICAgIH1cbiAgICB0byB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMCAwIDApO1xuICAgIH1cbiAgfVxuICBcbiAgQGtleWZyYW1lcyByZXZlYWxlciB7XG4gICAgXG4gICAgMCUsIDUwJSB7XG4gICAgICAgICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDUwJTtcbiAgICB9XG4gICAgXG4gICAgNjAlLCAxMDAlIHtcbiAgICAgICAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDEwMCUgNTAlO1x0XHRcbiAgICB9XG4gICBcbiAgICA2MCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XG4gICAgfVxuICAgIFxuICAgIDEwMCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMCk7XG4gICAgfVxuICB9XG4gIFxuICAucmV2ZWFsZGVzZyxcbiAgLnJldmVhbGRlc2c6OmFmdGVyIHtcbiAgICAgIGFuaW1hdGlvbi1kZWxheTogM3M7XG4gICAgICBhbmltYXRpb24tZHVyYXRpb246IDJzO1xuICAgICAgYW5pbWF0aW9uLWZpbGwtbW9kZTogYm90aDtcbiAgICAgIGFuaW1hdGlvbi10aW1pbmctZnVuY3Rpb246IGN1YmljLWJlemllciguNzQsIC4wNiwgLjQsIC45MikgZm9yd2FyZHM7XG4gIH1cbiAgIFxuICAucmV2ZWFsZGVzZyB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGZvbnQtc2l6ZTogMTB2dztcbiAgfVxuICAgXG4gIC5yZXZlYWxkZXNnOjphZnRlciB7XG4gICAgICBjb250ZW50OiBcIlwiO1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgei1pbmRleDogOTk5O1xuICAgICAgdG9wOiAwO1xuICAgICAgbGVmdDogMDtcbiAgICAgIHJpZ2h0OiAwO1xuICAgICAgYm90dG9tOiAwO1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2U5MWU2Mzs7XG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgwKTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgNTAlO1xuICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICBhbmltYXRpb24tbmFtZTogcmV2ZWFsZXI7XG4gICAgfVxuXG4gIEBrZXlmcmFtZXMgdGV4dCB7XG4gICAgZnJvbSB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMTAwJSAwIDApO1xuICAgIH1cbiAgICB0byB7XG4gICAgICAgICAgICBjbGlwLXBhdGg6IGluc2V0KDAgMCAwIDApO1xuICAgIH1cbiAgfVxuICBcbiAgQGtleWZyYW1lcyByZXZlYWxlciB7XG4gICAgXG4gICAgMCUsIDUwJSB7XG4gICAgICAgICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDUwJTtcbiAgICB9XG4gICAgXG4gICAgNjAlLCAxMDAlIHtcbiAgICAgICAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDEwMCUgNTAlO1x0XHRcbiAgICB9XG4gICBcbiAgICA2MCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XG4gICAgfVxuICAgIFxuICAgIDEwMCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMCk7XG4gICAgfVxuICB9XG5cbiAgc3BhbiB7XG4gICAgd2lkdGg6MHB4O1xuICAgIGhlaWdodDogMHB4O1xuICAgIC13ZWJraXQtYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIC1tb3otYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcblxuICAgIGJhY2tncm91bmQ6ICNmZmI1MTA7XG4gICAgLXdlYmtpdC1hbmltYXRpb246IGxvYWQgMC42cyBjdWJpYy1iZXppZXIoLjc0LCAuMDYsIC40LCAuOTIpIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbjogcG9wSW4gMC44cyBjdWJpYy1iZXppZXIoLjc0LCAuMDYsIC40LCAuOTIpIGZvcndhcmRzO1xuICAgIGFuaW1hdGlvbi1kZWxheTogM3M7XG4gICAgbWFyZ2luLWxlZnQ6IDVweDtcbiAgICBtYXJnaW4tdG9wOiAtMTBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIH1cblxuICBAa2V5ZnJhbWVzIHBvcEluIHtcbiAgICAwJSB7XG4gICAgICB3aWR0aDogMHB4O1xuICAgICAgaGVpZ2h0OiAwcHg7XG4gICAgICBiYWNrZ3JvdW5kOiAjZTlkODU2O1xuICAgICAgYm9yZGVyOiAwcHggc29saWQgI2RkZDtcbiAgICAgIG9wYWNpdHk6IDA7XG4gICAgfVxuICAgIDUwJSB7XG4gICAgICB3aWR0aDogMTBweDtcbiAgICAgIGhlaWdodDogMTBweDtcbiAgICAgIGJhY2tncm91bmQ6ICNlOWQ4NTY7XG4gICAgICBvcGFjaXR5OiAxO1xuICAgICAgYm90dG9tOiA0NXB4O1xuICAgIH1cbiAgICAgNjUlIHtcbiAgICAgICAgd2lkdGg6IDdweDtcbiAgICAgIGhlaWdodDogN3B4O1xuICAgICAgICBib3R0b206IDBweDtcbiAgICAgICAgd2lkdGg6IDE1cHhcbiAgICAgfVxuICAgICA4MCUge1xuICAgICAgICB3aWR0aDogMTBweDtcbiAgICAgIGhlaWdodDogMTBweDtcbiAgICAgICAgYm90dG9tOiAyMHB4XG4gICAgIH1cbiAgICAxMDAlIHtcbiAgICAgIHdpZHRoOiA3cHg7XG4gICAgICBoZWlnaHQ6IDdweDtcbiAgICAgIGJhY2tncm91bmQ6ICNlOWQ4NTY7XG4gICAgICBib3JkZXI6IDBweCBzb2xpZCAjMjIyO1xuICAgICAgYm90dG9tOiA3cHg7XG4gICAgfVxuICB9Il19 */"];
     /***/
   },
 
