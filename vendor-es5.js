@@ -874,14 +874,81 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "pushState",
+        key: "href",
+        get: function get() {
+          return this.location.href;
+        }
+        /**
+         * @return {?}
+         */
 
+      }, {
+        key: "protocol",
+        get: function get() {
+          return this.location.protocol;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "hostname",
+        get: function get() {
+          return this.location.hostname;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "port",
+        get: function get() {
+          return this.location.port;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "pathname",
+        get: function get() {
+          return this.location.pathname;
+        }
+        /**
+         * @return {?}
+         */
+        ,
+        set:
+        /**
+         * @param {?} newPath
+         * @return {?}
+         */
+        function set(newPath) {
+          this.location.pathname = newPath;
+        }
         /**
          * @param {?} state
          * @param {?} title
          * @param {?} url
          * @return {?}
          */
+
+      }, {
+        key: "search",
+        get: function get() {
+          return this.location.search;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "hash",
+        get: function get() {
+          return this.location.hash;
+        }
+      }, {
+        key: "pushState",
         value: function pushState(state, title, url) {
           if (supportsState()) {
             this._history.pushState(state, title, url);
@@ -931,73 +998,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "getState",
         value: function getState() {
           return this._history.state;
-        }
-      }, {
-        key: "href",
-        get: function get() {
-          return this.location.href;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "protocol",
-        get: function get() {
-          return this.location.protocol;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "hostname",
-        get: function get() {
-          return this.location.hostname;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "port",
-        get: function get() {
-          return this.location.port;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "pathname",
-        get: function get() {
-          return this.location.pathname;
-        }
-        /**
-         * @return {?}
-         */
-        ,
-
-        /**
-         * @param {?} newPath
-         * @return {?}
-         */
-        set: function set(newPath) {
-          this.location.pathname = newPath;
-        }
-      }, {
-        key: "search",
-        get: function get() {
-          return this.location.search;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "hash",
-        get: function get() {
-          return this.location.hash;
         }
       }]);
 
@@ -4875,11 +4875,46 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(NgClass, [{
-        key: "ngDoCheck",
+        key: "klass",
+        set: function set(value) {
+          this._removeClasses(this._initialClasses);
 
+          this._initialClasses = typeof value === 'string' ? value.split(/\s+/) : [];
+
+          this._applyClasses(this._initialClasses);
+
+          this._applyClasses(this._rawClass);
+        }
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+
+      }, {
+        key: "ngClass",
+        set: function set(value) {
+          this._removeClasses(this._rawClass);
+
+          this._applyClasses(this._initialClasses);
+
+          this._iterableDiffer = null;
+          this._keyValueDiffer = null;
+          this._rawClass = typeof value === 'string' ? value.split(/\s+/) : value;
+
+          if (this._rawClass) {
+            if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵisListLikeIterable"])(this._rawClass)) {
+              this._iterableDiffer = this._iterableDiffers.find(this._rawClass).create();
+            } else {
+              this._keyValueDiffer = this._keyValueDiffers.find(this._rawClass).create();
+            }
+          }
+        }
         /**
          * @return {?}
          */
+
+      }, {
+        key: "ngDoCheck",
         value: function ngDoCheck() {
           if (this._iterableDiffer) {
             /** @type {?} */
@@ -5074,41 +5109,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 _this11._renderer.removeClass(_this11._ngEl.nativeElement, klass);
               }
             });
-          }
-        }
-      }, {
-        key: "klass",
-        set: function set(value) {
-          this._removeClasses(this._initialClasses);
-
-          this._initialClasses = typeof value === 'string' ? value.split(/\s+/) : [];
-
-          this._applyClasses(this._initialClasses);
-
-          this._applyClasses(this._rawClass);
-        }
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-
-      }, {
-        key: "ngClass",
-        set: function set(value) {
-          this._removeClasses(this._rawClass);
-
-          this._applyClasses(this._initialClasses);
-
-          this._iterableDiffer = null;
-          this._keyValueDiffer = null;
-          this._rawClass = typeof value === 'string' ? value.split(/\s+/) : value;
-
-          if (this._rawClass) {
-            if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵisListLikeIterable"])(this._rawClass)) {
-              this._iterableDiffer = this._iterableDiffers.find(this._rawClass).create();
-            } else {
-              this._keyValueDiffer = this._keyValueDiffers.find(this._rawClass).create();
-            }
           }
         }
       }]);
@@ -5500,12 +5500,78 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(NgForOf, [{
-        key: "ngDoCheck",
+        key: "ngForOf",
+        set: function set(ngForOf) {
+          this._ngForOf = ngForOf;
+          this._ngForOfDirty = true;
+        }
+        /**
+         * A function that defines how to track changes for items in the iterable.
+         *
+         * When items are added, moved, or removed in the iterable,
+         * the directive must re-render the appropriate DOM nodes.
+         * To minimize churn in the DOM, only nodes that have changed
+         * are re-rendered.
+         *
+         * By default, the change detector assumes that
+         * the object instance identifies the node in the iterable.
+         * When this function is supplied, the directive uses
+         * the result of calling this function to identify the item node,
+         * rather than the identity of the object itself.
+         *
+         * The function receives two inputs,
+         * the iteration index and the node object ID.
+         * @param {?} fn
+         * @return {?}
+         */
 
+      }, {
+        key: "ngForTrackBy",
+        get:
+        /**
+         * @return {?}
+         */
+        function get() {
+          return this._trackByFn;
+        }
+        /**
+         * A reference to the template that is stamped out for each item in the iterable.
+         * @see [template reference variable](guide/template-syntax#template-reference-variables--var-)
+         * @param {?} value
+         * @return {?}
+         */
+        ,
+        set: function set(fn) {
+          if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])() && fn != null && typeof fn !== 'function') {
+            // TODO(vicb): use a log service once there is a public one available
+            if (
+            /** @type {?} */
+            console &&
+            /** @type {?} */
+            console.warn) {
+              console.warn("trackBy must be a function, but received ".concat(JSON.stringify(fn), ". ") + "See https://angular.io/api/common/NgForOf#change-propagation for more information.");
+            }
+          }
+
+          this._trackByFn = fn;
+        }
+      }, {
+        key: "ngForTemplate",
+        set: function set(value) {
+          // TODO(TS2.1): make TemplateRef<Partial<NgForRowOf<T>>> once we move to TS v2.1
+          // The current type is too restrictive; a template that just uses index, for example,
+          // should be acceptable.
+          if (value) {
+            this._template = value;
+          }
+        }
         /**
          * Applies the changes when needed.
          * @return {?}
          */
+
+      }, {
+        key: "ngDoCheck",
         value: function ngDoCheck() {
           if (this._ngForOfDirty) {
             this._ngForOfDirty = false; // React on ngForOf changes only once all inputs have been initialized
@@ -5641,72 +5707,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @return {?}
          */
 
-      }, {
-        key: "ngForOf",
-        set: function set(ngForOf) {
-          this._ngForOf = ngForOf;
-          this._ngForOfDirty = true;
-        }
-        /**
-         * A function that defines how to track changes for items in the iterable.
-         *
-         * When items are added, moved, or removed in the iterable,
-         * the directive must re-render the appropriate DOM nodes.
-         * To minimize churn in the DOM, only nodes that have changed
-         * are re-rendered.
-         *
-         * By default, the change detector assumes that
-         * the object instance identifies the node in the iterable.
-         * When this function is supplied, the directive uses
-         * the result of calling this function to identify the item node,
-         * rather than the identity of the object itself.
-         *
-         * The function receives two inputs,
-         * the iteration index and the node object ID.
-         * @param {?} fn
-         * @return {?}
-         */
-
-      }, {
-        key: "ngForTrackBy",
-        set: function set(fn) {
-          if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])() && fn != null && typeof fn !== 'function') {
-            // TODO(vicb): use a log service once there is a public one available
-            if (
-            /** @type {?} */
-            console &&
-            /** @type {?} */
-            console.warn) {
-              console.warn("trackBy must be a function, but received ".concat(JSON.stringify(fn), ". ") + "See https://angular.io/api/common/NgForOf#change-propagation for more information.");
-            }
-          }
-
-          this._trackByFn = fn;
-        }
-        /**
-         * @return {?}
-         */
-        ,
-        get: function get() {
-          return this._trackByFn;
-        }
-        /**
-         * A reference to the template that is stamped out for each item in the iterable.
-         * @see [template reference variable](guide/template-syntax#template-reference-variables--var-)
-         * @param {?} value
-         * @return {?}
-         */
-
-      }, {
-        key: "ngForTemplate",
-        set: function set(value) {
-          // TODO(TS2.1): make TemplateRef<Partial<NgForRowOf<T>>> once we move to TS v2.1
-          // The current type is too restrictive; a template that just uses index, for example,
-          // should be acceptable.
-          if (value) {
-            this._template = value;
-          }
-        }
       }], [{
         key: "ngTemplateContextGuard",
         value: function ngTemplateContextGuard(dir, ctx) {
@@ -5947,47 +5947,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(NgIf, [{
-        key: "_updateView",
-
-        /**
-         * @private
-         * @return {?}
-         */
-        value: function _updateView() {
-          if (this._context.$implicit) {
-            if (!this._thenViewRef) {
-              this._viewContainer.clear();
-
-              this._elseViewRef = null;
-
-              if (this._thenTemplateRef) {
-                this._thenViewRef = this._viewContainer.createEmbeddedView(this._thenTemplateRef, this._context);
-              }
-            }
-          } else {
-            if (!this._elseViewRef) {
-              this._viewContainer.clear();
-
-              this._thenViewRef = null;
-
-              if (this._elseTemplateRef) {
-                this._elseViewRef = this._viewContainer.createEmbeddedView(this._elseTemplateRef, this._context);
-              }
-            }
-          }
-        }
-        /**
-         * Asserts the correct type of the context for the template that `NgIf` will render.
-         *
-         * The presence of this method is a signal to the Ivy template type-check compiler that the
-         * `NgIf` structural directive renders its template with a specific context type.
-         * @template T
-         * @param {?} dir
-         * @param {?} ctx
-         * @return {?}
-         */
-
-      }, {
         key: "ngIf",
         set: function set(condition) {
           this._context.$implicit = this._context.ngIf = condition;
@@ -6024,6 +5983,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this._updateView();
         }
+        /**
+         * @private
+         * @return {?}
+         */
+
+      }, {
+        key: "_updateView",
+        value: function _updateView() {
+          if (this._context.$implicit) {
+            if (!this._thenViewRef) {
+              this._viewContainer.clear();
+
+              this._elseViewRef = null;
+
+              if (this._thenTemplateRef) {
+                this._thenViewRef = this._viewContainer.createEmbeddedView(this._thenTemplateRef, this._context);
+              }
+            }
+          } else {
+            if (!this._elseViewRef) {
+              this._viewContainer.clear();
+
+              this._thenViewRef = null;
+
+              if (this._elseTemplateRef) {
+                this._elseViewRef = this._viewContainer.createEmbeddedView(this._elseTemplateRef, this._context);
+              }
+            }
+          }
+        }
+        /**
+         * Asserts the correct type of the context for the template that `NgIf` will render.
+         *
+         * The presence of this method is a signal to the Ivy template type-check compiler that the
+         * `NgIf` structural directive renders its template with a specific context type.
+         * @template T
+         * @param {?} dir
+         * @param {?} ctx
+         * @return {?}
+         */
+
       }], [{
         key: "ngTemplateContextGuard",
         value: function ngTemplateContextGuard(dir, ctx) {
@@ -6242,12 +6242,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(NgSwitch, [{
-        key: "_addCase",
+        key: "ngSwitch",
+        set: function set(newValue) {
+          this._ngSwitch = newValue;
 
+          if (this._caseCount === 0) {
+            this._updateDefaultCases(true);
+          }
+        }
         /**
          * \@internal
          * @return {?}
          */
+
+      }, {
+        key: "_addCase",
         value: function _addCase() {
           return this._caseCount++;
         }
@@ -6306,15 +6315,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               var defaultView = this._defaultViews[i];
               defaultView.enforceState(useDefault);
             }
-          }
-        }
-      }, {
-        key: "ngSwitch",
-        set: function set(newValue) {
-          this._ngSwitch = newValue;
-
-          if (this._caseCount === 0) {
-            this._updateDefaultCases(true);
           }
         }
       }]);
@@ -6533,13 +6533,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(NgPlural, [{
-        key: "addCase",
+        key: "ngPlural",
+        set: function set(value) {
+          this._switchValue = value;
 
+          this._updateView();
+        }
         /**
          * @param {?} value
          * @param {?} switchView
          * @return {?}
          */
+
+      }, {
+        key: "addCase",
         value: function addCase(value, switchView) {
           this._caseViews[value] = switchView;
         }
@@ -6586,13 +6593,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             this._activeView.create();
           }
-        }
-      }, {
-        key: "ngPlural",
-        set: function set(value) {
-          this._switchValue = value;
-
-          this._updateView();
         }
       }]);
 
@@ -6753,11 +6753,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(NgStyle, [{
-        key: "ngDoCheck",
+        key: "ngStyle",
+        set: function set(values) {
+          this._ngStyle = values;
 
+          if (!this._differ && values) {
+            this._differ = this._differs.find(values).create();
+          }
+        }
         /**
          * @return {?}
          */
+
+      }, {
+        key: "ngDoCheck",
         value: function ngDoCheck() {
           if (this._differ) {
             /** @type {?} */
@@ -6830,15 +6839,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           function (record) {
             return _this13._setStyle(record.key, record.currentValue);
           });
-        }
-      }, {
-        key: "ngStyle",
-        set: function set(values) {
-          this._ngStyle = values;
-
-          if (!this._differ && values) {
-            this._differ = this._differs.find(values).create();
-          }
         }
       }]);
 
@@ -7110,13 +7110,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(ObservableStrategy, [{
         key: "createSubscription",
-
+        value:
         /**
          * @param {?} async
          * @param {?} updateLatestValue
          * @return {?}
          */
-        value: function createSubscription(async, updateLatestValue) {
+        function createSubscription(async, updateLatestValue) {
           return async.subscribe({
             next: updateLatestValue,
             error:
@@ -7161,13 +7161,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(PromiseStrategy, [{
         key: "createSubscription",
-
+        value:
         /**
          * @param {?} async
          * @param {?} updateLatestValue
          * @return {?}
          */
-        value: function createSubscription(async, updateLatestValue) {
+        function createSubscription(async, updateLatestValue) {
           return async.then(updateLatestValue,
           /**
           * @param {?} e
@@ -7419,12 +7419,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(LowerCasePipe, [{
         key: "transform",
-
+        value:
         /**
          * @param {?} value The string to transform to lower case.
          * @return {?}
          */
-        value: function transform(value) {
+        function transform(value) {
           if (!value) return value;
 
           if (typeof value !== 'string') {
@@ -7480,12 +7480,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(TitleCasePipe, [{
         key: "transform",
-
+        value:
         /**
          * @param {?} value The string to transform to title case.
          * @return {?}
          */
-        value: function transform(value) {
+        function transform(value) {
           if (!value) return value;
 
           if (typeof value !== 'string') {
@@ -7528,12 +7528,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(UpperCasePipe, [{
         key: "transform",
-
+        value:
         /**
          * @param {?} value The string to transform to upper case.
          * @return {?}
          */
-        value: function transform(value) {
+        function transform(value) {
           if (!value) return value;
 
           if (typeof value !== 'string') {
@@ -7874,14 +7874,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(I18nSelectPipe, [{
         key: "transform",
-
+        value:
         /**
          * @param {?} value a string to be internationalized.
          * @param {?} mapping an object that indicates the text that should be displayed
          * for different values of the provided `value`.
          * @return {?}
          */
-        value: function transform(value, mapping) {
+        function transform(value, mapping) {
           if (value == null) return '';
 
           if (typeof mapping !== 'object' || typeof value !== 'string') {
@@ -7939,12 +7939,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(JsonPipe, [{
         key: "transform",
-
+        value:
         /**
          * @param {?} value A value of any type to convert into a JSON-format string.
          * @return {?}
          */
-        value: function transform(value) {
+        function transform(value) {
           return JSON.stringify(value, null, 2);
         }
       }]);
@@ -8571,14 +8571,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(SlicePipe, [{
         key: "transform",
-
+        value:
         /**
          * @param {?} value
          * @param {?} start
          * @param {?=} end
          * @return {?}
          */
-        value: function transform(value, start, end) {
+        function transform(value, start, end) {
           if (value == null) return value;
 
           if (!this.supports(value)) {
@@ -8971,13 +8971,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(NullViewportScroller, [{
         key: "setOffset",
-
+        value:
         /**
          * Empty implementation
          * @param {?} offset
          * @return {?}
          */
-        value: function setOffset(offset) {}
+        function setOffset(offset) {}
         /**
          * Empty implementation
          * @return {?}
@@ -9798,13 +9798,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(HttpUrlEncodingCodec, [{
         key: "encodeKey",
-
+        value:
         /**
          * Encodes a key name for a URL parameter or query-string.
          * @param {?} key The key name.
          * @return {?} The encoded key name.
          */
-        value: function encodeKey(key) {
+        function encodeKey(key) {
           return standardEncoding(key);
         }
         /**
@@ -11504,13 +11504,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(NoopInterceptor, [{
         key: "intercept",
-
+        value:
         /**
          * @param {?} req
          * @param {?} next
          * @return {?}
          */
-        value: function intercept(req, next) {
+        function intercept(req, next) {
           return next.handle(req);
         }
       }]);
@@ -12679,12 +12679,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(HttpClientXsrfModule, null, [{
         key: "disable",
-
+        value:
         /**
          * Disable the default XSRF protection.
          * @return {?}
          */
-        value: function disable() {
+        function disable() {
           return {
             ngModule: HttpClientXsrfModule,
             providers: [{
@@ -16684,13 +16684,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(NullInjector, [{
         key: "get",
-
+        value:
         /**
          * @param {?} token
          * @param {?=} notFoundValue
          * @return {?}
          */
-        value: function get(token) {
+        function get(token) {
           var notFoundValue = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : THROW_IF_NOT_FOUND;
 
           if (notFoundValue === THROW_IF_NOT_FOUND) {
@@ -22244,11 +22244,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(SafeHtmlImpl, [{
         key: "getTypeName",
-
+        value:
         /**
          * @return {?}
          */
-        value: function getTypeName() {
+        function getTypeName() {
           return "HTML"
           /* Html */
           ;
@@ -22271,11 +22271,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(SafeStyleImpl, [{
         key: "getTypeName",
-
+        value:
         /**
          * @return {?}
          */
-        value: function getTypeName() {
+        function getTypeName() {
           return "Style"
           /* Style */
           ;
@@ -22298,11 +22298,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(SafeScriptImpl, [{
         key: "getTypeName",
-
+        value:
         /**
          * @return {?}
          */
-        value: function getTypeName() {
+        function getTypeName() {
           return "Script"
           /* Script */
           ;
@@ -22325,11 +22325,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(SafeUrlImpl, [{
         key: "getTypeName",
-
+        value:
         /**
          * @return {?}
          */
-        value: function getTypeName() {
+        function getTypeName() {
           return "URL"
           /* Url */
           ;
@@ -22352,11 +22352,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(SafeResourceUrlImpl, [{
         key: "getTypeName",
-
+        value:
         /**
          * @return {?}
          */
-        value: function getTypeName() {
+        function getTypeName() {
           return "ResourceURL"
           /* ResourceUrl */
           ;
@@ -32520,11 +32520,52 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ViewRef, [{
-        key: "destroy",
+        key: "rootNodes",
+        get: function get() {
+          /** @type {?} */
+          var lView = this._lView;
 
+          if (lView[HOST] == null) {
+            /** @type {?} */
+            var hostTView =
+            /** @type {?} */
+            lView[T_HOST];
+            return collectNativeNodes(lView[TVIEW], lView, hostTView.child, []);
+          }
+
+          return [];
+        }
         /**
          * @return {?}
          */
+
+      }, {
+        key: "context",
+        get: function get() {
+          return (
+            /** @type {?} */
+            this._lView[CONTEXT]
+          );
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "destroyed",
+        get: function get() {
+          return (this._lView[FLAGS] & 256
+          /* Destroyed */
+          ) === 256
+          /* Destroyed */
+          ;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "destroy",
         value: function destroy() {
           if (this._appRef) {
             this._appRef.detachView(this);
@@ -32795,47 +32836,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           this._appRef = appRef;
-        }
-      }, {
-        key: "rootNodes",
-        get: function get() {
-          /** @type {?} */
-          var lView = this._lView;
-
-          if (lView[HOST] == null) {
-            /** @type {?} */
-            var hostTView =
-            /** @type {?} */
-            lView[T_HOST];
-            return collectNativeNodes(lView[TVIEW], lView, hostTView.child, []);
-          }
-
-          return [];
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "context",
-        get: function get() {
-          return (
-            /** @type {?} */
-            this._lView[CONTEXT]
-          );
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "destroyed",
-        get: function get() {
-          return (this._lView[FLAGS] & 256
-          /* Destroyed */
-          ) === 256
-          /* Destroyed */
-          ;
         }
       }]);
 
@@ -33215,11 +33215,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
           _createClass2(ViewContainerRef, [{
-            key: "clear",
-
+            key: "element",
+            get: function get() {
+              return createElementRef(ElementRefToken, this._hostTNode, this._hostView);
+            }
             /**
              * @return {?}
              */
+
+          }, {
+            key: "injector",
+            get: function get() {
+              return new NodeInjector(this._hostTNode, this._hostView);
+            }
+            /**
+             * @deprecated No replacement
+             * @return {?}
+             */
+
+          }, {
+            key: "parentInjector",
+            get: function get() {
+              /** @type {?} */
+              var parentLocation = getParentInjectorLocation(this._hostTNode, this._hostView);
+              /** @type {?} */
+
+              var parentView = getParentInjectorView(parentLocation, this._hostView);
+              /** @type {?} */
+
+              var parentTNode = getParentInjectorTNode(parentLocation, this._hostView, this._hostTNode);
+              return !hasParentInjector(parentLocation) || parentTNode == null ? new NodeInjector(null, this._hostView) : new NodeInjector(parentTNode, parentView);
+            }
+            /**
+             * @return {?}
+             */
+
+          }, {
+            key: "clear",
             value: function clear() {
               while (this.length > 0) {
                 this.remove(this.length - 1);
@@ -33242,8 +33274,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
              */
 
           }, {
-            key: "createEmbeddedView",
-
+            key: "length",
+            get: function get() {
+              return this._lContainer.length - CONTAINER_HEADER_OFFSET;
+            }
             /**
              * @template C
              * @param {?} templateRef
@@ -33251,6 +33285,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
              * @param {?=} index
              * @return {?}
              */
+
+          }, {
+            key: "createEmbeddedView",
             value: function createEmbeddedView(templateRef, context, index) {
               /** @type {?} */
               var viewRef = templateRef.createEmbeddedView(context ||
@@ -33471,43 +33508,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               if (this._lContainer[VIEW_REFS] === null) {
                 this._lContainer[VIEW_REFS] = [];
               }
-            }
-          }, {
-            key: "element",
-            get: function get() {
-              return createElementRef(ElementRefToken, this._hostTNode, this._hostView);
-            }
-            /**
-             * @return {?}
-             */
-
-          }, {
-            key: "injector",
-            get: function get() {
-              return new NodeInjector(this._hostTNode, this._hostView);
-            }
-            /**
-             * @deprecated No replacement
-             * @return {?}
-             */
-
-          }, {
-            key: "parentInjector",
-            get: function get() {
-              /** @type {?} */
-              var parentLocation = getParentInjectorLocation(this._hostTNode, this._hostView);
-              /** @type {?} */
-
-              var parentView = getParentInjectorView(parentLocation, this._hostView);
-              /** @type {?} */
-
-              var parentTNode = getParentInjectorTNode(parentLocation, this._hostView, this._hostTNode);
-              return !hasParentInjector(parentLocation) || parentTNode == null ? new NodeInjector(null, this._hostView) : new NodeInjector(parentTNode, parentView);
-            }
-          }, {
-            key: "length",
-            get: function get() {
-              return this._lContainer.length - CONTAINER_HEADER_OFFSET;
             }
           }]);
 
@@ -34824,8 +34824,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(R3Injector, [{
-        key: "destroy",
-
+        key: "destroyed",
+        get: function get() {
+          return this._destroyed;
+        }
         /**
          * Destroy the injector and release references to every instance or provider associated with it.
          *
@@ -34833,6 +34835,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * hook was found.
          * @return {?}
          */
+
+      }, {
+        key: "destroy",
         value: function destroy() {
           this.assertNotDestroyed(); // Set destroyed = true first, in case lifecycle hooks re-enter destroy().
 
@@ -35265,11 +35270,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return this.injectorDefTypes.has(def.providedIn);
           }
         }
-      }, {
-        key: "destroyed",
-        get: function get() {
-          return this._destroyed;
-        }
       }]);
 
       return R3Injector;
@@ -35622,13 +35622,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(Injector, null, [{
         key: "create",
-
+        value:
         /**
          * @param {?} options
          * @param {?=} parent
          * @return {?}
          */
-        value: function create(options, parent) {
+        function create(options, parent) {
           if (Array.isArray(options)) {
             return INJECTOR_IMPL(options, parent, '');
           } else {
@@ -37211,7 +37211,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(ReflectiveInjector, null, [{
         key: "resolve",
-
+        value:
         /**
          * Turns an array of provider definitions into an array of resolved providers.
          *
@@ -37246,7 +37246,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} providers
          * @return {?}
          */
-        value: function resolve(providers) {
+        function resolve(providers) {
           return resolveReflectiveProviders(providers);
         }
         /**
@@ -37642,15 +37642,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "toString",
-
-        /**
-         * @return {?}
-         */
-        value: function toString() {
-          return this.displayName;
-        }
-      }, {
         key: "displayName",
         get: function get() {
           /** @type {?} */
@@ -37664,6 +37655,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }).join(', ');
 
           return "ReflectiveInjector(providers: [".concat(providers, "])");
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "toString",
+        value: function toString() {
+          return this.displayName;
         }
       }]);
 
@@ -47193,13 +47193,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(_NullComponentFactoryResolver, [{
         key: "resolveComponentFactory",
-
+        value:
         /**
          * @template T
          * @param {?} component
          * @return {?}
          */
-        value: function resolveComponentFactory(component) {
+        function resolveComponentFactory(component) {
           throw noComponentFactoryError(component);
         }
       }]);
@@ -47944,8 +47944,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "_reset",
-
+        key: "isDirty",
+        get: function get() {
+          return this._additionsHead !== null || this._movesHead !== null || this._removalsHead !== null || this._identityChangesHead !== null;
+        }
         /**
          * Reset the state of the change objects to show no changes. This means set previousKey to
          * currentKey, and clear all of the queues (additions, moves, removals).
@@ -47955,6 +47957,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * \@internal
          * @return {?}
          */
+
+      }, {
+        key: "_reset",
         value: function _reset() {
           if (this.isDirty) {
             /** @type {?} */
@@ -48403,11 +48408,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           return record;
         }
-      }, {
-        key: "isDirty",
-        get: function get() {
-          return this._additionsHead !== null || this._movesHead !== null || this._removalsHead !== null || this._identityChangesHead !== null;
-        }
       }]);
 
       return DefaultIterableDiffer;
@@ -48694,18 +48694,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "clear",
-
-        /**
-         * @return {?}
-         */
-        value: function clear() {
-          this.map.clear();
-        }
-      }, {
         key: "isEmpty",
         get: function get() {
           return this.map.size === 0;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "clear",
+        value: function clear() {
+          this.map.clear();
         }
       }]);
 
@@ -48802,12 +48802,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(DefaultKeyValueDiffer, [{
-        key: "forEachItem",
-
+        key: "isDirty",
+        get: function get() {
+          return this._additionsHead !== null || this._changesHead !== null || this._removalsHead !== null;
+        }
         /**
          * @param {?} fn
          * @return {?}
          */
+
+      }, {
+        key: "forEachItem",
         value: function forEachItem(fn) {
           /** @type {?} */
           var record;
@@ -49171,11 +49176,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             });
           }
         }
-      }, {
-        key: "isDirty",
-        get: function get() {
-          return this._additionsHead !== null || this._changesHead !== null || this._removalsHead !== null;
-        }
       }]);
 
       return DefaultKeyValueDiffer;
@@ -49332,12 +49332,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(IterableDiffers, [{
         key: "find",
-
+        value:
         /**
          * @param {?} iterable
          * @return {?}
          */
-        value: function find(iterable) {
+        function find(iterable) {
           /** @type {?} */
           var factory = this.factories.find(
           /**
@@ -49521,12 +49521,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(KeyValueDiffers, [{
         key: "find",
-
+        value:
         /**
          * @param {?} kv
          * @return {?}
          */
-        value: function find(kv) {
+        function find(kv) {
           /** @type {?} */
           var factory = this.factories.find(
           /**
@@ -52052,45 +52052,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ComponentFactory_, [{
-        key: "create",
-
-        /**
-         * Creates a new component.
-         * @param {?} injector
-         * @param {?=} projectableNodes
-         * @param {?=} rootSelectorOrNode
-         * @param {?=} ngModule
-         * @return {?}
-         */
-        value: function create(injector, projectableNodes, rootSelectorOrNode, ngModule) {
-          if (!ngModule) {
-            throw new Error('ngModule should be provided');
-          }
-          /** @type {?} */
-
-
-          var viewDef = resolveDefinition(this.viewDefFactory);
-          /** @type {?} */
-
-          var componentNodeIndex =
-          /** @type {?} */
-
-          /** @type {?} */
-          viewDef.nodes[0].element.componentProvider.nodeIndex;
-          /** @type {?} */
-
-          var view = Services.createRootView(injector, projectableNodes || [], rootSelectorOrNode, viewDef, ngModule, EMPTY_CONTEXT);
-          /** @type {?} */
-
-          var component = asProviderData(view, componentNodeIndex).instance;
-
-          if (rootSelectorOrNode) {
-            view.renderer.setAttribute(asElementData(view, 0).renderElement, 'ng-version', VERSION.full);
-          }
-
-          return new ComponentRef_(view, new ViewRef_(view), component);
-        }
-      }, {
         key: "inputs",
         get: function get() {
           /** @type {?} */
@@ -52133,6 +52094,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           return outputsArr;
         }
+        /**
+         * Creates a new component.
+         * @param {?} injector
+         * @param {?=} projectableNodes
+         * @param {?=} rootSelectorOrNode
+         * @param {?=} ngModule
+         * @return {?}
+         */
+
+      }, {
+        key: "create",
+        value: function create(injector, projectableNodes, rootSelectorOrNode, ngModule) {
+          if (!ngModule) {
+            throw new Error('ngModule should be provided');
+          }
+          /** @type {?} */
+
+
+          var viewDef = resolveDefinition(this.viewDefFactory);
+          /** @type {?} */
+
+          var componentNodeIndex =
+          /** @type {?} */
+
+          /** @type {?} */
+          viewDef.nodes[0].element.componentProvider.nodeIndex;
+          /** @type {?} */
+
+          var view = Services.createRootView(injector, projectableNodes || [], rootSelectorOrNode, viewDef, ngModule, EMPTY_CONTEXT);
+          /** @type {?} */
+
+          var component = asProviderData(view, componentNodeIndex).instance;
+
+          if (rootSelectorOrNode) {
+            view.renderer.setAttribute(asElementData(view, 0).renderElement, 'ng-version', VERSION.full);
+          }
+
+          return new ComponentRef_(view, new ViewRef_(view), component);
+        }
       }]);
 
       return ComponentFactory_;
@@ -52171,25 +52171,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ComponentRef_, [{
-        key: "destroy",
-
-        /**
-         * @return {?}
-         */
-        value: function destroy() {
-          this._viewRef.destroy();
-        }
-        /**
-         * @param {?} callback
-         * @return {?}
-         */
-
-      }, {
-        key: "onDestroy",
-        value: function onDestroy(callback) {
-          this._viewRef.onDestroy(callback);
-        }
-      }, {
         key: "location",
         get: function get() {
           return new ElementRef(asElementData(this._view, this._elDef.nodeIndex).renderElement);
@@ -52214,6 +52195,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             /** @type {?} */
             this._component.constructor
           );
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "destroy",
+        value: function destroy() {
+          this._viewRef.destroy();
+        }
+        /**
+         * @param {?} callback
+         * @return {?}
+         */
+
+      }, {
+        key: "onDestroy",
+        value: function onDestroy(callback) {
+          this._viewRef.onDestroy(callback);
         }
       }]);
 
@@ -52257,11 +52257,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ViewContainerRef_, [{
-        key: "clear",
-
+        key: "element",
+        get: function get() {
+          return new ElementRef(this._data.renderElement);
+        }
         /**
          * @return {?}
          */
+
+      }, {
+        key: "injector",
+        get: function get() {
+          return new Injector_(this._view, this._elDef);
+        }
+        /**
+         * @deprecated No replacement
+         * @return {?}
+         */
+
+      }, {
+        key: "parentInjector",
+        get: function get() {
+          /** @type {?} */
+          var view = this._view;
+          /** @type {?} */
+
+          var elDef = this._elDef.parent;
+
+          while (!elDef && view) {
+            elDef = viewParentEl(view);
+            view =
+            /** @type {?} */
+            view.parent;
+          }
+
+          return view ? new Injector_(view, elDef) : new Injector_(this._view, null);
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "clear",
         value: function clear() {
           /** @type {?} */
           var len = this._embeddedViews.length;
@@ -52299,8 +52336,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "createEmbeddedView",
-
+        key: "length",
+        get: function get() {
+          return this._embeddedViews.length;
+        }
         /**
          * @template C
          * @param {?} templateRef
@@ -52308,6 +52347,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?=} index
          * @return {?}
          */
+
+      }, {
+        key: "createEmbeddedView",
         value: function createEmbeddedView(templateRef, context, index) {
           /** @type {?} */
           var viewRef = templateRef.createEmbeddedView(context ||
@@ -52426,48 +52468,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var view = detachEmbeddedView(this._data, index);
           return view ? new ViewRef_(view) : null;
         }
-      }, {
-        key: "element",
-        get: function get() {
-          return new ElementRef(this._data.renderElement);
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "injector",
-        get: function get() {
-          return new Injector_(this._view, this._elDef);
-        }
-        /**
-         * @deprecated No replacement
-         * @return {?}
-         */
-
-      }, {
-        key: "parentInjector",
-        get: function get() {
-          /** @type {?} */
-          var view = this._view;
-          /** @type {?} */
-
-          var elDef = this._elDef.parent;
-
-          while (!elDef && view) {
-            elDef = viewParentEl(view);
-            view =
-            /** @type {?} */
-            view.parent;
-          }
-
-          return view ? new Injector_(view, elDef) : new Injector_(this._view, null);
-        }
-      }, {
-        key: "length",
-        get: function get() {
-          return this._embeddedViews.length;
-        }
       }]);
 
       return ViewContainerRef_;
@@ -52501,11 +52501,36 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ViewRef_, [{
-        key: "markForCheck",
-
+        key: "rootNodes",
+        get: function get() {
+          return rootRenderNodes(this._view);
+        }
         /**
          * @return {?}
          */
+
+      }, {
+        key: "context",
+        get: function get() {
+          return this._view.context;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "destroyed",
+        get: function get() {
+          return (this._view.state & 128
+          /* Destroyed */
+          ) !== 0;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "markForCheck",
         value: function markForCheck() {
           markParentViewsForCheck(this._view);
         }
@@ -52631,31 +52656,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           this._viewContainerRef = vcRef;
-        }
-      }, {
-        key: "rootNodes",
-        get: function get() {
-          return rootRenderNodes(this._view);
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "context",
-        get: function get() {
-          return this._view.context;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "destroyed",
-        get: function get() {
-          return (this._view.state & 128
-          /* Destroyed */
-          ) !== 0;
         }
       }]);
 
@@ -52881,11 +52881,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "destroy",
-
+        key: "instance",
+        get: function get() {
+          return this.get(this._moduleType);
+        }
         /**
          * @return {?}
          */
+
+      }, {
+        key: "componentFactoryResolver",
+        get: function get() {
+          return this.get(ComponentFactoryResolver);
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "destroy",
         value: function destroy() {
           if (this._destroyed) {
             throw new Error("The ng module ".concat(stringify(this.instance.constructor), " has already been destroyed."));
@@ -52914,20 +52928,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "onDestroy",
         value: function onDestroy(callback) {
           this._destroyListeners.push(callback);
-        }
-      }, {
-        key: "instance",
-        get: function get() {
-          return this.get(this._moduleType);
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "componentFactoryResolver",
-        get: function get() {
-          return this.get(ComponentFactoryResolver);
         }
       }]);
 
@@ -54120,8 +54120,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ComponentFactory$1, [{
-        key: "create",
+        key: "inputs",
+        get: function get() {
+          return toRefArray(this.componentDef.inputs);
+        }
+        /**
+         * @return {?}
+         */
 
+      }, {
+        key: "outputs",
+        get: function get() {
+          return toRefArray(this.componentDef.outputs);
+        }
         /**
          * @param {?} injector
          * @param {?=} projectableNodes
@@ -54129,6 +54140,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?=} ngModule
          * @return {?}
          */
+
+      }, {
+        key: "create",
         value: function create(injector, projectableNodes, rootSelectorOrNode, ngModule) {
           ngModule = ngModule || this.ngModule;
           /** @type {?} */
@@ -54269,20 +54283,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           return componentRef;
         }
-      }, {
-        key: "inputs",
-        get: function get() {
-          return toRefArray(this.componentDef.inputs);
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "outputs",
-        get: function get() {
-          return toRefArray(this.componentDef.outputs);
-        }
       }]);
 
       return ComponentFactory$1;
@@ -54349,11 +54349,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ComponentRef$1, [{
-        key: "destroy",
-
+        key: "injector",
+        get: function get() {
+          return new NodeInjector(this._tNode, this._rootLView);
+        }
         /**
          * @return {?}
          */
+
+      }, {
+        key: "destroy",
         value: function destroy() {
           if (this.destroyCbs) {
             this.destroyCbs.forEach(
@@ -54379,11 +54384,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           if (this.destroyCbs) {
             this.destroyCbs.push(callback);
           }
-        }
-      }, {
-        key: "injector",
-        get: function get() {
-          return new NodeInjector(this._tNode, this._rootLView);
         }
       }]);
 
@@ -58868,19 +58868,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "track",
-
+        key: "length",
+        get: function get() {
+          return this.queries.length;
+        }
         /**
          * @param {?} tquery
          * @return {?}
          */
+
+      }, {
+        key: "track",
         value: function track(tquery) {
           this.queries.push(tquery);
-        }
-      }, {
-        key: "length",
-        get: function get() {
-          return this.queries.length;
         }
       }]);
 
@@ -61969,12 +61969,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(Console, [{
         key: "log",
-
+        value:
         /**
          * @param {?} message
          * @return {?}
          */
-        value: function log(message) {
+        function log(message) {
           // tslint:disable-next-line:no-console
           console.log(message);
         } // Note: for reporting errors use `DOM.logError()` as it is platform specific
@@ -62625,7 +62625,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(NgZone, [{
         key: "run",
-
+        value:
         /**
          * Executes the `fn` function synchronously within the Angular zone and returns value returned by
          * the function.
@@ -62643,7 +62643,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?=} applyArgs
          * @return {?}
          */
-        value: function run(fn, applyThis, applyArgs) {
+        function run(fn, applyThis, applyArgs) {
           return (
             /** @type {?} */
 
@@ -63555,12 +63555,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(_NoopGetTestability, [{
         key: "addToWindow",
-
+        value:
         /**
          * @param {?} registry
          * @return {?}
          */
-        value: function addToWindow(registry) {}
+        function addToWindow(registry) {}
         /**
          * @param {?} registry
          * @param {?} elem
@@ -64181,12 +64181,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "destroy",
-
+        key: "injector",
+        get: function get() {
+          return this._injector;
+        }
         /**
          * Destroy the Angular platform and all Angular applications on the page.
          * @return {?}
          */
+
+      }, {
+        key: "destroy",
         value: function destroy() {
           if (this._destroyed) {
             throw new Error('The platform has already been destroyed!');
@@ -64216,11 +64221,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @return {?}
          */
 
-      }, {
-        key: "injector",
-        get: function get() {
-          return this._injector;
-        }
       }, {
         key: "destroyed",
         get: function get() {
@@ -65548,26 +65548,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "triggerEventHandler",
-
-        /**
-         * @param {?} eventName
-         * @param {?} eventObj
-         * @return {?}
-         */
-        value: function triggerEventHandler(eventName, eventObj) {
-          this.listeners.forEach(
-          /**
-          * @param {?} listener
-          * @return {?}
-          */
-          function (listener) {
-            if (listener.name == eventName) {
-              listener.callback(eventObj);
-            }
-          });
-        }
-      }, {
         key: "children",
         get: function get() {
           return (
@@ -65582,6 +65562,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               return node instanceof DebugElement__PRE_R3__;
             })
           );
+        }
+        /**
+         * @param {?} eventName
+         * @param {?} eventObj
+         * @return {?}
+         */
+
+      }, {
+        key: "triggerEventHandler",
+        value: function triggerEventHandler(eventName, eventObj) {
+          this.listeners.forEach(
+          /**
+          * @param {?} listener
+          * @return {?}
+          */
+          function (listener) {
+            if (listener.name == eventName) {
+              listener.callback(eventObj);
+            }
+          });
         }
       }]);
 
@@ -65780,103 +65780,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(DebugElement__POST_R3__, [{
-        key: "query",
-
-        /**
-         * @param {?} predicate
-         * @return {?}
-         */
-        value: function query(predicate) {
-          /** @type {?} */
-          var results = this.queryAll(predicate);
-          return results[0] || null;
-        }
-        /**
-         * @param {?} predicate
-         * @return {?}
-         */
-
-      }, {
-        key: "queryAll",
-        value: function queryAll(predicate) {
-          /** @type {?} */
-          var matches = [];
-
-          _queryAllR3(this, predicate, matches, true);
-
-          return matches;
-        }
-        /**
-         * @param {?} predicate
-         * @return {?}
-         */
-
-      }, {
-        key: "queryAllNodes",
-        value: function queryAllNodes(predicate) {
-          /** @type {?} */
-          var matches = [];
-
-          _queryAllR3(this, predicate, matches, false);
-
-          return matches;
-        }
-        /**
-         * @param {?} eventName
-         * @param {?} eventObj
-         * @return {?}
-         */
-
-      }, {
-        key: "triggerEventHandler",
-        value: function triggerEventHandler(eventName, eventObj) {
-          /** @type {?} */
-          var node =
-          /** @type {?} */
-          this.nativeNode;
-          /** @type {?} */
-
-          var invokedListeners = [];
-          this.listeners.forEach(
-          /**
-          * @param {?} listener
-          * @return {?}
-          */
-          function (listener) {
-            if (listener.name === eventName) {
-              /** @type {?} */
-              var callback = listener.callback;
-              callback.call(node, eventObj);
-              invokedListeners.push(callback);
-            }
-          }); // We need to check whether `eventListeners` exists, because it's something
-          // that Zone.js only adds to `EventTarget` in browser environments.
-
-          if (typeof node.eventListeners === 'function') {
-            // Note that in Ivy we wrap event listeners with a call to `event.preventDefault` in some
-            // cases. We use '__ngUnwrap__' as a special token that gives us access to the actual event
-            // listener.
-            node.eventListeners(eventName).forEach(
-            /**
-            * @param {?} listener
-            * @return {?}
-            */
-            function (listener) {
-              // In order to ensure that we can detect the special __ngUnwrap__ token described above, we
-              // use `toString` on the listener and see if it contains the token. We use this approach to
-              // ensure that it still worked with compiled code since it cannot remove or rename string
-              // literals. We also considered using a special function name (i.e. if(listener.name ===
-              // special)) but that was more cumbersome and we were also concerned the compiled code could
-              // strip the name, turning the condition in to ("" === "") and always returning true.
-              if (listener.toString().indexOf('__ngUnwrap__') !== -1) {
-                /** @type {?} */
-                var unwrappedListener = listener('__ngUnwrap__');
-                return invokedListeners.indexOf(unwrappedListener) === -1 && unwrappedListener.call(node, eventObj);
-              }
-            });
-          }
-        }
-      }, {
         key: "nativeElement",
         get: function get() {
           return this.nativeNode.nodeType == Node.ELEMENT_NODE ?
@@ -66142,6 +66045,103 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           return children;
+        }
+        /**
+         * @param {?} predicate
+         * @return {?}
+         */
+
+      }, {
+        key: "query",
+        value: function query(predicate) {
+          /** @type {?} */
+          var results = this.queryAll(predicate);
+          return results[0] || null;
+        }
+        /**
+         * @param {?} predicate
+         * @return {?}
+         */
+
+      }, {
+        key: "queryAll",
+        value: function queryAll(predicate) {
+          /** @type {?} */
+          var matches = [];
+
+          _queryAllR3(this, predicate, matches, true);
+
+          return matches;
+        }
+        /**
+         * @param {?} predicate
+         * @return {?}
+         */
+
+      }, {
+        key: "queryAllNodes",
+        value: function queryAllNodes(predicate) {
+          /** @type {?} */
+          var matches = [];
+
+          _queryAllR3(this, predicate, matches, false);
+
+          return matches;
+        }
+        /**
+         * @param {?} eventName
+         * @param {?} eventObj
+         * @return {?}
+         */
+
+      }, {
+        key: "triggerEventHandler",
+        value: function triggerEventHandler(eventName, eventObj) {
+          /** @type {?} */
+          var node =
+          /** @type {?} */
+          this.nativeNode;
+          /** @type {?} */
+
+          var invokedListeners = [];
+          this.listeners.forEach(
+          /**
+          * @param {?} listener
+          * @return {?}
+          */
+          function (listener) {
+            if (listener.name === eventName) {
+              /** @type {?} */
+              var callback = listener.callback;
+              callback.call(node, eventObj);
+              invokedListeners.push(callback);
+            }
+          }); // We need to check whether `eventListeners` exists, because it's something
+          // that Zone.js only adds to `EventTarget` in browser environments.
+
+          if (typeof node.eventListeners === 'function') {
+            // Note that in Ivy we wrap event listeners with a call to `event.preventDefault` in some
+            // cases. We use '__ngUnwrap__' as a special token that gives us access to the actual event
+            // listener.
+            node.eventListeners(eventName).forEach(
+            /**
+            * @param {?} listener
+            * @return {?}
+            */
+            function (listener) {
+              // In order to ensure that we can detect the special __ngUnwrap__ token described above, we
+              // use `toString` on the listener and see if it contains the token. We use this approach to
+              // ensure that it still worked with compiled code since it cannot remove or rename string
+              // literals. We also considered using a special function name (i.e. if(listener.name ===
+              // special)) but that was more cumbersome and we were also concerned the compiled code could
+              // strip the name, turning the condition in to ("" === "") and always returning true.
+              if (listener.toString().indexOf('__ngUnwrap__') !== -1) {
+                /** @type {?} */
+                var unwrappedListener = listener('__ngUnwrap__');
+                return invokedListeners.indexOf(unwrappedListener) === -1 && unwrappedListener.call(node, eventObj);
+              }
+            });
+          }
         }
       }]);
 
@@ -70793,71 +70793,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(DebugContext_, [{
-        key: "logError",
-
-        /**
-         * @param {?} console
-         * @param {...?} values
-         * @return {?}
-         */
-        value: function logError(console) {
-          for (var _len12 = arguments.length, values = new Array(_len12 > 1 ? _len12 - 1 : 0), _key12 = 1; _key12 < _len12; _key12++) {
-            values[_key12 - 1] = arguments[_key12];
-          }
-
-          /** @type {?} */
-          var logViewDef;
-          /** @type {?} */
-
-          var logNodeIndex;
-
-          if (this.nodeDef.flags & 2
-          /* TypeText */
-          ) {
-              logViewDef = this.view.def;
-              logNodeIndex = this.nodeDef.nodeIndex;
-            } else {
-            logViewDef = this.elView.def;
-            logNodeIndex = this.elDef.nodeIndex;
-          } // Note: we only generate a log function for text and element nodes
-          // to make the generated code as small as possible.
-
-          /** @type {?} */
-
-
-          var renderNodeIndex = getRenderNodeIndex(logViewDef, logNodeIndex);
-          /** @type {?} */
-
-          var currRenderNodeIndex = -1;
-          /** @type {?} */
-
-          var nodeLogger =
-          /**
-          * @return {?}
-          */
-          function nodeLogger() {
-            currRenderNodeIndex++;
-
-            if (currRenderNodeIndex === renderNodeIndex) {
-              var _console$error;
-
-              return (_console$error = console.error).bind.apply(_console$error, [console].concat(values));
-            } else {
-              return NOOP;
-            }
-          };
-
-          /** @type {?} */
-          logViewDef.factory(nodeLogger);
-
-          if (currRenderNodeIndex < renderNodeIndex) {
-            console.error('Illegal state: the ViewDefinitionFactory did not call the logger!');
-
-            /** @type {?} */
-            console.error.apply(console, values);
-          }
-        }
-      }, {
         key: "elOrCompView",
         get: function get() {
           // Has to be done lazily as we use the DebugContext also during creation of elements...
@@ -70969,6 +70904,71 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return this.nodeDef.flags & 2
           /* TypeText */
           ? renderNode(this.view, this.nodeDef) : renderNode(this.elView, this.elDef);
+        }
+        /**
+         * @param {?} console
+         * @param {...?} values
+         * @return {?}
+         */
+
+      }, {
+        key: "logError",
+        value: function logError(console) {
+          for (var _len12 = arguments.length, values = new Array(_len12 > 1 ? _len12 - 1 : 0), _key12 = 1; _key12 < _len12; _key12++) {
+            values[_key12 - 1] = arguments[_key12];
+          }
+
+          /** @type {?} */
+          var logViewDef;
+          /** @type {?} */
+
+          var logNodeIndex;
+
+          if (this.nodeDef.flags & 2
+          /* TypeText */
+          ) {
+              logViewDef = this.view.def;
+              logNodeIndex = this.nodeDef.nodeIndex;
+            } else {
+            logViewDef = this.elView.def;
+            logNodeIndex = this.elDef.nodeIndex;
+          } // Note: we only generate a log function for text and element nodes
+          // to make the generated code as small as possible.
+
+          /** @type {?} */
+
+
+          var renderNodeIndex = getRenderNodeIndex(logViewDef, logNodeIndex);
+          /** @type {?} */
+
+          var currRenderNodeIndex = -1;
+          /** @type {?} */
+
+          var nodeLogger =
+          /**
+          * @return {?}
+          */
+          function nodeLogger() {
+            currRenderNodeIndex++;
+
+            if (currRenderNodeIndex === renderNodeIndex) {
+              var _console$error;
+
+              return (_console$error = console.error).bind.apply(_console$error, [console].concat(values));
+            } else {
+              return NOOP;
+            }
+          };
+
+          /** @type {?} */
+          logViewDef.factory(nodeLogger);
+
+          if (currRenderNodeIndex < renderNodeIndex) {
+            console.error('Illegal state: the ViewDefinitionFactory did not call the logger!');
+
+            /** @type {?} */
+            console.error.apply(console, values);
+          }
         }
       }]);
 
@@ -72701,96 +72701,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass2(AbstractControlDirective, [{
-        key: "reset",
-
-        /**
-         * \@description
-         * Resets the control with the provided value if the control is present.
-         * @param {?=} value
-         * @return {?}
-         */
-        value: function reset() {
-          var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
-          if (this.control) this.control.reset(value);
-        }
-        /**
-         * \@description
-         * Reports whether the control with the given path has the error specified.
-         *
-         * \@usageNotes
-         * For example, for the following `FormGroup`:
-         *
-         * ```
-         * form = new FormGroup({
-         *   address: new FormGroup({ street: new FormControl() })
-         * });
-         * ```
-         *
-         * The path to the 'street' control from the root form would be 'address' -> 'street'.
-         *
-         * It can be provided to this method in one of two formats:
-         *
-         * 1. An array of string control names, e.g. `['address', 'street']`
-         * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
-         *
-         * If no path is given, this method checks for the error on the current control.
-         *
-         * @param {?} errorCode The code of the error to check
-         * @param {?=} path A list of control names that designates how to move from the current control
-         * to the control that should be queried for errors.
-         *
-         * @return {?} whether the given error is present in the control at the given path.
-         *
-         * If the control is not present, false is returned.
-         */
-
-      }, {
-        key: "hasError",
-        value: function hasError(errorCode, path) {
-          return this.control ? this.control.hasError(errorCode, path) : false;
-        }
-        /**
-         * \@description
-         * Reports error data for the control with the given path.
-         *
-         * \@usageNotes
-         * For example, for the following `FormGroup`:
-         *
-         * ```
-         * form = new FormGroup({
-         *   address: new FormGroup({ street: new FormControl() })
-         * });
-         * ```
-         *
-         * The path to the 'street' control from the root form would be 'address' -> 'street'.
-         *
-         * It can be provided to this method in one of two formats:
-         *
-         * 1. An array of string control names, e.g. `['address', 'street']`
-         * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
-         *
-         * @param {?} errorCode The code of the error to check
-         * @param {?=} path A list of control names that designates how to move from the current control
-         * to the control that should be queried for errors.
-         *
-         * @return {?} error data for that particular error. If the control or error is not present,
-         * null is returned.
-         */
-
-      }, {
-        key: "getError",
-        value: function getError(errorCode, path) {
-          return this.control ? this.control.getError(errorCode, path) : null;
-        }
-      }, {
         key: "value",
-
+        get:
         /**
          * \@description
          * Reports the value of the control if it is present, otherwise null.
          * @return {?}
          */
-        get: function get() {
+        function get() {
           return this.control ? this.control.value : null;
         }
         /**
@@ -72965,6 +72883,88 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         get: function get() {
           return null;
         }
+        /**
+         * \@description
+         * Resets the control with the provided value if the control is present.
+         * @param {?=} value
+         * @return {?}
+         */
+
+      }, {
+        key: "reset",
+        value: function reset() {
+          var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
+          if (this.control) this.control.reset(value);
+        }
+        /**
+         * \@description
+         * Reports whether the control with the given path has the error specified.
+         *
+         * \@usageNotes
+         * For example, for the following `FormGroup`:
+         *
+         * ```
+         * form = new FormGroup({
+         *   address: new FormGroup({ street: new FormControl() })
+         * });
+         * ```
+         *
+         * The path to the 'street' control from the root form would be 'address' -> 'street'.
+         *
+         * It can be provided to this method in one of two formats:
+         *
+         * 1. An array of string control names, e.g. `['address', 'street']`
+         * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
+         *
+         * If no path is given, this method checks for the error on the current control.
+         *
+         * @param {?} errorCode The code of the error to check
+         * @param {?=} path A list of control names that designates how to move from the current control
+         * to the control that should be queried for errors.
+         *
+         * @return {?} whether the given error is present in the control at the given path.
+         *
+         * If the control is not present, false is returned.
+         */
+
+      }, {
+        key: "hasError",
+        value: function hasError(errorCode, path) {
+          return this.control ? this.control.hasError(errorCode, path) : false;
+        }
+        /**
+         * \@description
+         * Reports error data for the control with the given path.
+         *
+         * \@usageNotes
+         * For example, for the following `FormGroup`:
+         *
+         * ```
+         * form = new FormGroup({
+         *   address: new FormGroup({ street: new FormControl() })
+         * });
+         * ```
+         *
+         * The path to the 'street' control from the root form would be 'address' -> 'street'.
+         *
+         * It can be provided to this method in one of two formats:
+         *
+         * 1. An array of string control names, e.g. `['address', 'street']`
+         * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
+         *
+         * @param {?} errorCode The code of the error to check
+         * @param {?=} path A list of control names that designates how to move from the current control
+         * to the control that should be queried for errors.
+         *
+         * @return {?} error data for that particular error. If the control or error is not present,
+         * null is returned.
+         */
+
+      }, {
+        key: "getError",
+        value: function getError(errorCode, path) {
+          return this.control ? this.control.getError(errorCode, path) : null;
+        }
       }]);
 
       return AbstractControlDirective;
@@ -73000,13 +73000,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(ControlContainer, [{
         key: "formDirective",
-
+        get:
         /**
          * \@description
          * The top-level form directive for the control.
          * @return {?}
          */
-        get: function get() {
+        function get() {
           return null;
         }
         /**
@@ -73453,7 +73453,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(Validators, null, [{
         key: "min",
-
+        value:
         /**
          * \@description
          * Validator that requires the control's value to be greater than or equal to the provided number.
@@ -73476,7 +73476,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * `min` property if the validation check fails, otherwise `null`.
          *
          */
-        value: function min(_min) {
+        function min(_min) {
           return (
             /**
             * @param {?} control
@@ -74786,11 +74786,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(ReactiveErrors, null, [{
         key: "controlParentException",
-
+        value:
         /**
          * @return {?}
          */
-        value: function controlParentException() {
+        function controlParentException() {
           throw new Error("formControlName must be used with a parent formGroup directive.  You'll want to add a formGroup\n       directive and pass it an existing FormGroup instance (you can create one in your class).\n\n      Example:\n\n      ".concat(FormErrorExamples.formControlName));
         }
         /**
@@ -75006,8 +75006,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(SelectControlValueAccessor, [{
-        key: "writeValue",
+        key: "compareWith",
+        set: function set(fn) {
+          if (typeof fn !== 'function') {
+            throw new Error("compareWith must be a function, but received ".concat(JSON.stringify(fn)));
+          }
 
+          this._compareWith = fn;
+        }
         /**
          * Sets the "value" property on the input element. The "selectedIndex"
          * property is also set if an ID is provided on the option element.
@@ -75015,6 +75021,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} value The checked value
          * @return {?}
          */
+
+      }, {
+        key: "writeValue",
         value: function writeValue(value) {
           this.value = value;
           /** @type {?} */
@@ -75119,15 +75128,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           return this._optionMap.has(id) ? this._optionMap.get(id) : valueString;
         }
-      }, {
-        key: "compareWith",
-        set: function set(fn) {
-          if (typeof fn !== 'function') {
-            throw new Error("compareWith must be a function, but received ".concat(JSON.stringify(fn)));
-          }
-
-          this._compareWith = fn;
-        }
       }]);
 
       return SelectControlValueAccessor;
@@ -75197,32 +75197,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(NgSelectOption, [{
-        key: "_setElementValue",
-
-        /**
-         * \@internal
-         * @param {?} value
-         * @return {?}
-         */
-        value: function _setElementValue(value) {
-          this._renderer.setProperty(this._element.nativeElement, 'value', value);
-        }
-        /**
-         * \@description
-         * Lifecycle method called before the directive's instance is destroyed. For internal use only.
-         * @return {?}
-         */
-
-      }, {
-        key: "ngOnDestroy",
-        value: function ngOnDestroy() {
-          if (this._select) {
-            this._select._optionMap["delete"](this.id);
-
-            this._select.writeValue(this._select.value);
-          }
-        }
-      }, {
         key: "ngValue",
         set: function set(value) {
           if (this._select == null) return;
@@ -75247,6 +75221,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this._setElementValue(value);
 
           if (this._select) this._select.writeValue(this._select.value);
+        }
+        /**
+         * \@internal
+         * @param {?} value
+         * @return {?}
+         */
+
+      }, {
+        key: "_setElementValue",
+        value: function _setElementValue(value) {
+          this._renderer.setProperty(this._element.nativeElement, 'value', value);
+        }
+        /**
+         * \@description
+         * Lifecycle method called before the directive's instance is destroyed. For internal use only.
+         * @return {?}
+         */
+
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          if (this._select) {
+            this._select._optionMap["delete"](this.id);
+
+            this._select.writeValue(this._select.value);
+          }
         }
       }]);
 
@@ -75441,8 +75441,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(SelectMultipleControlValueAccessor, [{
-        key: "writeValue",
+        key: "compareWith",
+        set: function set(fn) {
+          if (typeof fn !== 'function') {
+            throw new Error("compareWith must be a function, but received ".concat(JSON.stringify(fn)));
+          }
 
+          this._compareWith = fn;
+        }
         /**
          * \@description
          * Sets the "value" property on one or of more
@@ -75451,6 +75457,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} value The value
          * @return {?}
          */
+
+      }, {
+        key: "writeValue",
         value: function writeValue(value) {
           var _this67 = this;
 
@@ -75630,15 +75639,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /** @type {?} */
           this._optionMap.get(id)._value : valueString;
         }
-      }, {
-        key: "compareWith",
-        set: function set(fn) {
-          if (typeof fn !== 'function') {
-            throw new Error("compareWith must be a function, but received ".concat(JSON.stringify(fn)));
-          }
-
-          this._compareWith = fn;
-        }
       }]);
 
       return SelectMultipleControlValueAccessor;
@@ -75711,43 +75711,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ɵNgSelectMultipleOption, [{
-        key: "_setElementValue",
-
-        /**
-         * \@internal
-         * @param {?} value
-         * @return {?}
-         */
-        value: function _setElementValue(value) {
-          this._renderer.setProperty(this._element.nativeElement, 'value', value);
-        }
-        /**
-         * \@internal
-         * @param {?} selected
-         * @return {?}
-         */
-
-      }, {
-        key: "_setSelected",
-        value: function _setSelected(selected) {
-          this._renderer.setProperty(this._element.nativeElement, 'selected', selected);
-        }
-        /**
-         * \@description
-         * Lifecycle method called before the directive's instance is destroyed. For internal use only.
-         * @return {?}
-         */
-
-      }, {
-        key: "ngOnDestroy",
-        value: function ngOnDestroy() {
-          if (this._select) {
-            this._select._optionMap["delete"](this.id);
-
-            this._select.writeValue(this._select.value);
-          }
-        }
-      }, {
         key: "ngValue",
         set: function set(value) {
           if (this._select == null) return;
@@ -75776,6 +75739,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             this._select.writeValue(this._select.value);
           } else {
             this._setElementValue(value);
+          }
+        }
+        /**
+         * \@internal
+         * @param {?} value
+         * @return {?}
+         */
+
+      }, {
+        key: "_setElementValue",
+        value: function _setElementValue(value) {
+          this._renderer.setProperty(this._element.nativeElement, 'value', value);
+        }
+        /**
+         * \@internal
+         * @param {?} selected
+         * @return {?}
+         */
+
+      }, {
+        key: "_setSelected",
+        value: function _setSelected(selected) {
+          this._renderer.setProperty(this._element.nativeElement, 'selected', selected);
+        }
+        /**
+         * \@description
+         * Lifecycle method called before the directive's instance is destroyed. For internal use only.
+         * @return {?}
+         */
+
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          if (this._select) {
+            this._select._optionMap["delete"](this.id);
+
+            this._select.writeValue(this._select.value);
           }
         }
       }]);
@@ -76455,8 +76455,123 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(AbstractControl, [{
-        key: "setValidators",
+        key: "parent",
+        get: function get() {
+          return this._parent;
+        }
+        /**
+         * A control is `valid` when its `status` is `VALID`.
+         *
+         * @see {\@link AbstractControl.status}
+         *
+         * @return {?} True if the control has passed all of its validation tests,
+         * false otherwise.
+         */
 
+      }, {
+        key: "valid",
+        get: function get() {
+          return this.status === VALID;
+        }
+        /**
+         * A control is `invalid` when its `status` is `INVALID`.
+         *
+         * @see {\@link AbstractControl.status}
+         *
+         * @return {?} True if this control has failed one or more of its validation checks,
+         * false otherwise.
+         */
+
+      }, {
+        key: "invalid",
+        get: function get() {
+          return this.status === INVALID;
+        }
+        /**
+         * A control is `pending` when its `status` is `PENDING`.
+         *
+         * @see {\@link AbstractControl.status}
+         *
+         * @return {?} True if this control is in the process of conducting a validation check,
+         * false otherwise.
+         */
+
+      }, {
+        key: "pending",
+        get: function get() {
+          return this.status == PENDING;
+        }
+        /**
+         * A control is `disabled` when its `status` is `DISABLED`.
+         *
+         * Disabled controls are exempt from validation checks and
+         * are not included in the aggregate value of their ancestor
+         * controls.
+         *
+         * @see {\@link AbstractControl.status}
+         *
+         * @return {?} True if the control is disabled, false otherwise.
+         */
+
+      }, {
+        key: "disabled",
+        get: function get() {
+          return this.status === DISABLED;
+        }
+        /**
+         * A control is `enabled` as long as its `status` is not `DISABLED`.
+         *
+         * @see {\@link AbstractControl.status}
+         *
+         * @return {?} True if the control has any status other than 'DISABLED',
+         * false if the status is 'DISABLED'.
+         *
+         */
+
+      }, {
+        key: "enabled",
+        get: function get() {
+          return this.status !== DISABLED;
+        }
+        /**
+         * A control is `dirty` if the user has changed the value
+         * in the UI.
+         *
+         * @return {?} True if the user has changed the value of this control in the UI; compare `pristine`.
+         * Programmatic changes to a control's value do not mark it dirty.
+         */
+
+      }, {
+        key: "dirty",
+        get: function get() {
+          return !this.pristine;
+        }
+        /**
+         * True if the control has not been marked as touched
+         *
+         * A control is `untouched` if the user has not yet triggered
+         * a `blur` event on it.
+         * @return {?}
+         */
+
+      }, {
+        key: "untouched",
+        get: function get() {
+          return !this.touched;
+        }
+        /**
+         * Reports the update strategy of the `AbstractControl` (meaning
+         * the event on which the control updates itself).
+         * Possible values: `'change'` | `'blur'` | `'submit'`
+         * Default value: `'change'`
+         * @return {?}
+         */
+
+      }, {
+        key: "updateOn",
+        get: function get() {
+          return this._updateOn ? this._updateOn : this.parent ? this.parent.updateOn : 'change';
+        }
         /**
          * Sets the synchronous validators that are active on this control.  Calling
          * this overwrites any existing sync validators.
@@ -76467,6 +76582,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} newValidator
          * @return {?}
          */
+
+      }, {
+        key: "setValidators",
         value: function setValidators(newValidator) {
           this.validator = coerceToValidator(newValidator);
         }
@@ -77140,13 +77258,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "_updateControlsErrors",
+        key: "root",
+        get: function get() {
+          /** @type {?} */
+          var x = this;
 
+          while (x._parent) {
+            x = x._parent;
+          }
+
+          return x;
+        }
         /**
          * \@internal
          * @param {?} emitEvent
          * @return {?}
          */
+
+      }, {
+        key: "_updateControlsErrors",
         value: function _updateControlsErrors(emitEvent) {
           /** @type {?} */
           this.status = this._calculateStatus();
@@ -77332,136 +77462,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /** @type {?} */
           var parentDirty = this._parent && this._parent.dirty;
           return !onlySelf && parentDirty && !this._parent._anyControlsDirty();
-        }
-      }, {
-        key: "parent",
-        get: function get() {
-          return this._parent;
-        }
-        /**
-         * A control is `valid` when its `status` is `VALID`.
-         *
-         * @see {\@link AbstractControl.status}
-         *
-         * @return {?} True if the control has passed all of its validation tests,
-         * false otherwise.
-         */
-
-      }, {
-        key: "valid",
-        get: function get() {
-          return this.status === VALID;
-        }
-        /**
-         * A control is `invalid` when its `status` is `INVALID`.
-         *
-         * @see {\@link AbstractControl.status}
-         *
-         * @return {?} True if this control has failed one or more of its validation checks,
-         * false otherwise.
-         */
-
-      }, {
-        key: "invalid",
-        get: function get() {
-          return this.status === INVALID;
-        }
-        /**
-         * A control is `pending` when its `status` is `PENDING`.
-         *
-         * @see {\@link AbstractControl.status}
-         *
-         * @return {?} True if this control is in the process of conducting a validation check,
-         * false otherwise.
-         */
-
-      }, {
-        key: "pending",
-        get: function get() {
-          return this.status == PENDING;
-        }
-        /**
-         * A control is `disabled` when its `status` is `DISABLED`.
-         *
-         * Disabled controls are exempt from validation checks and
-         * are not included in the aggregate value of their ancestor
-         * controls.
-         *
-         * @see {\@link AbstractControl.status}
-         *
-         * @return {?} True if the control is disabled, false otherwise.
-         */
-
-      }, {
-        key: "disabled",
-        get: function get() {
-          return this.status === DISABLED;
-        }
-        /**
-         * A control is `enabled` as long as its `status` is not `DISABLED`.
-         *
-         * @see {\@link AbstractControl.status}
-         *
-         * @return {?} True if the control has any status other than 'DISABLED',
-         * false if the status is 'DISABLED'.
-         *
-         */
-
-      }, {
-        key: "enabled",
-        get: function get() {
-          return this.status !== DISABLED;
-        }
-        /**
-         * A control is `dirty` if the user has changed the value
-         * in the UI.
-         *
-         * @return {?} True if the user has changed the value of this control in the UI; compare `pristine`.
-         * Programmatic changes to a control's value do not mark it dirty.
-         */
-
-      }, {
-        key: "dirty",
-        get: function get() {
-          return !this.pristine;
-        }
-        /**
-         * True if the control has not been marked as touched
-         *
-         * A control is `untouched` if the user has not yet triggered
-         * a `blur` event on it.
-         * @return {?}
-         */
-
-      }, {
-        key: "untouched",
-        get: function get() {
-          return !this.touched;
-        }
-        /**
-         * Reports the update strategy of the `AbstractControl` (meaning
-         * the event on which the control updates itself).
-         * Possible values: `'change'` | `'blur'` | `'submit'`
-         * Default value: `'change'`
-         * @return {?}
-         */
-
-      }, {
-        key: "updateOn",
-        get: function get() {
-          return this._updateOn ? this._updateOn : this.parent ? this.parent.updateOn : 'change';
-        }
-      }, {
-        key: "root",
-        get: function get() {
-          /** @type {?} */
-          var x = this;
-
-          while (x._parent) {
-            x = x._parent;
-          }
-
-          return x;
         }
       }]);
 
@@ -78706,8 +78706,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "setValue",
-
+        key: "length",
+        get: function get() {
+          return this.controls.length;
+        }
         /**
          * Sets the value of the `FormArray`. It accepts an array that matches
          * the structure of the control.
@@ -78744,6 +78746,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * updateValueAndValidity} method.
          * @return {?}
          */
+
+      }, {
+        key: "setValue",
         value: function setValue(value) {
           var _this80 = this;
 
@@ -79154,11 +79159,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           control._registerOnCollectionChange(this._onCollectionChange);
         }
-      }, {
-        key: "length",
-        get: function get() {
-          return this.controls.length;
-        }
       }]);
 
       return FormArray;
@@ -79311,8 +79311,44 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "addControl",
+        key: "formDirective",
+        get: function get() {
+          return this;
+        }
+        /**
+         * \@description
+         * The internal `FormGroup` instance.
+         * @return {?}
+         */
 
+      }, {
+        key: "control",
+        get: function get() {
+          return this.form;
+        }
+        /**
+         * \@description
+         * Returns an array representing the path to this group. Because this directive
+         * always lives at the top level of a form, it is always an empty array.
+         * @return {?}
+         */
+
+      }, {
+        key: "path",
+        get: function get() {
+          return [];
+        }
+        /**
+         * \@description
+         * Returns a map of the controls in this group.
+         * @return {?}
+         */
+
+      }, {
+        key: "controls",
+        get: function get() {
+          return this.form.controls;
+        }
         /**
          * \@description
          * Method that sets up the control directive in this group, re-calculates its value
@@ -79321,6 +79357,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} dir The `NgModel` directive instance.
          * @return {?}
          */
+
+      }, {
+        key: "addControl",
         value: function addControl(dir) {
           var _this85 = this;
 
@@ -79574,45 +79613,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /** @type {?} */
           this.form.get(path) : this.form;
         }
-      }, {
-        key: "formDirective",
-        get: function get() {
-          return this;
-        }
-        /**
-         * \@description
-         * The internal `FormGroup` instance.
-         * @return {?}
-         */
-
-      }, {
-        key: "control",
-        get: function get() {
-          return this.form;
-        }
-        /**
-         * \@description
-         * Returns an array representing the path to this group. Because this directive
-         * always lives at the top level of a form, it is always an empty array.
-         * @return {?}
-         */
-
-      }, {
-        key: "path",
-        get: function get() {
-          return [];
-        }
-        /**
-         * \@description
-         * Returns a map of the controls in this group.
-         * @return {?}
-         */
-
-      }, {
-        key: "controls",
-        get: function get() {
-          return this.form.controls;
-        }
       }]);
 
       return NgForm;
@@ -79692,14 +79692,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(AbstractFormGroupDirective, [{
         key: "ngOnInit",
-
+        value:
         /**
          * \@description
          * An internal callback method triggered on the instance after the inputs are set.
          * Registers the group with its parent group.
          * @return {?}
          */
-        value: function ngOnInit() {
+        function ngOnInit() {
           this._checkParentType();
 
           /** @type {?} */
@@ -79725,14 +79725,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @return {?}
          */
 
-      }, {
-        key: "_checkParentType",
-
-        /**
-         * \@internal
-         * @return {?}
-         */
-        value: function _checkParentType() {}
       }, {
         key: "control",
         get: function get() {
@@ -79785,6 +79777,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         get: function get() {
           return composeAsyncValidators(this._asyncValidators);
         }
+        /**
+         * \@internal
+         * @return {?}
+         */
+
+      }, {
+        key: "_checkParentType",
+        value: function _checkParentType() {}
       }]);
 
       return AbstractFormGroupDirective;
@@ -79805,11 +79805,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(TemplateDrivenErrors, null, [{
         key: "modelParentException",
-
+        value:
         /**
          * @return {?}
          */
-        value: function modelParentException() {
+        function modelParentException() {
           throw new Error("\n      ngModel cannot be used to register form controls with a parent formGroup directive.  Try using\n      formGroup's partner directive \"formControlName\" instead.  Example:\n\n      ".concat(FormErrorExamples.formControlName, "\n\n      Or, if you'd like to avoid registering this form control, indicate that it's standalone in ngModelOptions:\n\n      Example:\n\n      ").concat(FormErrorExamples.ngModelWithFormGroup));
         }
         /**
@@ -80192,8 +80192,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "viewToModelUpdate",
+        key: "path",
+        get: function get() {
+          return this._parent ? controlPath(this.name, this._parent) : [this.name];
+        }
+        /**
+         * \@description
+         * The top-level directive for this control if present, otherwise null.
+         * @return {?}
+         */
 
+      }, {
+        key: "formDirective",
+        get: function get() {
+          return this._parent ? this._parent.formDirective : null;
+        }
+        /**
+         * \@description
+         * Synchronous validator function composed of all the synchronous validators
+         * registered with this directive.
+         * @return {?}
+         */
+
+      }, {
+        key: "validator",
+        get: function get() {
+          return composeValidators(this._rawValidators);
+        }
+        /**
+         * \@description
+         * Async validator function composed of all the async validators registered with this
+         * directive.
+         * @return {?}
+         */
+
+      }, {
+        key: "asyncValidator",
+        get: function get() {
+          return composeAsyncValidators(this._rawAsyncValidators);
+        }
         /**
          * \@description
          * Sets the new value for the view model and emits an `ngModelChange` event.
@@ -80201,6 +80238,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} newValue The new value emitted by `ngModelChange`.
          * @return {?}
          */
+
+      }, {
+        key: "viewToModelUpdate",
         value: function viewToModelUpdate(newValue) {
           this.viewModel = newValue;
           this.update.emit(newValue);
@@ -80343,46 +80383,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this93.control.enable();
             }
           });
-        }
-      }, {
-        key: "path",
-        get: function get() {
-          return this._parent ? controlPath(this.name, this._parent) : [this.name];
-        }
-        /**
-         * \@description
-         * The top-level directive for this control if present, otherwise null.
-         * @return {?}
-         */
-
-      }, {
-        key: "formDirective",
-        get: function get() {
-          return this._parent ? this._parent.formDirective : null;
-        }
-        /**
-         * \@description
-         * Synchronous validator function composed of all the synchronous validators
-         * registered with this directive.
-         * @return {?}
-         */
-
-      }, {
-        key: "validator",
-        get: function get() {
-          return composeValidators(this._rawValidators);
-        }
-        /**
-         * \@description
-         * Async validator function composed of all the async validators registered with this
-         * directive.
-         * @return {?}
-         */
-
-      }, {
-        key: "asyncValidator",
-        get: function get() {
-          return composeAsyncValidators(this._rawAsyncValidators);
         }
       }]);
 
@@ -80594,8 +80594,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(FormControlDirective, [{
-        key: "ngOnChanges",
-
+        key: "isDisabled",
+        set: function set(isDisabled) {
+          ReactiveErrors.disabledAttrWarning();
+        }
         /**
          * \@description
          * A lifecycle method called when the directive's inputs change. For internal use
@@ -80604,6 +80606,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} changes A object of key/value pairs for the set of changed inputs.
          * @return {?}
          */
+
+      }, {
+        key: "ngOnChanges",
         value: function ngOnChanges(changes) {
           if (this._isControlChanged(changes)) {
             setUpControl(this.form, this);
@@ -80636,36 +80641,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @return {?}
          */
 
-      }, {
-        key: "viewToModelUpdate",
-
-        /**
-         * \@description
-         * Sets the new value for the view model and emits an `ngModelChange` event.
-         *
-         * @param {?} newValue The new value for the view model.
-         * @return {?}
-         */
-        value: function viewToModelUpdate(newValue) {
-          this.viewModel = newValue;
-          this.update.emit(newValue);
-        }
-        /**
-         * @private
-         * @param {?} changes
-         * @return {?}
-         */
-
-      }, {
-        key: "_isControlChanged",
-        value: function _isControlChanged(changes) {
-          return changes.hasOwnProperty('form');
-        }
-      }, {
-        key: "isDisabled",
-        set: function set(isDisabled) {
-          ReactiveErrors.disabledAttrWarning();
-        }
       }, {
         key: "path",
         get: function get() {
@@ -80705,6 +80680,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "control",
         get: function get() {
           return this.form;
+        }
+        /**
+         * \@description
+         * Sets the new value for the view model and emits an `ngModelChange` event.
+         *
+         * @param {?} newValue The new value for the view model.
+         * @return {?}
+         */
+
+      }, {
+        key: "viewToModelUpdate",
+        value: function viewToModelUpdate(newValue) {
+          this.viewModel = newValue;
+          this.update.emit(newValue);
+        }
+        /**
+         * @private
+         * @param {?} changes
+         * @return {?}
+         */
+
+      }, {
+        key: "_isControlChanged",
+        value: function _isControlChanged(changes) {
+          return changes.hasOwnProperty('form');
         }
       }]);
 
@@ -80909,8 +80909,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "addControl",
+        key: "formDirective",
+        get: function get() {
+          return this;
+        }
+        /**
+         * \@description
+         * Returns the `FormGroup` bound to this directive.
+         * @return {?}
+         */
 
+      }, {
+        key: "control",
+        get: function get() {
+          return this.form;
+        }
+        /**
+         * \@description
+         * Returns an array representing the path to this group. Because this directive
+         * always lives at the top level of a form, it always an empty array.
+         * @return {?}
+         */
+
+      }, {
+        key: "path",
+        get: function get() {
+          return [];
+        }
         /**
          * \@description
          * Method that sets up the control directive in this group, re-calculates its value
@@ -80919,6 +80944,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} dir The `FormControlName` directive instance.
          * @return {?}
          */
+
+      }, {
+        key: "addControl",
         value: function addControl(dir) {
           /** @type {?} */
           var ctrl = this.form.get(dir.path);
@@ -81199,34 +81227,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           if (!this.form) {
             ReactiveErrors.missingFormException();
           }
-        }
-      }, {
-        key: "formDirective",
-        get: function get() {
-          return this;
-        }
-        /**
-         * \@description
-         * Returns the `FormGroup` bound to this directive.
-         * @return {?}
-         */
-
-      }, {
-        key: "control",
-        get: function get() {
-          return this.form;
-        }
-        /**
-         * \@description
-         * Returns an array representing the path to this group. Because this directive
-         * always lives at the top level of a form, it always an empty array.
-         * @return {?}
-         */
-
-      }, {
-        key: "path",
-        get: function get() {
-          return [];
         }
       }]);
 
@@ -81534,18 +81534,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "_checkParentType",
-
-        /**
-         * @private
-         * @return {?}
-         */
-        value: function _checkParentType() {
-          if (_hasInvalidParent(this._parent)) {
-            ReactiveErrors.arrayParentException();
-          }
-        }
-      }, {
         key: "control",
         get: function get() {
           return (
@@ -81600,6 +81588,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "asyncValidator",
         get: function get() {
           return composeAsyncValidators(this._asyncValidators);
+        }
+        /**
+         * @private
+         * @return {?}
+         */
+
+      }, {
+        key: "_checkParentType",
+        value: function _checkParentType() {
+          if (_hasInvalidParent(this._parent)) {
+            ReactiveErrors.arrayParentException();
+          }
         }
       }]);
 
@@ -81768,8 +81768,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(FormControlName, [{
-        key: "ngOnChanges",
-
+        key: "isDisabled",
+        set: function set(isDisabled) {
+          ReactiveErrors.disabledAttrWarning();
+        }
         /**
          * \@description
          * A lifecycle method called when the directive's inputs change. For internal use only.
@@ -81777,6 +81779,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} changes A object of key/value pairs for the set of changed inputs.
          * @return {?}
          */
+
+      }, {
+        key: "ngOnChanges",
         value: function ngOnChanges(changes) {
           if (!this._added) this._setUpControl();
 
@@ -81822,49 +81827,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "_checkParentType",
-
-        /**
-         * @private
-         * @return {?}
-         */
-        value: function _checkParentType() {
-          if (!(this._parent instanceof FormGroupName) && this._parent instanceof AbstractFormGroupDirective) {
-            ReactiveErrors.ngModelGroupException();
-          } else if (!(this._parent instanceof FormGroupName) && !(this._parent instanceof FormGroupDirective) && !(this._parent instanceof FormArrayName)) {
-            ReactiveErrors.controlParentException();
-          }
-        }
-        /**
-         * @private
-         * @return {?}
-         */
-
-      }, {
-        key: "_setUpControl",
-        value: function _setUpControl() {
-          this._checkParentType();
-
-          /** @type {?} */
-          this.control = this.formDirective.addControl(this);
-
-          if (this.control.disabled &&
-          /** @type {?} */
-          this.valueAccessor.setDisabledState) {
-            /** @type {?} */
-
-            /** @type {?} */
-            this.valueAccessor.setDisabledState(true);
-          }
-
-          this._added = true;
-        }
-      }, {
-        key: "isDisabled",
-        set: function set(isDisabled) {
-          ReactiveErrors.disabledAttrWarning();
-        }
-      }, {
         key: "path",
         get: function get() {
           return controlPath(this.name == null ? this.name : this.name.toString(),
@@ -81908,6 +81870,44 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             /** @type {?} */
             composeAsyncValidators(this._rawAsyncValidators)
           );
+        }
+        /**
+         * @private
+         * @return {?}
+         */
+
+      }, {
+        key: "_checkParentType",
+        value: function _checkParentType() {
+          if (!(this._parent instanceof FormGroupName) && this._parent instanceof AbstractFormGroupDirective) {
+            ReactiveErrors.ngModelGroupException();
+          } else if (!(this._parent instanceof FormGroupName) && !(this._parent instanceof FormGroupDirective) && !(this._parent instanceof FormArrayName)) {
+            ReactiveErrors.controlParentException();
+          }
+        }
+        /**
+         * @private
+         * @return {?}
+         */
+
+      }, {
+        key: "_setUpControl",
+        value: function _setUpControl() {
+          this._checkParentType();
+
+          /** @type {?} */
+          this.control = this.formDirective.addControl(this);
+
+          if (this.control.disabled &&
+          /** @type {?} */
+          this.valueAccessor.setDisabledState) {
+            /** @type {?} */
+
+            /** @type {?} */
+            this.valueAccessor.setDisabledState(true);
+          }
+
+          this._added = true;
         }
       }]);
 
@@ -82135,8 +82135,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass2(RequiredValidator, [{
-        key: "validate",
-
+        key: "required",
+        get:
+        /**
+         * \@description
+         * Tracks changes to the required attribute bound to this directive.
+         * @return {?}
+         */
+        function get() {
+          return this._required;
+        }
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        ,
+        set: function set(value) {
+          this._required = value != null && value !== false && "".concat(value) !== 'false';
+          if (this._onChange) this._onChange();
+        }
         /**
          * \@description
          * Method that validates whether the control is empty.
@@ -82144,6 +82161,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} control
          * @return {?}
          */
+
+      }, {
+        key: "validate",
         value: function validate(control) {
           return this.required ? Validators.required(control) : null;
         }
@@ -82159,26 +82179,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "registerOnValidatorChange",
         value: function registerOnValidatorChange(fn) {
           this._onChange = fn;
-        }
-      }, {
-        key: "required",
-
-        /**
-         * \@description
-         * Tracks changes to the required attribute bound to this directive.
-         * @return {?}
-         */
-        get: function get() {
-          return this._required;
-        }
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        ,
-        set: function set(value) {
-          this._required = value != null && value !== false && "".concat(value) !== 'false';
-          if (this._onChange) this._onChange();
         }
       }]);
 
@@ -82238,7 +82238,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(CheckboxRequiredValidator, [{
         key: "validate",
-
+        value:
         /**
          * \@description
          * Method that validates whether or not the checkbox has been checked.
@@ -82246,7 +82246,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} control
          * @return {?}
          */
-        value: function validate(control) {
+        function validate(control) {
           return this.required ? Validators.requiredTrue(control) : null;
         }
       }]);
@@ -82311,8 +82311,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass2(EmailValidator, [{
-        key: "validate",
-
+        key: "email",
+        set:
+        /**
+         * \@description
+         * Tracks changes to the email attribute bound to this directive.
+         * @param {?} value
+         * @return {?}
+         */
+        function set(value) {
+          this._enabled = value === '' || value === true || value === 'true';
+          if (this._onChange) this._onChange();
+        }
         /**
          * \@description
          * Method that validates whether an email address is valid.
@@ -82320,6 +82330,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} control
          * @return {?}
          */
+
+      }, {
+        key: "validate",
         value: function validate(control) {
           return this._enabled ? Validators.email(control) : null;
         }
@@ -82335,19 +82348,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "registerOnValidatorChange",
         value: function registerOnValidatorChange(fn) {
           this._onChange = fn;
-        }
-      }, {
-        key: "email",
-
-        /**
-         * \@description
-         * Tracks changes to the email attribute bound to this directive.
-         * @param {?} value
-         * @return {?}
-         */
-        set: function set(value) {
-          this._enabled = value === '' || value === true || value === 'true';
-          if (this._onChange) this._onChange();
         }
       }]);
 
@@ -82437,7 +82437,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(MinLengthValidator, [{
         key: "ngOnChanges",
-
+        value:
         /**
          * \@description
          * A lifecycle method called when the directive's inputs change. For internal use
@@ -82446,7 +82446,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} changes A object of key/value pairs for the set of changed inputs.
          * @return {?}
          */
-        value: function ngOnChanges(changes) {
+        function ngOnChanges(changes) {
           if ('minlength' in changes) {
             this._createValidator();
 
@@ -82558,7 +82558,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(MaxLengthValidator, [{
         key: "ngOnChanges",
-
+        value:
         /**
          * \@description
          * A lifecycle method called when the directive's inputs change. For internal use
@@ -82567,7 +82567,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} changes A object of key/value pairs for the set of changed inputs.
          * @return {?}
          */
-        value: function ngOnChanges(changes) {
+        function ngOnChanges(changes) {
           if ('maxlength' in changes) {
             this._createValidator();
 
@@ -82681,7 +82681,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(PatternValidator, [{
         key: "ngOnChanges",
-
+        value:
         /**
          * \@description
          * A lifecycle method called when the directive's inputs change. For internal use
@@ -82690,7 +82690,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} changes A object of key/value pairs for the set of changed inputs.
          * @return {?}
          */
-        value: function ngOnChanges(changes) {
+        function ngOnChanges(changes) {
           if ('pattern' in changes) {
             this._createValidator();
 
@@ -82828,7 +82828,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(FormBuilder, [{
         key: "group",
-
+        value:
         /**
          * \@description
          * Construct a new `FormGroup` instance.
@@ -82851,7 +82851,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          *
          * @return {?}
          */
-        value: function group(controlsConfig) {
+        function group(controlsConfig) {
           var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
           /** @type {?} */
@@ -83061,7 +83061,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(ReactiveFormsModule, null, [{
         key: "withConfig",
-
+        value:
         /**
          * \@description
          * Provides options for configuring the reactive forms module.
@@ -83071,7 +83071,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * binding is used with reactive form directives.
          * @return {?}
          */
-        value: function withConfig(opts) {
+        function withConfig(opts) {
           return {
             ngModule: ReactiveFormsModule,
             providers: [{
@@ -83580,13 +83580,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(BrowserDomAdapter, [{
         key: "getProperty",
-
+        value:
         /**
          * @param {?} el
          * @param {?} name
          * @return {?}
          */
-        value: function getProperty(el, name) {
+        function getProperty(el, name) {
           return (
             /** @type {?} */
             el[name]
@@ -83837,11 +83837,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }], [{
         key: "makeCurrent",
-
+        value:
         /**
          * @return {?}
          */
-        value: function makeCurrent() {
+        function makeCurrent() {
           Object(_angular_common__WEBPACK_IMPORTED_MODULE_0__["ɵsetRootDomAdapter"])(new BrowserDomAdapter());
         }
       }]);
@@ -83967,12 +83967,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(BrowserGetTestability, [{
         key: "addToWindow",
-
+        value:
         /**
          * @param {?} registry
          * @return {?}
          */
-        value: function addToWindow(registry) {
+        function addToWindow(registry) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵglobal"]['getAngularTestability'] =
           /**
           * @param {?} elem
@@ -84097,11 +84097,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }], [{
         key: "init",
-
+        value:
         /**
          * @return {?}
          */
-        value: function init() {
+        function init() {
           Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["setTestabilityGetter"])(new BrowserGetTestability());
         }
       }]);
@@ -87409,7 +87409,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(TransferState, [{
         key: "get",
-
+        value:
         /**
          * Get the value corresponding to a key. Return `defaultValue` if key is not found.
          * @template T
@@ -87417,7 +87417,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param {?} defaultValue
          * @return {?}
          */
-        value: function get(key, defaultValue) {
+        function get(key, defaultValue) {
           return this.store[key] !== undefined ?
           /** @type {?} */
           this.store[key] : defaultValue;
@@ -87579,7 +87579,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(By, null, [{
         key: "all",
-
+        value:
         /**
          * Match all nodes.
          *
@@ -87589,7 +87589,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * {\@example platform-browser/dom/debug/ts/by/by.ts region='by_all'}
          * @return {?}
          */
-        value: function all() {
+        function all() {
           return (
             /**
             * @return {?}
@@ -89885,16 +89885,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(UrlTree, [{
-        key: "toString",
-
-        /**
-         * \@docsNotRequired
-         * @return {?}
-         */
-        value: function toString() {
-          return DEFAULT_SERIALIZER.serialize(this);
-        }
-      }, {
         key: "queryParamMap",
         get: function get() {
           if (!this._queryParamMap) {
@@ -89902,6 +89892,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           return this._queryParamMap;
+        }
+        /**
+         * \@docsNotRequired
+         * @return {?}
+         */
+
+      }, {
+        key: "toString",
+        value: function toString() {
+          return DEFAULT_SERIALIZER.serialize(this);
         }
       }]);
 
@@ -89966,19 +89966,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "toString",
-
+        key: "numberOfChildren",
+        get: function get() {
+          return Object.keys(this.children).length;
+        }
         /**
          * \@docsNotRequired
          * @return {?}
          */
+
+      }, {
+        key: "toString",
         value: function toString() {
           return serializePaths(this);
-        }
-      }, {
-        key: "numberOfChildren",
-        get: function get() {
-          return Object.keys(this.children).length;
         }
       }]);
 
@@ -90031,16 +90031,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(UrlSegment, [{
-        key: "toString",
-
-        /**
-         * \@docsNotRequired
-         * @return {?}
-         */
-        value: function toString() {
-          return serializePath(this);
-        }
-      }, {
         key: "parameterMap",
         get: function get() {
           if (!this._parameterMap) {
@@ -90048,6 +90038,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           return this._parameterMap;
+        }
+        /**
+         * \@docsNotRequired
+         * @return {?}
+         */
+
+      }, {
+        key: "toString",
+        value: function toString() {
+          return serializePath(this);
         }
       }]);
 
@@ -90174,13 +90174,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(DefaultUrlSerializer, [{
         key: "parse",
-
+        value:
         /**
          * Parses a url into a `UrlTree`
          * @param {?} url
          * @return {?}
          */
-        value: function parse(url) {
+        function parse(url) {
           /** @type {?} */
           var p = new UrlParser(url);
           return new UrlTree(p.parseRootSegment(), p.parseQueryParams(), p.parseFragment());
@@ -90807,13 +90807,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(Tree, [{
-        key: "parent",
-
+        key: "root",
+        get: function get() {
+          return this._root.value;
+        }
         /**
          * \@internal
          * @param {?} t
          * @return {?}
          */
+
+      }, {
+        key: "parent",
         value: function parent(t) {
           /** @type {?} */
           var p = this.pathFromRoot(t);
@@ -90900,11 +90905,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           function (s) {
             return s.value;
           });
-        }
-      }, {
-        key: "root",
-        get: function get() {
-          return this._root.value;
         }
       }]);
 
@@ -91209,15 +91209,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ActivatedRoute, [{
-        key: "toString",
-
-        /**
-         * @return {?}
-         */
-        value: function toString() {
-          return this.snapshot ? this.snapshot.toString() : "Future(".concat(this._futureSnapshot, ")");
-        }
-      }, {
         key: "routeConfig",
         get: function get() {
           return this._futureSnapshot.routeConfig;
@@ -91316,6 +91307,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           return this._queryParamMap;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "toString",
+        value: function toString() {
+          return this.snapshot ? this.snapshot.toString() : "Future(".concat(this._futureSnapshot, ")");
         }
       }]);
 
@@ -91459,27 +91459,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(ActivatedRouteSnapshot, [{
-        key: "toString",
-
-        /**
-         * @return {?}
-         */
-        value: function toString() {
-          /** @type {?} */
-          var url = this.url.map(
-          /**
-          * @param {?} segment
-          * @return {?}
-          */
-          function (segment) {
-            return segment.toString();
-          }).join('/');
-          /** @type {?} */
-
-          var matched = this.routeConfig ? this.routeConfig.path : '';
-          return "Route(url:'".concat(url, "', path:'").concat(matched, "')");
-        }
-      }, {
         key: "root",
         get: function get() {
           return this._routerState.root;
@@ -91549,6 +91528,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           return this._queryParamMap;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "toString",
+        value: function toString() {
+          /** @type {?} */
+          var url = this.url.map(
+          /**
+          * @param {?} segment
+          * @return {?}
+          */
+          function (segment) {
+            return segment.toString();
+          }).join('/');
+          /** @type {?} */
+
+          var matched = this.routeConfig ? this.routeConfig.path : '';
+          return "Route(url:'".concat(url, "', path:'").concat(matched, "')");
         }
       }]);
 
@@ -95662,12 +95662,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(DefaultRouteReuseStrategy, [{
         key: "shouldDetach",
-
+        value:
         /**
          * @param {?} route
          * @return {?}
          */
-        value: function shouldDetach(route) {
+        function shouldDetach(route) {
           return false;
         }
         /**
@@ -95857,12 +95857,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(DefaultUrlHandlingStrategy, [{
         key: "shouldProcessUrl",
-
+        value:
         /**
          * @param {?} url
          * @return {?}
          */
-        value: function shouldProcessUrl(url) {
+        function shouldProcessUrl(url) {
           return true;
         }
         /**
@@ -96764,12 +96764,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "getCurrentNavigation",
-
+        key: "url",
+        get: function get() {
+          return this.serializeUrl(this.currentUrlTree);
+        }
         /**
          * The current Navigation object if one exists
          * @return {?}
          */
+
+      }, {
+        key: "getCurrentNavigation",
         value: function getCurrentNavigation() {
           return this.currentNavigation;
         }
@@ -97276,11 +97281,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             navigationId: this.lastSuccessfulId
           });
         }
-      }, {
-        key: "url",
-        get: function get() {
-          return this.serializeUrl(this.currentUrlTree);
-        }
       }]);
 
       return Router;
@@ -97436,26 +97436,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(RouterLink, [{
-        key: "onClick",
-
-        /**
-         * @return {?}
-         */
-        value: function onClick() {
-          /** @type {?} */
-          var extras = {
-            skipLocationChange: attrBoolValue(this.skipLocationChange),
-            replaceUrl: attrBoolValue(this.replaceUrl),
-            state: this.state
-          };
-          this.router.navigateByUrl(this.urlTree, extras);
-          return true;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
         key: "routerLink",
         set: function set(commands) {
           if (commands != null) {
@@ -97483,6 +97463,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.preserve = value;
         }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "onClick",
+        value: function onClick() {
+          /** @type {?} */
+          var extras = {
+            skipLocationChange: attrBoolValue(this.skipLocationChange),
+            replaceUrl: attrBoolValue(this.replaceUrl),
+            state: this.state
+          };
+          this.router.navigateByUrl(this.urlTree, extras);
+          return true;
+        }
+        /**
+         * @return {?}
+         */
+
       }, {
         key: "urlTree",
         get: function get() {
@@ -97612,12 +97612,40 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(RouterLinkWithHref, [{
-        key: "ngOnChanges",
+        key: "routerLink",
+        set: function set(commands) {
+          if (commands != null) {
+            this.commands = Array.isArray(commands) ? commands : [commands];
+          } else {
+            this.commands = [];
+          }
+        }
+        /**
+         * @deprecated As of Angular v4.0 use `queryParamsHandling` instead.
+         * @param {?} value
+         * @return {?}
+         */
 
+      }, {
+        key: "preserveQueryParams",
+        set: function set(value) {
+          if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])() &&
+          /** @type {?} */
+          console &&
+          /** @type {?} */
+          console.warn) {
+            console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
+          }
+
+          this.preserve = value;
+        }
         /**
          * @param {?} changes
          * @return {?}
          */
+
+      }, {
+        key: "ngOnChanges",
         value: function ngOnChanges(changes) {
           this.updateTargetUrlAndHref();
         }
@@ -97673,34 +97701,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @return {?}
          */
 
-      }, {
-        key: "routerLink",
-        set: function set(commands) {
-          if (commands != null) {
-            this.commands = Array.isArray(commands) ? commands : [commands];
-          } else {
-            this.commands = [];
-          }
-        }
-        /**
-         * @deprecated As of Angular v4.0 use `queryParamsHandling` instead.
-         * @param {?} value
-         * @return {?}
-         */
-
-      }, {
-        key: "preserveQueryParams",
-        set: function set(value) {
-          if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])() &&
-          /** @type {?} */
-          console &&
-          /** @type {?} */
-          console.warn) {
-            console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
-          }
-
-          this.preserve = value;
-        }
       }, {
         key: "urlTree",
         get: function get() {
@@ -97922,12 +97922,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "ngOnChanges",
-
+        key: "routerLinkActive",
+        set: function set(data) {
+          /** @type {?} */
+          var classes = Array.isArray(data) ? data : data.split(' ');
+          this.classes = classes.filter(
+          /**
+          * @param {?} c
+          * @return {?}
+          */
+          function (c) {
+            return !!c;
+          });
+        }
         /**
          * @param {?} changes
          * @return {?}
          */
+
+      }, {
+        key: "ngOnChanges",
         value: function ngOnChanges(changes) {
           this.update();
         }
@@ -98010,20 +98024,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /** @type {?} */
           var isActiveCheckFn = this.isLinkActive(this.router);
           return this.link && isActiveCheckFn(this.link) || this.linkWithHref && isActiveCheckFn(this.linkWithHref) || this.links.some(isActiveCheckFn) || this.linksWithHrefs.some(isActiveCheckFn);
-        }
-      }, {
-        key: "routerLinkActive",
-        set: function set(data) {
-          /** @type {?} */
-          var classes = Array.isArray(data) ? data : data.split(' ');
-          this.classes = classes.filter(
-          /**
-          * @param {?} c
-          * @return {?}
-          */
-          function (c) {
-            return !!c;
-          });
         }
       }]);
 
@@ -98315,12 +98315,53 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          */
 
       }, {
-        key: "detach",
+        key: "isActivated",
+        get: function get() {
+          return !!this.activated;
+        }
+        /**
+         * @return {?}
+         */
 
+      }, {
+        key: "component",
+        get: function get() {
+          if (!this.activated) throw new Error('Outlet is not activated');
+          return this.activated.instance;
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "activatedRoute",
+        get: function get() {
+          if (!this.activated) throw new Error('Outlet is not activated');
+          return (
+            /** @type {?} */
+            this._activatedRoute
+          );
+        }
+        /**
+         * @return {?}
+         */
+
+      }, {
+        key: "activatedRouteData",
+        get: function get() {
+          if (this._activatedRoute) {
+            return this._activatedRoute.snapshot.data;
+          }
+
+          return {};
+        }
         /**
          * Called when the `RouteReuseStrategy` instructs to detach the subtree
          * @return {?}
          */
+
+      }, {
+        key: "detach",
         value: function detach() {
           if (!this.activated) throw new Error('Outlet is not activated');
           this.location.detach();
@@ -98400,47 +98441,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.changeDetector.markForCheck();
           this.activateEvents.emit(this.activated.instance);
-        }
-      }, {
-        key: "isActivated",
-        get: function get() {
-          return !!this.activated;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "component",
-        get: function get() {
-          if (!this.activated) throw new Error('Outlet is not activated');
-          return this.activated.instance;
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "activatedRoute",
-        get: function get() {
-          if (!this.activated) throw new Error('Outlet is not activated');
-          return (
-            /** @type {?} */
-            this._activatedRoute
-          );
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
-        key: "activatedRouteData",
-        get: function get() {
-          if (this._activatedRoute) {
-            return this._activatedRoute.snapshot.data;
-          }
-
-          return {};
         }
       }]);
 
@@ -98567,13 +98567,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(PreloadAllModules, [{
         key: "preload",
-
+        value:
         /**
          * @param {?} route
          * @param {?} fn
          * @return {?}
          */
-        value: function preload(route, fn) {
+        function preload(route, fn) {
           return fn().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(
           /**
           * @return {?}
@@ -98604,13 +98604,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass2(NoPreloading, [{
         key: "preload",
-
+        value:
         /**
          * @param {?} route
          * @param {?} fn
          * @return {?}
          */
-        value: function preload(route, fn) {
+        function preload(route, fn) {
           return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(null);
         }
       }]);
@@ -100518,6 +100518,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass2(BehaviorSubject, [{
+        key: "value",
+        get: function get() {
+          return this.getValue();
+        }
+      }, {
         key: "_subscribe",
         value: function _subscribe(subscriber) {
           var subscription = _get(_getPrototypeOf(BehaviorSubject.prototype), "_subscribe", this).call(this, subscriber);
@@ -100543,11 +100548,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "next",
         value: function next(value) {
           _get(_getPrototypeOf(BehaviorSubject.prototype), "next", this).call(this, this._value = value);
-        }
-      }, {
-        key: "value",
-        get: function get() {
-          return this.getValue();
         }
       }]);
 
@@ -112394,6 +112394,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass2(ScanSubscriber, [{
+        key: "seed",
+        get: function get() {
+          return this._seed;
+        },
+        set: function set(value) {
+          this.hasSeed = true;
+          this._seed = value;
+        }
+      }, {
         key: "_next",
         value: function _next(value) {
           if (!this.hasSeed) {
@@ -112417,15 +112426,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.seed = result;
           this.destination.next(result);
-        }
-      }, {
-        key: "seed",
-        get: function get() {
-          return this._seed;
-        },
-        set: function set(value) {
-          this.hasSeed = true;
-          this._seed = value;
         }
       }]);
 
